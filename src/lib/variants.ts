@@ -24,3 +24,8 @@ export const side = LogicType.string({
     default: "top",
     enum: ["top", "right", "bottom", "left"]
 });
+
+export const position = LogicType.string({
+    default: "top-right",
+    enum: ["top-right", "bottom-right", "top-left", "bottom-left"]
+});

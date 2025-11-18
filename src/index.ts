@@ -4,7 +4,7 @@ import { useColorMode } from "@nuxt/ui/composables/color-mode/useColorMode";
 import ui from "@nuxt/ui/vue-plugin";
 import { h } from "vue";
 
-import { components } from "@/components";
+import { components, getComponents } from "@/components";
 import baseStyle from "@/index.css?inline";
 import icon from "@/logo.svg";
 
@@ -29,7 +29,7 @@ export default makePlugin({
     }),
     description: "",
     editor: {
-        components,
+        components: getComponents,
         wrapper: ({ config }) => h("div", { "class": config.colorMode, "nuxt-body": "" }, UApp)
     },
     icon,

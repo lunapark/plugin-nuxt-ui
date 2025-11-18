@@ -3,7 +3,7 @@ import Error from "@nuxt/ui/components/Error.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
 
-export const error: TComponent = {
+export default {
     component: Error,
     name: "Layout/Error",
     properties: {
@@ -22,4 +22,4 @@ export const error: TComponent = {
         statusCode: LogicType.void(),
         statusMessage: LogicType.void()
     }
-};
+} satisfies TComponent;

@@ -4,7 +4,7 @@ import Header from "@nuxt/ui/components/Header.vue";
 import { ButtonProps } from "@/components/element/button.ts";
 import { DrawerProps, ModalProps, SlideoverProps } from "@/lib/menu.ts";
 
-export const header: TComponent = {
+export default {
     component: Header,
     models: {
         open: LogicType.boolean()
@@ -41,4 +41,4 @@ export const header: TComponent = {
         toggle: LogicType.object({ open: LogicType.boolean() }),
         top: LogicType.void()
     }
-};
+} satisfies TComponent;

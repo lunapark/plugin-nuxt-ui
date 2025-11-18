@@ -5,7 +5,7 @@ import { ComponentIconsProps } from "@/lib/icon.ts";
 import { LinkProps } from "@/lib/link.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
-export const button: TComponent = {
+const button = {
     component: Button,
     name: "Element/Button",
     properties: {
@@ -24,6 +24,7 @@ export const button: TComponent = {
         leading: LogicType.void(),
         trailing: LogicType.void()
     }
-};
+} satisfies TComponent;
 
-export const ButtonProps = LogicType.object(button.properties);
+export default button;
+export const ButtonProps = LogicUtil.partial(LogicType.object(button.properties));

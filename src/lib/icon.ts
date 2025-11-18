@@ -1,6 +1,6 @@
 import { LogicType, LogicUtil } from "@luna-park/plugin";
 
-import { AvatarProps } from "./avatar.ts";
+import { AvatarProps } from "@/components/element/avatar.ts";
 
 export const ComponentIconsProps = LogicUtil.partial(LogicType.object({
     avatar: AvatarProps,

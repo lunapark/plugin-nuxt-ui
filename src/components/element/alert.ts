@@ -1,11 +1,11 @@
 import { LogicType, type TComponent } from "@luna-park/plugin";
 import Alert from "@nuxt/ui/components/Alert.vue";
 
+import { AvatarProps } from "@/components/element/avatar.ts";
 import { ButtonProps } from "@/components/element/button.ts";
-import { AvatarProps } from "@/lib/avatar.ts";
 import { color, orientation, variant } from "@/lib/variants.ts";
 
-export const alert: TComponent = {
+export default {
     component: Alert,
     emits: {
         "update:open": LogicType.function(LogicType.object({ value: LogicType.boolean() }), LogicType.unknown())
@@ -30,4 +30,4 @@ export const alert: TComponent = {
         leading: LogicType.void(),
         title: LogicType.void()
     }
-};
+} satisfies TComponent;
