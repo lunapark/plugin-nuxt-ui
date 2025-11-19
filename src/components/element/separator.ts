@@ -1,4 +1,4 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Separator from "@nuxt/ui/components/Separator.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -23,3 +23,4 @@ const separator = {
 } satisfies TComponent;
 
 export default separator;
+export const SeparatorProps = LogicUtil.partial(LogicType.object(separator.properties));

@@ -1,8 +1,9 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import User from "@nuxt/ui/components/User.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ChipProps } from "@/components/element/chip.ts";
+import { LinkProps } from "@/lib/link.ts";
 import { orientation, size } from "@/lib/variants.ts";
 
 export const user = {
@@ -12,14 +13,13 @@ export const user = {
     },
     name: "Data/User",
     properties: {
+        ...LogicUtil.pick(LinkProps, ["to", "target"]).properties,
         avatar: AvatarProps,
         chip: LogicType.union([LogicType.boolean(), ChipProps]),
         description: LogicType.string(),
         name: LogicType.string(),
         orientation: { ...orientation, description: "The orientation of the user." },
-        size,
-        target: LogicType.string({ enum: ["_blank", "_self", "_parent", "_top"] }),
-        to: LogicType.string()
+        size
     },
     slots: {
         avatar: LogicType.void(),
@@ -30,3 +30,4 @@ export const user = {
 } satisfies TComponent;
 
 export default user;
+export const UserProps = LogicUtil.partial(LogicType.object(user.properties));

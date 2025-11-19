@@ -1,4 +1,4 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Marquee from "@nuxt/ui/components/Marquee.vue";
 
 import { orientation } from "@/lib/variants.ts";
@@ -19,3 +19,4 @@ export const marquee = {
 } satisfies TComponent;
 
 export default marquee;
+export const MarqueeProps = LogicUtil.partial(LogicType.object(marquee.properties));
