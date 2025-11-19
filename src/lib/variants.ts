@@ -29,3 +29,8 @@ export const position = LogicType.string({
     default: "top-right",
     enum: ["top-right", "bottom-right", "top-left", "bottom-left"]
 });
+
+export const indicator = LogicType.string({
+    default: "start",
+    enum: ["start", "end", "hidden"]
+});

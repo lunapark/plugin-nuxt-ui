@@ -128,9 +128,10 @@ for (const [category, elements] of Object.entries(components)) {
         if (category === "content") {
             filePath = `@nuxt/ui/components/content/${ element }.vue`;
         }
-        console.log(filePath);
-        await extractFile(filePath, `${ import.meta.dirname }/generated/${ category }/${ element }.ts`);
+        // console.log(filePath);
+        // await extractFile(filePath, `${ import.meta.dirname }/generated/${ category }/${ element }.ts`);
     }
 }
 
-// await extractFile("@nuxt/ui/components/Button.vue", `${ import.meta.dirname }/generated/elements/Button.ts`);
+await extractFile("@nuxt/ui/components/InputDate.vue", `${ import.meta.dirname }/generated/form/InputDate.ts`);
+await extractFile("@nuxt/ui/components/InputTime.vue", `${ import.meta.dirname }/generated/form/InputTime.ts`);

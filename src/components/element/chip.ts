@@ -1,4 +1,4 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Chip from "@nuxt/ui/components/Chip.vue";
 
 import { color, position, size } from "@/lib/variants.ts";
@@ -21,3 +21,4 @@ const chip = {
 } satisfies TComponent;
 
 export default chip;
+export const ChipProps = LogicUtil.partial(LogicType.object(chip.properties));

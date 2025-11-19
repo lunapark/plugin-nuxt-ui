@@ -1,4 +1,4 @@
-import { LogicType, LogicUtil, type TSchema } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 
 export const NuxtLinkProps = LogicUtil.partial(LogicType.object({
     external: LogicType.boolean({ description: "Forces the link to be considered as external (true) or internal (false). This is helpful to handle edge-cases" }),

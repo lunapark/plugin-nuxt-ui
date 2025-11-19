@@ -5,7 +5,7 @@ import { AvatarProps } from "@/components/element/avatar.ts";
 import { ButtonProps } from "@/components/element/button.ts";
 import { color, orientation, variant } from "@/lib/variants.ts";
 
-export default {
+const alert = {
     component: Alert,
     emits: {
         "update:open": LogicType.function(LogicType.object({ value: LogicType.boolean() }), LogicType.unknown())
@@ -31,3 +31,5 @@ export default {
         title: LogicType.void()
     }
 } satisfies TComponent;
+
+export default alert;

@@ -4,7 +4,7 @@ import { useColorMode } from "@nuxt/ui/composables/color-mode/useColorMode";
 import ui from "@nuxt/ui/vue-plugin";
 import { h } from "vue";
 
-import { components, getComponents } from "@/components";
+import { getComponents } from "@/components";
 import baseStyle from "@/index.css?inline";
 import icon from "@/logo.svg";
 
