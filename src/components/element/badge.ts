@@ -13,7 +13,7 @@ const badge = {
         icon: LogicType.string(),
         label: LogicType.string(),
         size,
-        square: LogicType.boolean({ description: "Render the badge with equal padding on all sides.", name: "square" }),
+        square: LogicType.boolean({ description: "Render the badge with equal padding on all sides." }),
         variant
     },
     slots: {

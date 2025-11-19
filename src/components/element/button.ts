@@ -11,12 +11,12 @@ const button = {
     properties: {
         ...ComponentIconsProps.properties,
         ...LogicUtil.omit(LinkProps, ["custom"]).properties,
-        block: LogicType.boolean({ description: "Render the button full width.", name: "block" }),
+        block: LogicType.boolean({ description: "Render the button full width." }),
         color,
         icon: LogicType.string(),
         label: LogicType.string(),
         size,
-        square: LogicType.boolean({ description: "Render the button with equal padding on all sides.", name: "square" }),
+        square: LogicType.boolean({ description: "Render the button with equal padding on all sides." }),
         variant
     },
     slots: {

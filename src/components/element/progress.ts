@@ -1,6 +1,7 @@
 import { LogicType, type TComponent } from "@luna-park/plugin";
 import Progress from "@nuxt/ui/components/Progress.vue";
 
+import { animation } from "@/lib/animation.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const progress = {
@@ -10,7 +11,7 @@ const progress = {
     },
     name: "Element/Progress",
     properties: {
-        animation: LogicType.string({ description: "The animation of the progress bar.", enum: ["carousel", "carousel-inverse", "swing", "elastic"] }),
+        animation,
         color,
         inverted: LogicType.boolean({ description: "Whether the progress is visually inverted." }),
         max: LogicType.number({ description: "The maximum progress value." }),

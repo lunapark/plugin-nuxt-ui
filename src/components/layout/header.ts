@@ -25,9 +25,9 @@ export default {
             }
         }),
         mode: LogicType.string({ description: "The mode of the header menu.", enum: ["modal", "slideover", "drawer"] }),
-        title: LogicType.string({ name: "title" }),
-        to: LogicType.string({ name: "to" }),
-        toggle: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Customize the toggle button to open the header menu displayed when the `content` slot is used.", name: "toggle" }),
+        title: LogicType.string(),
+        to: LogicType.string(),
+        toggle: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Customize the toggle button to open the header menu displayed when the `content` slot is used." }),
         toggleSide: LogicType.string({ description: "The side to render the toggle button on.", enum: ["left", "right"] })
     },
     slots: {

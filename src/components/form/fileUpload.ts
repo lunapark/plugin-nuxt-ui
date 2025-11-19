@@ -22,7 +22,7 @@ const fileUpload = {
         layout: LogicType.string({ default: "grid", description: "The layout of how files are displayed.\nOnly works when `variant` is `area`.", enum: ["list", "grid"] }),
         multiple: LogicType.boolean(),
         name: LogicType.string(),
-        position: LogicType.string({ default: "outside", description: "The position of the files.\nOnly works when `variant` is `area` and when `layout` is `list`.", enum: ["outside", "inside"], name: "position" }),
+        position: LogicType.string({ default: "outside", description: "The position of the files.\nOnly works when `variant` is `area` and when `layout` is `list`.", enum: ["outside", "inside"] }),
         preview: LogicType.boolean({ description: "Show the file preview/list after upload." }),
         required: LogicType.boolean(),
         reset: LogicType.boolean({ description: "Reset the file input when dialog is opened." }),

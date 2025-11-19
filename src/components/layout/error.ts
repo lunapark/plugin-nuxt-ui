@@ -7,7 +7,7 @@ export default {
     component: Error,
     name: "Layout/Error",
     properties: {
-        clear: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a button to clear the error in the links slot.", name: "clear" }),
+        clear: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a button to clear the error in the links slot." }),
         error: LogicType.object({
             message: LogicType.string(),
             statusCode: LogicType.number(),

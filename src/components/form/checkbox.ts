@@ -22,7 +22,7 @@ const checkbox = {
         indicator: { ...indicator, description: "Position of the indicator." },
         label: LogicType.string(),
         name: LogicType.string({ description: "The name of the field. Submitted with its owning form as part of a name/value pair." }),
-        required: LogicType.boolean({ description: "When `true`, indicates that the user must set the value before the owning form can be submitted.", name: "required" }),
+        required: LogicType.boolean({ description: "When `true`, indicates that the user must set the value before the owning form can be submitted." }),
         size,
         variant: LogicType.string({ default: "list", enum: ["list", "card"] })
     },
