@@ -12,7 +12,7 @@
     "homepage": "https://luna-park.app",
     "repository": {
         "type": "git",
-        "url": "https://github.com/lunapark"
+        "url": "https://github.com/lunapark/plugin-nuxt-ui"
     },
     "author": {
         "name": "Luna Park",
