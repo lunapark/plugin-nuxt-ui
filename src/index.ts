@@ -1,7 +1,6 @@
 import { makePlugin } from "@luna-park/plugin";
 import UApp from "@nuxt/ui/components/App.vue";
 import ui from "@nuxt/ui/vue-plugin";
-import { defineComponent, h } from "vue";
 
 import { colorMode } from "@/color.ts";
 import { getComponents } from "@/components";
@@ -13,7 +12,7 @@ import nodes from "@/nodes";
 
 export default makePlugin({
     config,
-    description: "Add all the component from Nuxt UI",
+    description: "Nuxt UI is a collection of reusable components and utilities for building apps.",
     editor: {
         components: getComponents,
         nodes,
@@ -36,7 +35,7 @@ export default makePlugin({
         }
     },
     lifecycle: {
-        mount: ({ internal }) => {
+        mount: () => {
             window.__LUNA_PARK__.app.use(ui);
         },
         update({ config }) {
