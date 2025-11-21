@@ -3,7 +3,7 @@ import User from "@nuxt/ui/components/User.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ChipProps } from "@/components/element/chip.ts";
-import { LinkProps } from "@/lib/link.ts";
+import { LinkProps } from "@/components/navigation/link.ts";
 import { orientation, size } from "@/lib/variants.ts";
 
 export const user = {

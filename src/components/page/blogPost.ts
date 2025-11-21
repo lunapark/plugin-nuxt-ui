@@ -3,7 +3,7 @@ import BlogPost from "@nuxt/ui/components/BlogPost.vue";
 
 import { UserProps } from "@/components/data/user.ts";
 import { BadgeProps } from "@/components/element/badge.ts";
-import { LinkProps } from "@/lib/link.ts";
+import { LinkProps } from "@/components/navigation/link.ts";
 import { orientation, variant } from "@/lib/variants.ts";
 
 const blogPost = {

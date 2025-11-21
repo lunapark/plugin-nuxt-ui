@@ -1,7 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageColumns from "@nuxt/ui/components/PageColumns.vue";
 
-const pagecolumns = {
+const pageColumns = {
     component: PageColumns,
     name: "Page/PageColumns",
     properties: {},
@@ -10,5 +10,5 @@ const pagecolumns = {
     }
 } satisfies TComponent;
 
-export default pagecolumns;
-export const PageColumnsProps = LogicUtil.partial(LogicType.object(pagecolumns.properties));
+export default pageColumns;
+export const PageColumnsProps = LogicUtil.partial(LogicType.object(pageColumns.properties));

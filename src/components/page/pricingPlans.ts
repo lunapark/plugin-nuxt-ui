@@ -1,7 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PricingPlans from "@nuxt/ui/components/PricingPlans.vue";
 
-import { PricingPlanProps } from "@/components/page/PricingPlan.ts";
+import { PricingPlanProps } from "@/components/page/pricingPlan.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pricingPlans = {

@@ -6,7 +6,7 @@ import { color, indicator, size, variant } from "@/lib/variants.ts";
 const checkbox = {
     component: Checkbox,
     emits: {
-        change: LogicType.function(LogicType.object(), LogicType.unknown())
+        change: LogicType.function()
     },
     models: {
         modelValue: LogicType.boolean()

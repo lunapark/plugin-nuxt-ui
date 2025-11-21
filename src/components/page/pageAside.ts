@@ -1,7 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageAside from "@nuxt/ui/components/PageAside.vue";
 
-const pageaside = {
+const pageAside = {
     component: PageAside,
     name: "Page/PageAside",
     properties: {},
@@ -12,5 +12,5 @@ const pageaside = {
     }
 } satisfies TComponent;
 
-export default pageaside;
-export const PageAsideProps = LogicUtil.partial(LogicType.object(pageaside.properties));
+export default pageAside;
+export const PageAsideProps = LogicUtil.partial(LogicType.object(pageAside.properties));

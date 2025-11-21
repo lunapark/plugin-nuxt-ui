@@ -1,8 +1,8 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Button from "@nuxt/ui/components/Button.vue";
 
+import { LinkProps } from "@/components/navigation/link.ts";
 import { ComponentIconsProps } from "@/lib/icon.ts";
-import { LinkProps } from "@/lib/link.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const button = {

@@ -7,8 +7,8 @@ import { color, size, variant } from "@/lib/variants.ts";
 const input = {
     component: Input,
     emits: {
-        blur: LogicType.function(LogicType.object(), LogicType.unknown()),
-        change: LogicType.function(LogicType.object(), LogicType.unknown())
+        blur: LogicType.function(),
+        change: LogicType.function()
     },
     models: {
         modelValue: LogicType.union([LogicType.string(), LogicType.number()])

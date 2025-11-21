@@ -10,9 +10,9 @@ const DateValue = LogicType.unknown(); // TODO
 const inputDate = {
     component: InputDate,
     emits: {
-        blur: LogicType.function(LogicType.object(), LogicType.unknown()),
-        change: LogicType.function(LogicType.object(), LogicType.unknown()),
-        focus: LogicType.function(LogicType.object(), LogicType.unknown())
+        blur: LogicType.function(),
+        change: LogicType.function(),
+        focus: LogicType.function()
     },
     models: {
         modelValue: DateValue // TODO: add dynamic for range

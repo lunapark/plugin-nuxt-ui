@@ -1,4 +1,4 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Textarea from "@nuxt/ui/components/Textarea.vue";
 
 import { ComponentIconsProps } from "@/lib/icon.ts";
@@ -35,3 +35,4 @@ const textarea = {
 } satisfies TComponent;
 
 export default textarea;
+export const TextareaProps = LogicUtil.partial(LogicType.object(textarea.properties));

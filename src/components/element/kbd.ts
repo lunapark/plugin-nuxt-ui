@@ -1,4 +1,4 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Kbd from "@nuxt/ui/components/Kbd.vue";
 
 import { color, size, variant } from "@/lib/variants.ts";
@@ -18,3 +18,4 @@ const kbd = {
 } satisfies TComponent;
 
 export default kbd;
+export const KbdProps = LogicUtil.partial(LogicType.object(kbd.properties));

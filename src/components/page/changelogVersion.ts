@@ -3,7 +3,7 @@ import ChangelogVersion from "@nuxt/ui/components/ChangelogVersion.vue";
 
 import { UserProps } from "@/components/data/user.ts";
 import { BadgeProps } from "@/components/element/badge.ts";
-import { LinkProps } from "@/lib/link.ts";
+import { LinkProps } from "@/components/navigation/link.ts";
 
 const changelogVersion = {
     component: ChangelogVersion,

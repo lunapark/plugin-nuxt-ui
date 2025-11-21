@@ -1,10 +1,10 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Timeline from "@nuxt/ui/components/Timeline.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
-const TimelineItem = LogicType.object({
+const TimelineItem = LogicUtil.partial(LogicType.object({
     avatar: AvatarProps,
     date: LogicType.string(),
     description: LogicType.string(),
@@ -12,7 +12,7 @@ const TimelineItem = LogicType.object({
     slot: LogicType.string(),
     title: LogicType.string(),
     value: LogicType.union([LogicType.string(), LogicType.number()])
-});
+}));
 
 export const timeline = {
     component: Timeline,

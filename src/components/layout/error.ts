@@ -1,9 +1,9 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Error from "@nuxt/ui/components/Error.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
 
-export default {
+const error = {
     component: Error,
     name: "Layout/Error",
     properties: {
@@ -23,3 +23,6 @@ export default {
         statusMessage: LogicType.void()
     }
 } satisfies TComponent;
+
+export default error;
+export const ErrorProps = LogicUtil.partial(LogicType.object(error.properties));

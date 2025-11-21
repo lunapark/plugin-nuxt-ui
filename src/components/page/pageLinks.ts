@@ -1,7 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageLinks from "@nuxt/ui/components/PageLinks.vue";
 
-import { LinkProps } from "@/lib/link.ts";
+import { LinkProps } from "@/components/navigation/link.ts";
 
 const PageLink = LogicType.object({
     ...LogicUtil.omit(LinkProps, ["custom"]).properties,

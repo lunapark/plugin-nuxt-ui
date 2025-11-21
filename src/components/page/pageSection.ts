@@ -2,7 +2,7 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageSection from "@nuxt/ui/components/PageSection.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
-import { PageFeatureProps } from "@/components/page/PageFeature.ts";
+import { PageFeatureProps } from "@/components/page/pageFeature.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pageSection = {

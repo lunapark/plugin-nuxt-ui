@@ -1,7 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageAnchors from "@nuxt/ui/components/PageAnchors.vue";
 
-import { LinkProps } from "@/lib/link.ts";
+import { LinkProps } from "@/components/navigation/link.ts";
 
 const PageAnchor = LogicType.object({
     ...LogicUtil.omit(LinkProps, ["custom"]).properties,

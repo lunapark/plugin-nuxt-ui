@@ -1,7 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageCard from "@nuxt/ui/components/PageCard.vue";
 
-import { LinkProps } from "@/lib/link.ts";
+import { LinkProps } from "@/components/navigation/link.ts";
 import { color, orientation, variant } from "@/lib/variants.ts";
 
 const pageCard = {

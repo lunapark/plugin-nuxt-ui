@@ -2,13 +2,13 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Banner from "@nuxt/ui/components/Banner.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
-import { LinkProps } from "@/lib/link.ts";
+import { LinkProps } from "@/components/navigation/link.ts";
 import { color } from "@/lib/variants.ts";
 
 const banner = {
     component: Banner,
     emits: {
-        close: LogicType.function(LogicType.object(), LogicType.unknown())
+        close: LogicType.function()
     },
     name: "Element/Banner",
     properties: {

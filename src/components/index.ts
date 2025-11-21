@@ -1,7 +1,4 @@
 export async function getComponents() {
-    return (await Promise.all(
-        Object.values(import.meta.glob("./**/*.ts"))
-            .map((module) => module())
-    ))
+    return Object.values(import.meta.glob("./**/*.ts", { eager: true }))
         .map((module) => module.default);
 }

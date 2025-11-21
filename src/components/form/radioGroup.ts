@@ -17,7 +17,7 @@ const RadioGroupItem = LogicType.union([
 const radioGroup = {
     component: RadioGroup,
     emits: {
-        change: LogicType.function(LogicType.object(), LogicType.unknown())
+        change: LogicType.function()
     },
     models: {
         modelValue: AcceptableValues

@@ -1,10 +1,10 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageFeature from "@nuxt/ui/components/PageFeature.vue";
 
-import { LinkProps } from "@/lib/link.ts";
+import { LinkProps } from "@/components/navigation/link.ts";
 import { orientation } from "@/lib/variants.ts";
 
-const pagefeature = {
+const pageFeature = {
     component: PageFeature,
     name: "Page/PageFeature",
     properties: {
@@ -22,5 +22,5 @@ const pagefeature = {
     }
 } satisfies TComponent;
 
-export default pagefeature;
-export const PageFeatureProps = LogicUtil.partial(LogicType.object(pagefeature.properties));
+export default pageFeature;
+export const PageFeatureProps = LogicUtil.partial(LogicType.object(pageFeature.properties));

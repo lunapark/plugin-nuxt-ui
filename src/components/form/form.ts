@@ -6,8 +6,8 @@ const FormError = LogicType.object({ message: LogicType.string(), name: LogicTyp
 const form = {
     component: Form,
     emits: {
-        error: LogicType.function(LogicType.object(), LogicType.unknown()),
-        submit: LogicType.function(LogicType.object(), LogicType.unknown())
+        error: LogicType.function(),
+        submit: LogicType.function()
     },
     name: "Form/Form",
     properties: {

@@ -1,7 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PricingTable from "@nuxt/ui/components/PricingTable.vue";
 
-import { PricingPlanProps } from "@/components/page/PricingPlan.ts";
+import { PricingPlanProps } from "@/components/page/pricingPlan.ts";
 
 const PricingTableTier = LogicType.object({
     ...LogicUtil.pick(
