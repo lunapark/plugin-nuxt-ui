@@ -1,3 +1,4 @@
+/* eslint-disable sort-keys-custom-order/object-keys */
 import { LogicType, type TSchema } from "@luna-park/plugin";
 
 export default LogicType.object({
@@ -5,13 +6,17 @@ export default LogicType.object({
         default: "auto",
         enum: ["light", "dark", "auto"]
     }),
-    neutral: LogicType.string({
-        default: "slate",
-        enum: ["slate", "gray", "zinc", "neutral", "stone"]
-    }),
     primary: LogicType.string({
         default: "green",
         enum: ["black", "red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose"]
+    }),
+    secondary: LogicType.string({
+        default: "blue",
+        enum: ["black", "red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose"]
+    }),
+    neutral: LogicType.string({
+        default: "slate",
+        enum: ["slate", "gray", "zinc", "neutral", "stone"]
     }),
     radius: LogicType.number({
         default: 0.25,

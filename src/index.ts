@@ -9,6 +9,8 @@ import baseStyle from "@/index.css?inline";
 import icon from "@/logo.svg";
 import LWrapper from "@/LWrapper.vue";
 import nodes from "@/nodes";
+import { colorTokens } from "@/tokens/color.ts";
+import { lengthTokens } from "@/tokens/length.ts";
 
 export default makePlugin({
     config,
@@ -16,6 +18,10 @@ export default makePlugin({
     editor: {
         components: getComponents,
         nodes,
+        tokens: [
+            ...colorTokens,
+            ...lengthTokens
+        ],
         wrapper: ({ mode }) => {
             if (mode === "build") {
                 return UApp;
@@ -42,6 +48,7 @@ export default makePlugin({
             const appConfig = useAppConfig();
 
             appConfig.ui.colors.primary = config.primary;
+            appConfig.ui.colors.secondary = config.secondary;
             appConfig.ui.colors.neutral = config.neutral;
 
             colorMode.value = config.colorMode;

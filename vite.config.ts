@@ -16,7 +16,7 @@ export default defineConfig(() => {
                 entry: "src/index.ts",
                 fileName: "index",
                 formats: ["es"],
-                name: "@luna-park/plugin-tailwind"
+                name: "@luna-park/plugin-nuxt-ui"
             },
             rollupOptions: {
                 external: [...Object.keys(packageDefinition.peerDependencies || {})]
