@@ -3,6 +3,9 @@ import PageList from "@nuxt/ui/components/PageList.vue";
 
 const pageList = {
     component: PageList,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-list"
+    },
     name: "Page/PageList",
     properties: {
         divide: LogicType.boolean()

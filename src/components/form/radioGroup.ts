@@ -16,6 +16,9 @@ const RadioGroupItem = LogicType.union([
 
 const radioGroup = {
     component: RadioGroup,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/radio-group"
+    },
     emits: {
         change: LogicType.function()
     },

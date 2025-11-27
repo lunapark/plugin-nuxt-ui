@@ -6,6 +6,9 @@ import { menuProp } from "@/lib/menu.ts";
 
 const dashboardSidebar = {
     component: DashboardSidebar,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/dashboard-sidebar"
+    },
     models: {
         collapsed: LogicType.boolean(),
         open: LogicType.boolean()

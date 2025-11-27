@@ -7,6 +7,9 @@ import { color, orientation, variant } from "@/lib/variants.ts";
 
 const alert = {
     component: Alert,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/alert"
+    },
     emits: {
         "update:open": LogicType.function(LogicType.object({ value: LogicType.boolean() }), LogicType.unknown())
     },

@@ -38,6 +38,9 @@ export const CommandPaletteGroup = LogicUtil.partial(LogicType.object({
 
 const commandPalette = {
     component: CommandPalette,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/command-palette"
+    },
     name: "Navigation/CommandPalette",
     properties: {
         autofocus: LogicType.boolean({ description: "Automatically focus the input when component is mounted." }),

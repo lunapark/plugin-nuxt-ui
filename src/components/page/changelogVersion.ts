@@ -7,6 +7,9 @@ import { LinkProps } from "@/components/navigation/link.ts";
 
 const changelogVersion = {
     component: ChangelogVersion,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/changelog-version"
+    },
     emits: {
         click: LogicType.void()
     },

@@ -6,6 +6,9 @@ import { orientation } from "@/lib/variants.ts";
 
 const pageFeature = {
     component: PageFeature,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-feature"
+    },
     name: "Page/PageFeature",
     properties: {
         ...LogicUtil.pick(LinkProps, ["to", "target"]).properties,

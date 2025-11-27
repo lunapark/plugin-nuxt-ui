@@ -3,6 +3,9 @@ import Drawer from "@nuxt/ui/components/Drawer.vue";
 
 const drawer = {
     component: Drawer,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/drawer"
+    },
     name: "Overlay/Drawer",
     properties: {
         activeSnapPoint: LogicType.union([LogicType.string(), LogicType.number()]),

@@ -1,6 +1,5 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Tree from "@nuxt/ui/components/Tree.vue";
-import type { IconProps } from "@nuxt/ui/runtime/types";
 
 import { color, size } from "@/lib/variants.ts";
 
@@ -17,6 +16,9 @@ TreeItem.properties.children = LogicType.array(TreeItem, { optional: true });
 
 export const tree = {
     component: Tree,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/tree"
+    },
     emits: {
         select: LogicType.function(LogicType.object({ e: LogicType.interface("SelectEvent"), item: LogicType.array(LogicType.interface("T")) }), LogicType.interface("void")),
         toggle: LogicType.function(LogicType.object({ e: LogicType.interface("ToggleEvent"), item: LogicType.array(LogicType.interface("T")) }), LogicType.interface("void"))

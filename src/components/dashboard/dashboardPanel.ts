@@ -3,6 +3,9 @@ import DashboardPanel from "@nuxt/ui/components/DashboardPanel.vue";
 
 const dashboardPanel = {
     component: DashboardPanel,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/dashboard-panel"
+    },
     name: "Dashboard/DashboardPanel",
     properties: {
         defaultSize: LogicType.number({ description: "The default size of the panel." }),

@@ -5,6 +5,9 @@ import { color, size } from "@/lib/variants.ts";
 
 const sw = {
     component: Switch,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/switch"
+    },
     models: {
         modelValue: LogicType.boolean()
     },

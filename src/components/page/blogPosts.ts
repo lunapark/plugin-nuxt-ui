@@ -6,6 +6,9 @@ import { orientation } from "@/lib/variants.ts";
 
 const blogPosts = {
     component: BlogPosts,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/blog-posts"
+    },
     name: "Page/BlogPosts",
     properties: {
         orientation: { ...orientation, description: "The orientation of the blog posts." },

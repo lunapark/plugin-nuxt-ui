@@ -7,6 +7,9 @@ import { TooltipProps } from "@/components/overlay/tooltip.ts";
 
 const dashboardSearchButton = {
     component: DashboardSearchButton,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/dashboard-search-button"
+    },
     name: "Dashboard/DashboardSearchButton",
     properties: {
         ...ButtonProps.properties,

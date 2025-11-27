@@ -23,6 +23,9 @@ export const SelectItem = LogicType.union([
 
 const select = {
     component: Select,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/select"
+    },
     models: {
         modelValue: AcceptableValues
     },

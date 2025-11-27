@@ -14,6 +14,9 @@ const AuthFormField = LogicUtil.partial(LogicType.object({
 
 const authForm = {
     component: AuthForm,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/auth-form"
+    },
     emits: {
         submit: LogicType.function(LogicType.object({ payload: LogicType.unknown() }), LogicType.void())
     },

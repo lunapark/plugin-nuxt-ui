@@ -5,6 +5,9 @@ import { size } from "@/lib/variants.ts";
 
 const formField = {
     component: FormField,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/form-field"
+    },
     name: "Form/FormField",
     properties: {
         description: LogicType.string(),

@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button";
 
 export const slideover: TComponent = {
     component: Slideover,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/slideover"
+    },
     models: {
         open: LogicType.boolean()
     },

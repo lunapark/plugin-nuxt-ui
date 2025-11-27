@@ -16,6 +16,9 @@ const CheckboxGroupItem = LogicType.union([
 
 const checkboxGroup = {
     component: CheckboxGroup,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/checbox-group"
+    },
     models: {
         modelValue: LogicType.array(LogicType.union([LogicType.string(), LogicType.number(), LogicType.boolean()]))
     },

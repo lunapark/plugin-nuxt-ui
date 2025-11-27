@@ -8,6 +8,9 @@ import { UIMessage } from "@/lib/ai.ts";
 
 const chatMessages = {
     component: ChatMessages,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/chat-messages"
+    },
     name: "Chat/ChatMessages",
     properties: {
         assistant: LogicUtil.pick(ChatMessageProps, ["variant", "icon", "avatar", "side", "actions"]),

@@ -5,6 +5,9 @@ import { color, position, size } from "@/lib/variants.ts";
 
 const chip = {
     component: Chip,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/chip"
+    },
     name: "Element/Chip",
     properties: {
         color,

@@ -8,6 +8,9 @@ import { variant } from "@/lib/variants.ts";
 
 const chatMessage = {
     component: ChatMessage,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/chat-message"
+    },
     name: "Chat/ChatMessage",
     properties: {
         ...UIMessage.properties,

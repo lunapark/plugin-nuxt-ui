@@ -3,6 +3,9 @@ import Page from "@nuxt/ui/components/Page.vue";
 
 const page = {
     component: Page,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page"
+    },
     name: "Page/Page",
     properties: {},
     slots: {

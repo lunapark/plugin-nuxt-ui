@@ -5,6 +5,9 @@ import { orientation } from "@/lib/variants.ts";
 
 export const marquee = {
     component: Marquee,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/marquee"
+    },
     name: "Data/Marquee",
     properties: {
         orientation: { ...orientation, description: "The orientation of the marquee." },

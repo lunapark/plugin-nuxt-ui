@@ -11,6 +11,9 @@ const PageAnchor = LogicType.object({
 
 const pageAnchors = {
     component: PageAnchors,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-anchors"
+    },
     name: "Page/PageAnchors",
     properties: {
         links: LogicType.array(PageAnchor, { description: "The links to display in the anchors." })

@@ -19,6 +19,9 @@ const TabsItem = LogicUtil.partial(LogicType.object({
 
 const tabs = {
     component: Tabs,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/tabs"
+    },
     models: {
         modelValue: LogicType.union([LogicType.string(), LogicType.number()])
     },

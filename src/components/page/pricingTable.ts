@@ -25,6 +25,9 @@ const PricingTableSection = LogicType.object({
 
 const pricingTable = {
     component: PricingTable,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/pricing-table"
+    },
     name: "Page/PricingTable",
     properties: {
         caption: LogicType.string({ description: "The caption to display above the table." }),

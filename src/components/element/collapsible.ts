@@ -3,6 +3,9 @@ import Collapsible from "@nuxt/ui/components/Collapsible.vue";
 
 const collapsible = {
     component: Collapsible,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/collapsible"
+    },
     models: {
         open: LogicType.boolean()
     },

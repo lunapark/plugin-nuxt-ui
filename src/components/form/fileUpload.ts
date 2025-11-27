@@ -5,6 +5,9 @@ import { color, size } from "@/lib/variants.ts";
 
 const fileUpload = {
     component: FileUpload,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/file-upload"
+    },
     models: {
         modelValue: LogicType.union(LogicType.interface("File"), LogicType.array(LogicType.interface("File")))
     },

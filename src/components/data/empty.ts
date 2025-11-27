@@ -7,6 +7,9 @@ import { size, variant } from "@/lib/variants.ts";
 
 const empty = {
     component: Empty,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/empty"
+    },
     name: "Data/Empty",
     properties: {
         actions: LogicType.array(ButtonProps, { description: "Display a list of Button in the body." }),

@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 
 const dashboardNavbar = {
     component: DashboardNavbar,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/dashboard-navbar"
+    },
     name: "Dashboard/DashboardNavbar",
     properties: {
         icon: LogicType.string({ description: "The icon displayed next to the title." }),

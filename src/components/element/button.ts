@@ -7,6 +7,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const button = {
     component: Button,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/button"
+    },
     name: "Element/Button",
     properties: {
         ...ComponentIconsProps.properties,

@@ -3,6 +3,9 @@ import PageColumns from "@nuxt/ui/components/PageColumns.vue";
 
 const pageColumns = {
     component: PageColumns,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-column"
+    },
     name: "Page/PageColumns",
     properties: {},
     slots: {

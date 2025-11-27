@@ -30,6 +30,9 @@ const PopoverArrowProps = LogicUtil.partial(LogicType.object({
 
 export const popover: TComponent = {
     component: Popover,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/popover"
+    },
     models: {
         open: LogicType.boolean()
     },

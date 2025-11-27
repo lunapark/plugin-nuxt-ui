@@ -3,6 +3,9 @@ import PageAside from "@nuxt/ui/components/PageAside.vue";
 
 const pageAside = {
     component: PageAside,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-aside"
+    },
     name: "Page/PageAside",
     properties: {},
     slots: {

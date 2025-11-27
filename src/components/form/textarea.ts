@@ -6,6 +6,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const textarea = {
     component: Textarea,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/textarea"
+    },
     models: {
         modelValue: LogicType.string()
     },

@@ -5,6 +5,9 @@ import { size } from "@/lib/variants.ts";
 
 const avatarGroup = {
     component: AvatarGroup,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/avatar-group"
+    },
     name: "Element/AvatarGroup",
     properties: {
         max: LogicType.number({ description: "The maximum number of avatars to display." }),

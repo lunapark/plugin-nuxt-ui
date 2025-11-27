@@ -10,6 +10,9 @@ const PageLogoItem = LogicType.union([LogicType.string(), LogicType.object({
 
 const pageLogos = {
     component: PageLogos,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-logos"
+    },
     name: "Page/PageLogos",
     properties: {
         items: LogicType.array(PageLogoItem),

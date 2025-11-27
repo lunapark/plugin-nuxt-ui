@@ -5,6 +5,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const calendar = {
     component: Calendar,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/calendar"
+    },
     models: {
         modelValue: LogicType.array(LogicType.interface("Date"))
     },

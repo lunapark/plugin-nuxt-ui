@@ -28,8 +28,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2(69cde42742fce008e5a780ba5502e49c)
       '@luna-park/plugin':
-        specifier: ^1.0.8
-        version: 1.0.8(@fastify/cors@11.1.0)(@fastify/static@8.3.0)(@fortawesome/fontawesome-svg-core@7.1.0)(fastify@5.6.2)(typescript@5.9.3)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))(vue@3.5.25(typescript@5.9.3))
+        specifier: ^1.0.9
+        version: 1.0.9(@fastify/cors@11.1.0)(@fastify/static@8.3.0)(@fortawesome/fontawesome-svg-core@7.1.0)(fastify@5.6.2)(typescript@5.9.3)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))(vue@3.5.25(typescript@5.9.3))
       '@types/node':
         specifier: ^24.10.1
         version: 24.10.1
@@ -475,8 +475,8 @@ packages:
       stylelint: ^16.25.0
       typescript-eslint: ^8.46.3
 
-  '@luna-park/plugin@1.0.8':
-    resolution: {integrity: sha512-PdUUsRIwfwRuPpr1YRt83lT4EGMG0NUlxQq+7wrOzfUt56rZmfvgoMp3C5xXuoX8jF5PFSr9SWetM8npLC2oaw==}
+  '@luna-park/plugin@1.0.9':
+    resolution: {integrity: sha512-giBsZs2FuGtbXSfoIbD6SgOaYMOTAnGHf6TLqK6GXp2EU4T/kqyTtuINBMpK2Hj9SxG+qynFOqYffKlmehaICA==}
     hasBin: true
     peerDependencies:
       '@fastify/cors': ^11.1.0
@@ -3186,7 +3186,7 @@ snapshots:
       stylelint: 16.25.0(typescript@5.9.3)
       typescript-eslint: 8.48.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
 
-  '@luna-park/plugin@1.0.8(@fastify/cors@11.1.0)(@fastify/static@8.3.0)(@fortawesome/fontawesome-svg-core@7.1.0)(fastify@5.6.2)(typescript@5.9.3)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))(vue@3.5.25(typescript@5.9.3))':
+  '@luna-park/plugin@1.0.9(@fastify/cors@11.1.0)(@fastify/static@8.3.0)(@fortawesome/fontawesome-svg-core@7.1.0)(fastify@5.6.2)(typescript@5.9.3)(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       '@fastify/cors': 11.1.0
       '@fastify/static': 8.3.0

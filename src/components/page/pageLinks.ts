@@ -11,6 +11,9 @@ const PageLink = LogicType.object({
 
 const pageLinks = {
     component: PageLinks,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-links"
+    },
     name: "Page/PageLinks",
     properties: {
         links: LogicType.array(PageLink),

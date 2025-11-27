@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 
 const modal = {
     component: Modal,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/modal"
+    },
     models: {
         open: LogicType.boolean()
     },

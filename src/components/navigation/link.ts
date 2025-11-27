@@ -11,6 +11,9 @@ export const NuxtLinkProps = LogicUtil.partial(LogicType.object({
 
 const link = {
     component: Link,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/link"
+    },
     name: "Navigation/Link",
     properties: {
         ...NuxtLinkProps.properties,

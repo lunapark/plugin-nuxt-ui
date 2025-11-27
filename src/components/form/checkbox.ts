@@ -1,10 +1,13 @@
 import { LogicType, type TComponent } from "@luna-park/plugin";
 import Checkbox from "@nuxt/ui/components/Checkbox.vue";
 
-import { color, indicator, size, variant } from "@/lib/variants.ts";
+import { color, indicator, size } from "@/lib/variants.ts";
 
 const checkbox = {
     component: Checkbox,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/checkbox"
+    },
     emits: {
         change: LogicType.function()
     },

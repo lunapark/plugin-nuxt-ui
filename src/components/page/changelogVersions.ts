@@ -17,6 +17,9 @@ const SpringOptions = LogicUtil.partial(LogicType.object({
 
 const changelogVersions = {
     component: ChangelogVersions,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/changelog-versions"
+    },
     name: "Page/ChangelogVersions",
     properties: {
         indicator: LogicType.boolean({ description: "Display an indicator bar on the left." }),

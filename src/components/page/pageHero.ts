@@ -6,6 +6,9 @@ import { orientation } from "@/lib/variants.ts";
 
 const pageHero = {
     component: PageHero,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-hero"
+    },
     name: "Page/PageHero",
     properties: {
         description: LogicType.string(),

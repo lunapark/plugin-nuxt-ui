@@ -5,6 +5,9 @@ import { color, orientation, size } from "@/lib/variants.ts";
 
 const slider = {
     component: Slider,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/slider"
+    },
     models: {
         modelValue: LogicType.union([LogicType.number(), LogicType.array(LogicType.number())])
     },

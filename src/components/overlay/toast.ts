@@ -3,11 +3,13 @@ import Toast from "@nuxt/ui/components/Toast.vue";
 
 import { AvatarProps } from "@/components/element/avatar";
 import { ButtonProps } from "@/components/element/button";
-import modal from "@/components/overlay/modal.ts";
 import { color, orientation } from "@/lib/variants.ts";
 
 export const toast: TComponent = {
     component: Toast,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/toast"
+    },
     name: "Overlay/Toast",
     properties: {
         actions: LogicType.array(ButtonProps, { description: "Display a list of actions." }),

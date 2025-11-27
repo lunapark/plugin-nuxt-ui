@@ -6,6 +6,9 @@ import { orientation, variant } from "@/lib/variants.ts";
 
 const pageCTA = {
     component: PageCTA,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-cta"
+    },
     name: "Page/PageCTA",
     properties: {
         description: LogicType.string(),

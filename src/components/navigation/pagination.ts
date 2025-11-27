@@ -5,6 +5,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const pagination = {
     component: Pagination,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/pagination"
+    },
     models: {
         page: LogicType.number({ description: "The controlled value of the current page." })
     },

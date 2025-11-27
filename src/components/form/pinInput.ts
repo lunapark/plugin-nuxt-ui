@@ -5,6 +5,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const pinInput = {
     component: PinInput,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/pin-input"
+    },
     emits: {
         complete: LogicType.function(LogicType.object({ value: LogicType.array(LogicType.string()) }), LogicType.unknown())
     },

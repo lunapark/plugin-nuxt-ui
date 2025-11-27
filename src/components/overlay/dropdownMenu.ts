@@ -28,6 +28,9 @@ DropdownMenuItem.properties.children = LogicType.array(DropdownMenuItem, { optio
 
 const dropdownMenu = {
     component: DropdownMenu,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/dropdown-menu"
+    },
     models: {
         open: LogicType.boolean()
     },

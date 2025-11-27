@@ -3,6 +3,9 @@ import DashboardGroup from "@nuxt/ui/components/DashboardGroup.vue";
 
 const dashboardGroup = {
     component: DashboardGroup,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/dashboard-group"
+    },
     name: "Dashboard/DashboardGroup",
     properties: {
         persistent: LogicType.boolean({ description: "Whether to persist the size in the storage." }),

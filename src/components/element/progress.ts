@@ -6,6 +6,9 @@ import { color, orientation, size } from "@/lib/variants.ts";
 
 const progress = {
     component: Progress,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/progress"
+    },
     models: {
         modelValue: LogicType.number()
     },

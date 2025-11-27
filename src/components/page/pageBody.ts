@@ -3,6 +3,9 @@ import PageBody from "@nuxt/ui/components/PageBody.vue";
 
 const pageBody = {
     component: PageBody,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-body"
+    },
     name: "Page/PageBody",
     properties: { },
     slots: {

@@ -34,6 +34,9 @@ NavigationMenuItem.properties.children = LogicType.array(NavigationMenuChildItem
 
 const navigationMenu = {
     component: NavigationMenu,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/navigation-menu"
+    },
     models: {
         modelValue: LogicType.union([LogicType.string(), LogicType.array(LogicType.string())])
     },

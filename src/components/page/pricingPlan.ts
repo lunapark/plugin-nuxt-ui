@@ -7,6 +7,9 @@ import { orientation } from "@/lib/variants.ts";
 
 const pricingPlan = {
     component: PricingPlan,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/pricing-plan"
+    },
     name: "Page/PricingPlan",
     properties: {
         badge: LogicType.union([LogicType.string(), BadgeProps], { description: "Display a badge next to the title." }),

@@ -16,6 +16,9 @@ const TimelineItem = LogicUtil.partial(LogicType.object({
 
 export const timeline = {
     component: Timeline,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/timeline"
+    },
     models: {
         modelValue: LogicType.union([LogicType.string(), LogicType.number()])
     },

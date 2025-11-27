@@ -13,6 +13,9 @@ const AccordionItem = LogicUtil.partial(LogicType.object({
 
 const accordion = {
     component: Accordion,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/accordion"
+    },
     models: {
         modelValue: LogicType.union([LogicType.string(), LogicType.array(LogicType.string())], { description: "The controlled value of the active item(s).\n\nUse this when you need to control the state of the items. Can be binded with `v-model`" })
     },

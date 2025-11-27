@@ -6,6 +6,9 @@ import { menuProp } from "@/lib/menu.ts";
 
 const header = {
     component: Header,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/header"
+    },
     models: {
         open: LogicType.boolean()
     },

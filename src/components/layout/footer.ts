@@ -3,6 +3,9 @@ import Footer from "@nuxt/ui/components/Footer.vue";
 
 const footer = {
     component: Footer,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/footer"
+    },
     name: "Layout/Footer",
     properties: {},
     slots: {

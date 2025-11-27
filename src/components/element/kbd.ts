@@ -5,6 +5,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const kbd = {
     component: Kbd,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/kbd"
+    },
     name: "Element/Kbd",
     properties: {
         color,

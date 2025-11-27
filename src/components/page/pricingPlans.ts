@@ -6,6 +6,9 @@ import { orientation } from "@/lib/variants.ts";
 
 const pricingPlans = {
     component: PricingPlans,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/pricing-plans"
+    },
     name: "Page/PricingPlans",
     properties: {
         compact: LogicType.boolean({ description: "When `true`, the plans will be displayed without gap." }),

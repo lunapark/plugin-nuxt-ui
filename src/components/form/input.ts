@@ -6,6 +6,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const input = {
     component: Input,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/input"
+    },
     emits: {
         blur: LogicType.function(),
         change: LogicType.function()

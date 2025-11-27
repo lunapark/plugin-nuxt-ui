@@ -8,6 +8,9 @@ import { orientation, variant } from "@/lib/variants.ts";
 
 const blogPost = {
     component: BlogPost,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/blog-post"
+    },
     emits: {
         click: LogicType.void()
     },

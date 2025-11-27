@@ -6,6 +6,9 @@ import { color, orientation, variant } from "@/lib/variants.ts";
 
 const pageCard = {
     component: PageCard,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-card"
+    },
     name: "Page/PageCard",
     properties: {
         ...LogicUtil.pick(LinkProps, ["to", "target"]).properties,

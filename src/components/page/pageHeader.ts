@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 
 const pageHeader = {
     component: PageHeader,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-header"
+    },
     name: "Page/PageHeader",
     properties: {
         description: LogicType.string(),

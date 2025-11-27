@@ -26,6 +26,9 @@ ContextMenuItem.properties.children = LogicType.array(ContextMenuItem, { optiona
 
 const contextMenu = {
     component: ContextMenu,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/context-menu"
+    },
     emits: {
         "update:open": LogicType.function(LogicType.object({ value: LogicType.boolean() }), LogicType.void())
     },

@@ -6,6 +6,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const badge = {
     component: Badge,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/badge"
+    },
     name: "Element/Badge",
     properties: {
         ...ComponentIconsProps.properties,

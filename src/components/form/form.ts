@@ -5,6 +5,9 @@ const FormError = LogicType.object({ message: LogicType.string(), name: LogicTyp
 
 const form = {
     component: Form,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/form"
+    },
     emits: {
         error: LogicType.function(),
         submit: LogicType.function()

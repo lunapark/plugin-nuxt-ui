@@ -5,6 +5,9 @@ import { TextareaProps } from "@/components/form/textarea.ts";
 
 const chatPrompt = {
     component: ChatPrompt,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/chat-prompt"
+    },
     emits: {
         close: LogicType.function(LogicType.object({ event: LogicType.interface("Event") }), LogicType.void()),
         submit: LogicType.function(LogicType.object({ event: LogicType.interface("Event") }), LogicType.void())

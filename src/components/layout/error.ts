@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 
 const error = {
     component: Error,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/error"
+    },
     name: "Layout/Error",
     properties: {
         clear: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a button to clear the error in the links slot." }),

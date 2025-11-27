@@ -6,6 +6,9 @@ import { color, orientation, size } from "@/lib/variants.ts";
 
 const separator = {
     component: Separator,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/separator"
+    },
     name: "Element/Separator",
     properties: {
         avatar: AvatarProps,
@@ -15,7 +18,7 @@ const separator = {
         label: LogicType.string({ description: "Display a label in the middle." }),
         orientation,
         size,
-        type: LogicType.string()
+        type: LogicType.string({ enum: ["solid", "dashed", "dotted"] })
     },
     slots: {
         default: LogicType.void()

@@ -27,6 +27,9 @@ const TooltipArrowProps = LogicType.object({
 
 export const tooltip: TComponent = {
     component: Tooltip,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/tooltip"
+    },
     name: "Overlay/Tooltip",
     properties: {
         arrow: LogicType.union([LogicType.boolean(), TooltipArrowProps], { description: "Display an arrow alongside the tooltip." }),

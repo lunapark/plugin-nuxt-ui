@@ -5,6 +5,9 @@ import { size } from "@/lib/variants.ts";
 
 const colorPicker = {
     component: ColorPicker,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/color-picker"
+    },
     models: {
         modelValue: LogicType.string()
     },

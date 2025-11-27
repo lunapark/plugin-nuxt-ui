@@ -7,6 +7,9 @@ import { orientation } from "@/lib/variants.ts";
 
 const pageSection = {
     component: PageSection,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/page-section"
+    },
     name: "Page/PageSection",
     properties: {
         description: LogicType.string(),

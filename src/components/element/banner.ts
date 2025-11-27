@@ -7,6 +7,9 @@ import { color } from "@/lib/variants.ts";
 
 const banner = {
     component: Banner,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/banner"
+    },
     emits: {
         close: LogicType.function()
     },

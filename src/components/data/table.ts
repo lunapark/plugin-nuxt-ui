@@ -14,6 +14,9 @@ const TableColumn = LogicUtil.partial(LogicType.object({
 
 const table = {
     component: Table,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/table"
+    },
     name: "Data/Table",
     properties: {
         caption: LogicType.string(),

@@ -6,6 +6,9 @@ import { color, variant } from "@/lib/variants.ts";
 
 const chatPromptSubmit = {
     component: ChatPromptSubmit,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/chat-prompt-submit"
+    },
     emits: {
         reload: LogicType.function(),
         stop: LogicType.function()

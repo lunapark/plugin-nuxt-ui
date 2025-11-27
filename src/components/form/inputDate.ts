@@ -9,6 +9,9 @@ const DateValue = LogicType.unknown(); // TODO
 
 const inputDate = {
     component: InputDate,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/input-date"
+    },
     emits: {
         blur: LogicType.function(),
         change: LogicType.function(),

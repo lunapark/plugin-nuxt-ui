@@ -5,6 +5,9 @@ import { size } from "@/lib/variants.ts";
 
 const avatar = {
     component: Avatar,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/avatar"
+    },
     name: "Element/Avatar",
     properties: {
         alt: LogicType.string(),

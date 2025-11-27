@@ -12,6 +12,9 @@ const carouselItems = LogicType.union([
 
 const carousel = {
     component: Carousel,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/carousel"
+    },
     emits: {
         select: LogicType.function(LogicType.object({ selectedIndex: LogicType.number() }), LogicType.unknown())
     },

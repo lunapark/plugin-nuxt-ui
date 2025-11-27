@@ -5,6 +5,9 @@ import { color, orientation, size, variant } from "@/lib/variants.ts";
 
 const inputNumber = {
     component: InputNumber,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/input-number"
+    },
     models: {
         modelValue: LogicType.number()
     },

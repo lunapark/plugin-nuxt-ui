@@ -9,6 +9,9 @@ const Time = LogicType.unknown();
 
 const inputTime = {
     component: InputTime,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/input-time"
+    },
     models: {
         modelValue: Time
     },

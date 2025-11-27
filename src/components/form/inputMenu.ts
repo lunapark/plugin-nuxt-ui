@@ -22,6 +22,9 @@ const InputMenuItem = LogicType.union([
 
 const inputMenu = {
     component: InputMenu,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/input-menu"
+    },
     models: {
         modelValue: LogicType.union([LogicType.string(), LogicType.number()]) // TODO: Add dynamic for array
     },

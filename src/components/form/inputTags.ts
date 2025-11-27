@@ -8,6 +8,9 @@ const InputTagItem = LogicType.union([LogicType.string(), LogicType.number()]);
 
 const inputTags = {
     component: InputTags,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/input-tags"
+    },
     emits: {
         addTag: LogicType.function(LogicType.object({ item: InputTagItem }), LogicType.unknown()),
         invalid: LogicType.function(LogicType.object({ item: InputTagItem }), LogicType.unknown()),

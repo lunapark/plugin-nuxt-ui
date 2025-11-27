@@ -8,6 +8,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const selectMenu = {
     component: SelectMenu,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/select-menu"
+    },
     emits: {
         create: LogicType.function(LogicType.object({ item: LogicType.string() }), LogicType.unknown())
     },

@@ -7,6 +7,9 @@ import { ModalProps } from "@/components/overlay/modal.ts";
 
 const dashboardSearch = {
     component: DashboardSearch,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/dashboard-search"
+    },
     models: {
         open: LogicType.boolean(),
         searchTerm: LogicType.string()

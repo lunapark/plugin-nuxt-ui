@@ -5,6 +5,9 @@ import { variant } from "@/lib/variants.ts";
 
 const card = {
     component: Card,
+    documentation: {
+        link: "https://ui.nuxt.com/docs/components/card"
+    },
     name: "Element/Card",
     properties: {
         variant
