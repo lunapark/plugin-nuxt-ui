@@ -1,9 +1,9 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Switch from "@nuxt/ui/components/Switch.vue";
 
 import { color, size } from "@/lib/variants.ts";
 
-const sw = {
+const switch_ = {
     component: Switch,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/switch"
@@ -31,4 +31,5 @@ const sw = {
     }
 } satisfies TComponent;
 
-export default sw;
+export default switch_;
+export const SwitchProps = LogicUtil.partial(LogicType.object(switch_.properties));

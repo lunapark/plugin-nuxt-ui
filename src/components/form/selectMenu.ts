@@ -1,4 +1,4 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import SelectMenu from "@nuxt/ui/components/SelectMenu.vue";
 
 import { SelectItem } from "@/components/form/select.ts";
@@ -48,3 +48,4 @@ const selectMenu = {
 } satisfies TComponent;
 
 export default selectMenu;
+export const SelectMenuProps = LogicUtil.partial(LogicType.object(selectMenu.properties));
