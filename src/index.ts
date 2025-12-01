@@ -37,7 +37,7 @@ export default makePlugin({
     inject: {
         css: ({ config, mode }) => {
             if (mode === "editor") {
-                const configStyle = `:root{ --ui-radius:${ config.radius }rem; }[data-nuxt-body]{height: 100%}`;
+                const configStyle = `:root{ --ui-radius:${ config.radius }rem; }[data-nuxt-body]{min-height: 100%}`;
                 return baseStyle.replace(/\bbody\b([^:;])*?{/g, "[data-nuxt-body]$1{") + configStyle;
             }
         }
