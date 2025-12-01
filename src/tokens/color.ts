@@ -10,10 +10,34 @@ export const colorTokens = [
         value: "var(--ui-primary)"
     },
     {
+        id: "ui-text-dimmed",
+        name: "Text dimmed",
+        type: ETokenType.Color,
+        value: "var(--ui-text-dimmed)"
+    },
+    {
+        id: "ui-text-muted",
+        name: "Text muted",
+        type: ETokenType.Color,
+        value: "var(--ui-text-muted)"
+    },
+    {
+        id: "ui-text-toned",
+        name: "Text toned",
+        type: ETokenType.Color,
+        value: "var(--ui-text-toned)"
+    },
+    {
         id: "ui-text",
         name: "Text",
         type: ETokenType.Color,
         value: "var(--ui-text)"
+    },
+    {
+        id: "ui-text-highlighted",
+        name: "Text highlighted",
+        type: ETokenType.Color,
+        value: "var(--ui-text-highlighted)"
     },
     {
         id: "ui-text-inverted",
@@ -26,6 +50,24 @@ export const colorTokens = [
         name: "Background",
         type: ETokenType.Color,
         value: "var(--ui-bg)"
+    },
+    {
+        id: "ui-bg-muted",
+        name: "Background muted",
+        type: ETokenType.Color,
+        value: "var(--ui-bg-muted)"
+    },
+    {
+        id: "ui-bg-elevated",
+        name: "Background elevated",
+        type: ETokenType.Color,
+        value: "var(--ui-bg-elevated)"
+    },
+    {
+        id: "ui-bg-accented",
+        name: "Background accented",
+        type: ETokenType.Color,
+        value: "var(--ui-bg-accented)"
     },
     {
         id: "ui-bg-inverted",

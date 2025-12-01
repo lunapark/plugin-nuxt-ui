@@ -10,6 +10,7 @@ import icon from "@/logo.svg";
 import LWrapper from "@/LWrapper.vue";
 import nodes from "@/nodes";
 import { colorTokens } from "@/tokens/color.ts";
+import { fontSizeTokens } from "@/tokens/fontSize.ts";
 import { lengthTokens } from "@/tokens/length.ts";
 
 export default makePlugin({
@@ -20,7 +21,8 @@ export default makePlugin({
         nodes,
         tokens: [
             ...colorTokens,
-            ...lengthTokens
+            ...lengthTokens,
+            ...fontSizeTokens
         ],
         wrapper: ({ mode }) => {
             if (mode === "build") {
