@@ -8,7 +8,7 @@ const colorModeSwitch = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/color-mode-switch"
     },
-    name: "ColorMode/ColorModeSelect",
+    name: "ColorMode/ColorModeSwitch",
     properties: LogicUtil.omit(SwitchProps, ["checkedIcon", "uncheckedIcon"]).properties
 } satisfies TComponent;
 
