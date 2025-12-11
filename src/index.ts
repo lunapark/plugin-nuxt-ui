@@ -9,6 +9,7 @@ import baseStyle from "@/index.css?inline";
 import icon from "@/logo.svg";
 import LWrapper from "@/LWrapper.vue";
 import nodes from "@/nodes";
+import { templates } from "@/templates";
 import { colorTokens } from "@/tokens/color.ts";
 import { fontSizeTokens } from "@/tokens/fontSize.ts";
 import { lengthTokens } from "@/tokens/length.ts";
@@ -19,6 +20,7 @@ export default makePlugin({
     editor: {
         components: getComponents,
         nodes,
+        templates,
         tokens: [
             ...colorTokens,
             ...lengthTokens,

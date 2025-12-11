@@ -1,0 +1,899 @@
+{
+    "name": "Landing",
+    "type": "folder",
+    "children": {
+        "98acb73e-9b17-4e8c-a6c4-c527ff6950be": {
+            "name": "Layout",
+            "type": "component",
+            "layout": {
+                "id": "e1684065-fb0b-401e-8300-06c8e944d5ef",
+                "name": "",
+                "children": [
+                    {
+                        "id": "2a87ec87-59e5-41cb-9229-5d1494bea83e",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "id": "6a02d12d-5a0a-4658-8001-1a577e68c47f",
+                            "slot": false,
+                            "slots": {}
+                        },
+                        "element": "component",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    },
+                    {
+                        "id": "de1bc1d1-c852-47f0-93d9-67d7688c74ba",
+                        "name": "",
+                        "children": [
+                            {
+                                "id": "ea6300e7-3755-4c3b-b76d-6f90a70839c4",
+                                "name": "",
+                                "children": [],
+                                "classes": [],
+                                "element": "slot",
+                                "events": [],
+                                "properties": {},
+                                "style": {},
+                                "tag": "template"
+                            }
+                        ],
+                        "classes": [],
+                        "content": {
+                            "id": "8c820bd4-4352-49c3-933f-20614a035f05",
+                            "slot": true,
+                            "slots": {}
+                        },
+                        "element": "component",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    },
+                    {
+                        "id": "54ea4974-c893-499f-9f5b-e5f76d653e71",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {},
+                            "target": "nuxt-ui>Element/Separator"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {
+                            "icon": {
+                                "type": "constant",
+                                "value": "lucide:roller-coaster",
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    },
+                    {
+                        "id": "a38077e6-1416-4284-8587-328be8d60c0a",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "id": "3921d6ae-7b03-40f5-93ca-776b06ccc22e",
+                            "slot": false,
+                            "slots": {}
+                        },
+                        "element": "component",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    }
+                ],
+                "classes": [],
+                "element": "div",
+                "events": [],
+                "properties": {},
+                "style": {},
+                "tag": "div"
+            },
+            "logics": {
+                "main": {
+                    "name": "Main",
+                    "type": "main",
+                    "graph": {
+                        "canvas": {
+                            "location": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "zoom": 0
+                        },
+                        "nodes": {},
+                        "wires": {}
+                    },
+                    "values": {
+                        "variables": {}
+                    }
+                }
+            },
+            "options": {
+                "type": "component",
+                "path": "",
+                "preview": "full",
+                "previewSize": "auto"
+            },
+            "state": {
+                "expand": true,
+                "panel": "builder"
+            },
+            "values": {
+                "computed": {},
+                "events": {},
+                "properties": {},
+                "variables": {}
+            }
+        },
+        "6a02d12d-5a0a-4658-8001-1a577e68c47f": {
+            "name": "Header",
+            "type": "component",
+            "layout": {
+                "id": "e3bd5b99-dfd7-42ee-854e-0216cf30508b",
+                "name": "",
+                "children": [
+                    {
+                        "id": "5d1bc8e6-cc3e-4d10-913e-926374391eaf",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": false,
+                            "slots": {},
+                            "target": "nuxt-ui>Navigation/NavigationMenu"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "model": [],
+                        "properties": {
+                            "items": {
+                                "type": "constant",
+                                "value": [
+                                    {
+                                        "label": "Home",
+                                        "to": "/",
+                                        "icon": "fa7-solid:house"
+                                    },
+                                    {
+                                        "label": "Pricing",
+                                        "to": "/pricing",
+                                        "icon": "fa7-solid:money-bill"
+                                    },
+                                    {
+                                        "label": "Forum",
+                                        "to": "https://forum.luna-park.app/",
+                                        "target": "_blank",
+                                        "icon": "fa7-solid:users"
+                                    },
+                                    {
+                                        "label": "GitHub",
+                                        "to": "https://github.com/lunapark",
+                                        "target": "_blank",
+                                        "icon": "fa7-brands:github"
+                                    }
+                                ],
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    }
+                ],
+                "classes": [],
+                "content": {
+                    "slot": true,
+                    "slots": {
+                        "right": {
+                            "id": "3c4462f6-6032-400f-811c-5a6d974ec2c3",
+                            "name": "right",
+                            "children": [
+                                {
+                                    "id": "f6a053f0-a327-41e8-8918-e209492973ee",
+                                    "name": "",
+                                    "children": [],
+                                    "classes": [],
+                                    "content": {
+                                        "slot": false,
+                                        "slots": {},
+                                        "target": "nuxt-ui>ColorMode/ColorModeButton"
+                                    },
+                                    "element": "plugin/nuxt-ui",
+                                    "events": [],
+                                    "properties": {},
+                                    "style": {},
+                                    "tag": "template"
+                                }
+                            ],
+                            "classes": [],
+                            "element": "slot",
+                            "events": [],
+                            "properties": {},
+                            "style": {},
+                            "tag": "div"
+                        }
+                    },
+                    "target": "nuxt-ui>Layout/Header"
+                },
+                "element": "plugin/nuxt-ui",
+                "events": [],
+                "properties": {
+                    "title": {
+                        "type": "constant",
+                        "value": "Roller Coaster",
+                        "token": "",
+                        "access": []
+                    }
+                },
+                "style": {},
+                "tag": "template"
+            },
+            "logics": {
+                "main": {
+                    "name": "Main",
+                    "type": "main",
+                    "graph": {
+                        "canvas": {
+                            "location": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "zoom": 0
+                        },
+                        "nodes": {},
+                        "wires": {}
+                    },
+                    "values": {
+                        "variables": {}
+                    }
+                }
+            },
+            "options": {
+                "type": "component",
+                "path": "",
+                "preview": "stretch",
+                "previewSize": "auto"
+            },
+            "state": {
+                "expand": true,
+                "panel": "builder"
+            },
+            "values": {
+                "computed": {},
+                "events": {},
+                "properties": {},
+                "variables": {}
+            }
+        },
+        "3921d6ae-7b03-40f5-93ca-776b06ccc22e": {
+            "name": "Footer",
+            "type": "component",
+            "layout": {
+                "id": "e646563e-8fd8-4d5a-84da-6ab9c1da86de",
+                "name": "",
+                "children": [
+                    {
+                        "id": "c8583e2b-817c-4709-a652-38163b2e5ae0",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": false,
+                            "slots": {},
+                            "target": "nuxt-ui>Navigation/NavigationMenu"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "model": [],
+                        "properties": {
+                            "items": {
+                                "type": "constant",
+                                "value": [
+                                    {
+                                        "label": "Privacy Policy",
+                                        "to": "/privacy"
+                                    },
+                                    {
+                                        "label": "Terms of Use",
+                                        "to": "/terms"
+                                    }
+                                ],
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    }
+                ],
+                "classes": [],
+                "content": {
+                    "slot": true,
+                    "slots": {
+                        "left": {
+                            "id": "c449d7e6-e628-432d-9577-45fe51e69731",
+                            "name": "left",
+                            "children": [
+                                {
+                                    "id": "562efadd-fc3a-492d-99c9-e061143e38d7",
+                                    "name": "",
+                                    "children": [],
+                                    "classes": [],
+                                    "content": {
+                                        "text": {
+                                            "content": "Copyright © 2084",
+                                            "key": "root"
+                                        },
+                                        "variables": []
+                                    },
+                                    "element": "customText",
+                                    "events": [],
+                                    "properties": {},
+                                    "style": {
+                                        "base": {
+                                            "default": {
+                                                "font": {
+                                                    "color": {
+                                                        "type": "token",
+                                                        "value": "",
+                                                        "token": "plugin/nuxt-ui/ui-text-muted"
+                                                    },
+                                                    "size": {
+                                                        "type": "token",
+                                                        "value": "0px",
+                                                        "token": "plugin/nuxt-ui/text-sm"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "tag": "div"
+                                }
+                            ],
+                            "classes": [],
+                            "element": "slot",
+                            "events": [],
+                            "properties": {},
+                            "style": {},
+                            "tag": "div"
+                        },
+                        "right": {
+                            "id": "68d5a935-cc41-49b0-911b-37dcbcb5872f",
+                            "name": "right",
+                            "children": [
+                                {
+                                    "id": "1fd537fd-6d4e-4a9d-ab90-1d21f13a2d9e",
+                                    "name": "",
+                                    "children": [],
+                                    "classes": [],
+                                    "content": {
+                                        "slot": true,
+                                        "slots": {},
+                                        "target": "nuxt-ui>Element/Button"
+                                    },
+                                    "element": "plugin/nuxt-ui",
+                                    "events": [],
+                                    "properties": {
+                                        "color": {
+                                            "type": "constant",
+                                            "value": "neutral",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "variant": {
+                                            "type": "constant",
+                                            "value": "ghost",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "to": {
+                                            "type": "constant",
+                                            "value": "https://discord.gg/2eAk2AHvdw",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "target": {
+                                            "type": "constant",
+                                            "value": "_blank",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "icon": {
+                                            "type": "constant",
+                                            "value": "fa7-brands:discord",
+                                            "token": "",
+                                            "access": []
+                                        }
+                                    },
+                                    "style": {},
+                                    "tag": "template"
+                                },
+                                {
+                                    "id": "e4056983-8934-4175-ba7e-d1d8e00175c8",
+                                    "name": "",
+                                    "children": [],
+                                    "classes": [],
+                                    "content": {
+                                        "slot": true,
+                                        "slots": {},
+                                        "target": "nuxt-ui>Element/Button"
+                                    },
+                                    "element": "plugin/nuxt-ui",
+                                    "events": [],
+                                    "properties": {
+                                        "color": {
+                                            "type": "constant",
+                                            "value": "neutral",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "variant": {
+                                            "type": "constant",
+                                            "value": "ghost",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "to": {
+                                            "type": "constant",
+                                            "value": "https://github.com/lunapark",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "target": {
+                                            "type": "constant",
+                                            "value": "_blank",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "icon": {
+                                            "type": "constant",
+                                            "value": "fa7-brands:github",
+                                            "token": "",
+                                            "access": []
+                                        }
+                                    },
+                                    "style": {},
+                                    "tag": "template"
+                                },
+                                {
+                                    "id": "ffad81d9-f9fe-4976-a079-1342089c930a",
+                                    "name": "",
+                                    "children": [],
+                                    "classes": [],
+                                    "content": {
+                                        "slot": true,
+                                        "slots": {},
+                                        "target": "nuxt-ui>Element/Button"
+                                    },
+                                    "element": "plugin/nuxt-ui",
+                                    "events": [],
+                                    "properties": {
+                                        "color": {
+                                            "type": "constant",
+                                            "value": "neutral",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "variant": {
+                                            "type": "constant",
+                                            "value": "ghost",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "to": {
+                                            "type": "constant",
+                                            "value": "https://bsky.app/profile/luna-park.app",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "target": {
+                                            "type": "constant",
+                                            "value": "_blank",
+                                            "token": "",
+                                            "access": []
+                                        },
+                                        "icon": {
+                                            "type": "constant",
+                                            "value": "fa7-brands:bluesky",
+                                            "token": "",
+                                            "access": []
+                                        }
+                                    },
+                                    "style": {},
+                                    "tag": "template"
+                                }
+                            ],
+                            "classes": [],
+                            "element": "slot",
+                            "events": [],
+                            "properties": {},
+                            "style": {},
+                            "tag": "div"
+                        }
+                    },
+                    "target": "nuxt-ui>Layout/Footer"
+                },
+                "element": "plugin/nuxt-ui",
+                "events": [],
+                "properties": {},
+                "style": {},
+                "tag": "template"
+            },
+            "logics": {
+                "main": {
+                    "name": "Main",
+                    "type": "main",
+                    "graph": {
+                        "canvas": {
+                            "location": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "zoom": 0
+                        },
+                        "nodes": {},
+                        "wires": {}
+                    },
+                    "values": {
+                        "variables": {}
+                    }
+                }
+            },
+            "options": {
+                "type": "component",
+                "path": "",
+                "preview": "stretch",
+                "previewSize": "auto"
+            },
+            "state": {
+                "expand": true,
+                "panel": "preview"
+            },
+            "values": {
+                "computed": {},
+                "events": {},
+                "properties": {},
+                "variables": {}
+            }
+        },
+        "8c820bd4-4352-49c3-933f-20614a035f05": {
+            "name": "Main",
+            "type": "component",
+            "layout": {
+                "id": "066223a6-73f9-4668-b252-ce83ae4e4c26",
+                "name": "",
+                "children": [
+                    {
+                        "id": "23e46416-fbcc-44e3-9dbd-a6c028cdf94d",
+                        "name": "",
+                        "children": [
+                            {
+                                "id": "87f5b6b5-6338-47af-8c9f-bdb31f3d93e8",
+                                "name": "",
+                                "children": [],
+                                "classes": [],
+                                "element": "slot",
+                                "events": [],
+                                "properties": {},
+                                "style": {},
+                                "tag": "template"
+                            }
+                        ],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {},
+                            "target": "nuxt-ui>Layout/Container"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    }
+                ],
+                "classes": [],
+                "content": {
+                    "slot": true,
+                    "slots": {},
+                    "target": "nuxt-ui>Layout/Main"
+                },
+                "element": "plugin/nuxt-ui",
+                "events": [],
+                "properties": {},
+                "style": {},
+                "tag": "template"
+            },
+            "logics": {
+                "main": {
+                    "name": "Main",
+                    "type": "main",
+                    "graph": {
+                        "canvas": {
+                            "location": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "zoom": 0
+                        },
+                        "nodes": {},
+                        "wires": {}
+                    },
+                    "values": {
+                        "variables": {}
+                    }
+                }
+            },
+            "options": {
+                "type": "component",
+                "path": "",
+                "preview": "full",
+                "previewSize": "auto"
+            },
+            "state": {
+                "expand": true,
+                "panel": "builder"
+            },
+            "values": {
+                "computed": {},
+                "events": {},
+                "properties": {},
+                "variables": {}
+            }
+        },
+        "4a4c8fe2-0b3b-4d14-8b8d-dc4081b1f16b": {
+            "name": "Hero",
+            "type": "component",
+            "layout": {
+                "id": "60a9edcf-adac-48d1-983e-f91d45106922",
+                "name": "",
+                "children": [
+                    {
+                        "id": "3479a3c7-9a2d-41d2-bd56-554a43a276f9",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {},
+                            "target": "nuxt-ui>Page/PageHero"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {
+                            "title": {
+                                "type": "constant",
+                                "value": "Nuxt Starter Template",
+                                "token": "",
+                                "access": []
+                            },
+                            "description": {
+                                "type": "constant",
+                                "value": "Use this starter template to quickly start building your application.",
+                                "token": "",
+                                "access": []
+                            },
+                            "links": {
+                                "type": "constant",
+                                "value": [
+                                    {
+                                        "label": "Start now",
+                                        "icon": "fa7-solid:paper-plane"
+                                    },
+                                    {
+                                        "label": "Documentation",
+                                        "icon": "fa7-solid:book",
+                                        "color": "neutral",
+                                        "variant": "subtle"
+                                    }
+                                ],
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    },
+                    {
+                        "id": "03607b32-6634-492d-9a27-fefb3d7e6436",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {},
+                            "target": "nuxt-ui>Page/PageSection"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {
+                            "title": {
+                                "type": "constant",
+                                "value": "Everything you need to build modern apps",
+                                "token": "",
+                                "access": []
+                            },
+                            "description": {
+                                "type": "constant",
+                                "value": "Start with a solid foundation. This template includes all the essentials for building production-ready applications with Nuxt UI's powerful component system.",
+                                "token": "",
+                                "access": []
+                            },
+                            "features": {
+                                "type": "constant",
+                                "value": [
+                                    {
+                                        "title": "Production-ready from day one",
+                                        "icon": "fa7-solid:rocket",
+                                        "description": "Preconfigured with Luna Park to be ready to use. Focus on building features, not setting up tooling."
+                                    },
+                                    {
+                                        "title": "Beautiful by default",
+                                        "description": "Powered by Nuxt UI with automatic dark mode, consistent spacing, and polished components that look great out of the box.",
+                                        "icon": "fa7-solid:palette"
+                                    },
+                                    {
+                                        "title": "Lightning fast",
+                                        "description": "Optimized with Vite's blazing fast HMR, automatic code splitting, and tree-shaking. Your users will love the speed.",
+                                        "icon": "fa7-solid:zap"
+                                    },
+                                    {
+                                        "title": "100+ components included",
+                                        "description": "Access Nuxt UI's comprehensive component library. From forms to navigation, everything is accessible, responsive, and customizable.",
+                                        "icon": "fa7-solid:cubes"
+                                    },
+                                    {
+                                        "title": "Designed for No-Code Creators",
+                                        "description": "Update and customize  the style of your app in seconds, so you can focus on shipping more feature instead of building boilerplate.",
+                                        "icon": "fa7-solid:hammer"
+                                    },
+                                    {
+                                        "title": "Built for scale",
+                                        "description": "Future-proof with modern architecture, proper error handling, and security best practices built-in.",
+                                        "icon": "fa7-solid:shield-alt"
+                                    }
+                                ],
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    },
+                    {
+                        "id": "1a153f70-1e48-4362-94ca-ca4216be876c",
+                        "name": "",
+                        "children": [
+                            {
+                                "id": "92de0ab0-cf29-4e60-b5ae-f200f58e3a1d",
+                                "name": "",
+                                "children": [],
+                                "classes": [],
+                                "content": {
+                                    "slot": true,
+                                    "slots": {},
+                                    "target": "nuxt-ui>Page/PageCTA"
+                                },
+                                "element": "plugin/nuxt-ui",
+                                "events": [],
+                                "properties": {
+                                    "title": {
+                                        "type": "constant",
+                                        "value": "Ready to build your next app?",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "variant": {
+                                        "type": "constant",
+                                        "value": "subtle",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "description": {
+                                        "type": "constant",
+                                        "value": "Copy this ready-to-use template and start shipping today.",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "links": {
+                                        "type": "constant",
+                                        "value": [
+                                            {
+                                                "label": "Start building",
+                                                "color": "neutral",
+                                                "trailingIcon": "fa7-solid:arrow-right"
+                                            },
+                                            {
+                                                "label": "View demo",
+                                                "color": "neutral",
+                                                "variant": "outline",
+                                                "icon": "fa7-solid:eye"
+                                            }
+                                        ],
+                                        "token": "",
+                                        "access": []
+                                    }
+                                },
+                                "style": {},
+                                "tag": "template"
+                            }
+                        ],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {},
+                            "target": "nuxt-ui>Page/PageSection"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    }
+                ],
+                "classes": [],
+                "content": {
+                    "id": "98acb73e-9b17-4e8c-a6c4-c527ff6950be",
+                    "slot": true,
+                    "slots": {}
+                },
+                "element": "component",
+                "events": [],
+                "properties": {},
+                "style": {},
+                "tag": "template"
+            },
+            "logics": {
+                "main": {
+                    "name": "Main",
+                    "type": "main",
+                    "graph": {
+                        "canvas": {
+                            "location": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "zoom": 0
+                        },
+                        "nodes": {},
+                        "wires": {}
+                    },
+                    "values": {
+                        "variables": {}
+                    }
+                }
+            },
+            "options": {
+                "type": "page",
+                "path": "",
+                "preview": "compact",
+                "previewSize": "auto"
+            },
+            "state": {
+                "expand": true,
+                "panel": "preview"
+            },
+            "values": {
+                "computed": {},
+                "events": {},
+                "properties": {},
+                "variables": {}
+            }
+        }
+    },
+    "state": {
+        "expand": true
+    }
+}

@@ -1,6 +1,6 @@
 {
     "name": "@luna-park/plugin-nuxt-ui",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "private": false,
     "description": "Nuxt UI plugin for Luna Park",
     "keywords": [
@@ -60,5 +60,11 @@
         "tailwindcss": "^4.1.17",
         "vue": "^3.5.24",
         "vue-router": "^4.6.3"
+    },
+    "pnpm": {
+        "overrides": {
+            "@luna-park/plugin": "link:../core/packages/plugin",
+            "reka-ui": "link:../../reka-ui/packages/core"
+        }
     }
 }

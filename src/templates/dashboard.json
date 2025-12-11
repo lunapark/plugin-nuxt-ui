@@ -1,0 +1,2052 @@
+{
+    "name": "Dashboard",
+    "type": "folder",
+    "children": {
+        "d0cc299c-1360-4051-ac8a-5b7adc0e5beb": {
+            "name": "Layout",
+            "type": "component",
+            "layout": {
+                "id": "1b35206a-053c-42bb-b7ec-e9075f171c5e",
+                "name": "",
+                "children": [
+                    {
+                        "id": "f54161ad-51fb-42d7-9190-3c5582760d28",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "id": "f967b1ee-269e-4f06-ac34-49cc4a55ca1a",
+                            "slot": false,
+                            "slots": {}
+                        },
+                        "element": "component",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    },
+                    {
+                        "id": "45a8683e-0196-4aab-b2de-55574f8eb082",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "id": "83b827da-a9d0-43c3-aa0a-fb44f0c89708",
+                            "slot": false,
+                            "slots": {}
+                        },
+                        "element": "component",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    },
+                    {
+                        "id": "ada19eeb-88b3-4b0a-8011-9a94de982ac6",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": false,
+                            "slots": {},
+                            "target": "nuxt-ui>Dashboard/DashboardSearch"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    }
+                ],
+                "classes": [],
+                "content": {
+                    "slot": true,
+                    "slots": {},
+                    "target": "nuxt-ui>Dashboard/DashboardGroup"
+                },
+                "element": "plugin/nuxt-ui",
+                "events": [],
+                "properties": {},
+                "style": {},
+                "tag": "template"
+            },
+            "logics": {
+                "main": {
+                    "name": "Main",
+                    "type": "main",
+                    "graph": {
+                        "canvas": {
+                            "location": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "zoom": 0
+                        },
+                        "nodes": {},
+                        "wires": {}
+                    },
+                    "values": {
+                        "variables": {}
+                    }
+                }
+            },
+            "options": {
+                "type": "page",
+                "path": "",
+                "preview": "compact",
+                "previewSize": "auto"
+            },
+            "state": {
+                "expand": true,
+                "panel": "preview"
+            },
+            "values": {
+                "computed": {},
+                "events": {},
+                "properties": {},
+                "variables": {}
+            }
+        },
+        "3d7a5e14-1658-4978-adb3-c630102b436d": {
+            "name": "sidebar",
+            "type": "folder",
+            "children": {
+                "ba318733-392d-4a58-a738-5167b02747d6": {
+                    "name": "TeamsMenu",
+                    "type": "component",
+                    "layout": {
+                        "id": "41606608-6c15-4d01-b4a8-796db9ad656e",
+                        "name": "",
+                        "children": [
+                            {
+                                "id": "5615bee1-16ae-4493-b952-9d03ca8f220e",
+                                "name": "",
+                                "children": [],
+                                "classes": [],
+                                "content": {
+                                    "slot": true,
+                                    "slots": {},
+                                    "target": "nuxt-ui>Element/Button"
+                                },
+                                "element": "plugin/nuxt-ui",
+                                "events": [],
+                                "properties": {
+                                    "trailingIcon": {
+                                        "type": "constant",
+                                        "value": "lucide:chevrons-up-down",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "color": {
+                                        "type": "constant",
+                                        "value": "neutral",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "variant": {
+                                        "type": "constant",
+                                        "value": "ghost",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "block": {
+                                        "type": "constant",
+                                        "value": true,
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "icon": {
+                                        "type": "constant",
+                                        "value": "lucide:roller-coaster",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "label": {
+                                        "type": "constant",
+                                        "value": "Roller Coaster",
+                                        "token": "",
+                                        "access": []
+                                    }
+                                },
+                                "style": {},
+                                "tag": "template"
+                            }
+                        ],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {},
+                            "target": "nuxt-ui>Overlay/DropdownMenu"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {
+                            "items": {
+                                "type": "constant",
+                                "value": [
+                                    [
+                                        {
+                                            "label": "Roller Coaster",
+                                            "icon": "lucide:roller-coaster"
+                                        },
+                                        {
+                                            "label": "Ferris Wheel",
+                                            "icon": "lucide:ferris-wheel"
+                                        },
+                                        {
+                                            "label": "Drop Tower",
+                                            "icon": "lucide:tower-control"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "label": "Create team",
+                                            "icon": "lucide:circle-plus"
+                                        },
+                                        {
+                                            "label": "Manage teams",
+                                            "icon": "lucide:settings"
+                                        }
+                                    ]
+                                ],
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    },
+                    "logics": {
+                        "main": {
+                            "name": "Main",
+                            "type": "main",
+                            "graph": {
+                                "canvas": {
+                                    "location": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "zoom": 0
+                                },
+                                "nodes": {},
+                                "wires": {}
+                            },
+                            "values": {
+                                "variables": {}
+                            }
+                        }
+                    },
+                    "options": {
+                        "type": "component",
+                        "path": "",
+                        "preview": "compact",
+                        "previewSize": "auto"
+                    },
+                    "state": {
+                        "expand": true,
+                        "panel": "preview"
+                    },
+                    "values": {
+                        "computed": {},
+                        "events": {},
+                        "properties": {},
+                        "variables": {}
+                    }
+                },
+                "3c3a20ae-b4ff-4e14-8dcf-6fd75df988b0": {
+                    "name": "NavigationMenu",
+                    "type": "component",
+                    "layout": {
+                        "id": "0eae5699-15c9-4c88-911d-ea923aa0dc6d",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": false,
+                            "slots": {},
+                            "target": "nuxt-ui>Navigation/NavigationMenu"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "model": [],
+                        "properties": {
+                            "items": {
+                                "type": "constant",
+                                "value": [
+                                    {
+                                        "label": "Home",
+                                        "to": "/",
+                                        "icon": "lucide:house"
+                                    },
+                                    {
+                                        "label": "Inbox",
+                                        "icon": "lucide:inbox",
+                                        "badge": 12
+                                    },
+                                    {
+                                        "label": "Customers",
+                                        "icon": "lucide:users"
+                                    },
+                                    {
+                                        "label": "Settings",
+                                        "icon": "lucide:settings",
+                                        "children": [
+                                            {
+                                                "label": "General"
+                                            },
+                                            {
+                                                "label": "Notifications"
+                                            },
+                                            {
+                                                "label": "Security"
+                                            }
+                                        ],
+                                        "defaultOpen": true
+                                    }
+                                ],
+                                "token": "",
+                                "access": []
+                            },
+                            "orientation": {
+                                "type": "constant",
+                                "value": "vertical",
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    },
+                    "logics": {
+                        "main": {
+                            "name": "Main",
+                            "type": "main",
+                            "graph": {
+                                "canvas": {
+                                    "location": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "zoom": 0
+                                },
+                                "nodes": {},
+                                "wires": {}
+                            },
+                            "values": {
+                                "variables": {}
+                            }
+                        }
+                    },
+                    "options": {
+                        "type": "component",
+                        "path": "",
+                        "preview": "compact",
+                        "previewSize": "auto"
+                    },
+                    "state": {
+                        "expand": true,
+                        "panel": "builder"
+                    },
+                    "values": {
+                        "computed": {},
+                        "events": {},
+                        "properties": {},
+                        "variables": {}
+                    }
+                },
+                "f967b1ee-269e-4f06-ac34-49cc4a55ca1a": {
+                    "name": "Sidebar",
+                    "type": "component",
+                    "layout": {
+                        "id": "2c9d73e9-a6bd-4b0f-a023-e6c0b8dafcc2",
+                        "name": "",
+                        "children": [
+                            {
+                                "id": "90a62681-c635-4771-b8eb-e50b2de0970d",
+                                "name": "",
+                                "children": [],
+                                "classes": [],
+                                "content": {
+                                    "slot": true,
+                                    "slots": {},
+                                    "target": "nuxt-ui>Dashboard/DashboardSearchButton"
+                                },
+                                "element": "plugin/nuxt-ui",
+                                "events": [],
+                                "properties": {},
+                                "style": {},
+                                "tag": "template"
+                            },
+                            {
+                                "id": "a9814628-bddb-46af-8f70-d47dd5abc87f",
+                                "name": "",
+                                "children": [],
+                                "classes": [],
+                                "content": {
+                                    "id": "3c3a20ae-b4ff-4e14-8dcf-6fd75df988b0",
+                                    "slot": false,
+                                    "slots": {}
+                                },
+                                "element": "component",
+                                "events": [],
+                                "properties": {},
+                                "style": {},
+                                "tag": "template"
+                            }
+                        ],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {
+                                "header": {
+                                    "id": "71119fc8-8116-43ae-a4b8-87c0d533c025",
+                                    "name": "header",
+                                    "children": [
+                                        {
+                                            "id": "cd33b76f-e3c3-4132-97cc-dee1bb55d1b2",
+                                            "name": "",
+                                            "children": [],
+                                            "classes": [],
+                                            "content": {
+                                                "id": "ba318733-392d-4a58-a738-5167b02747d6",
+                                                "slot": false,
+                                                "slots": {}
+                                            },
+                                            "element": "component",
+                                            "events": [],
+                                            "properties": {},
+                                            "style": {},
+                                            "tag": "template"
+                                        }
+                                    ],
+                                    "classes": [],
+                                    "element": "slot",
+                                    "events": [],
+                                    "properties": {},
+                                    "style": {},
+                                    "tag": "div"
+                                }
+                            },
+                            "target": "nuxt-ui>Dashboard/DashboardSidebar"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {
+                            "collapsible": {
+                                "type": "constant",
+                                "value": true,
+                                "token": "",
+                                "access": []
+                            },
+                            "resizable": {
+                                "type": "constant",
+                                "value": true,
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    },
+                    "logics": {
+                        "main": {
+                            "name": "Main",
+                            "type": "main",
+                            "graph": {
+                                "canvas": {
+                                    "location": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "zoom": 0
+                                },
+                                "nodes": {},
+                                "wires": {}
+                            },
+                            "values": {
+                                "variables": {}
+                            }
+                        }
+                    },
+                    "options": {
+                        "type": "component",
+                        "path": "",
+                        "preview": "stretch",
+                        "previewSize": "auto"
+                    },
+                    "state": {
+                        "expand": true,
+                        "panel": "builder"
+                    },
+                    "values": {
+                        "computed": {},
+                        "events": {},
+                        "properties": {},
+                        "variables": {}
+                    }
+                }
+            },
+            "state": {
+                "expand": true
+            }
+        },
+        "0c1475b8-4c85-4adf-b250-ca9500de42ec": {
+            "name": "panel",
+            "type": "folder",
+            "children": {
+                "83b827da-a9d0-43c3-aa0a-fb44f0c89708": {
+                    "name": "Panel",
+                    "type": "component",
+                    "layout": {
+                        "id": "8865f1be-ecc4-4a27-8e96-cdd315578eac",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {
+                                "header": {
+                                    "id": "e65be85b-321b-49fe-b811-0f3cc8b1e58f",
+                                    "name": "header",
+                                    "children": [
+                                        {
+                                            "id": "cf7994b3-082c-4c15-9ba6-392bb1c66175",
+                                            "name": "",
+                                            "children": [],
+                                            "classes": [],
+                                            "content": {
+                                                "slot": true,
+                                                "slots": {
+                                                    "leading": {
+                                                        "id": "2b6d0dba-1599-4d07-a49e-a60b449e7d5a",
+                                                        "name": "leading",
+                                                        "children": [
+                                                            {
+                                                                "id": "a25c6d1e-04c9-4cf5-b18c-a7cb6d071f28",
+                                                                "name": "",
+                                                                "children": [],
+                                                                "classes": [],
+                                                                "content": {
+                                                                    "slot": false,
+                                                                    "slots": {},
+                                                                    "target": "nuxt-ui>Dashboard/DashboardSidebarCollapse"
+                                                                },
+                                                                "element": "plugin/nuxt-ui",
+                                                                "events": [],
+                                                                "properties": {},
+                                                                "style": {},
+                                                                "tag": "template"
+                                                            }
+                                                        ],
+                                                        "classes": [],
+                                                        "element": "slot",
+                                                        "events": [],
+                                                        "properties": {},
+                                                        "style": {},
+                                                        "tag": "div"
+                                                    },
+                                                    "right": {
+                                                        "id": "0c0d1463-f7a6-48aa-85ad-4ea3849a3877",
+                                                        "name": "right",
+                                                        "children": [
+                                                            {
+                                                                "id": "20d1b201-4afa-4e5f-ab86-29220280e560",
+                                                                "name": "",
+                                                                "children": [
+                                                                    {
+                                                                        "id": "a04f5a44-2cef-439e-afa6-1be3f216a437",
+                                                                        "name": "",
+                                                                        "children": [
+                                                                            {
+                                                                                "id": "afb909ad-c935-4e98-add2-ed628c4d92c3",
+                                                                                "name": "",
+                                                                                "children": [
+                                                                                    {
+                                                                                        "id": "a3921723-a924-4cbe-bb9d-01fd8ffe0406",
+                                                                                        "name": "",
+                                                                                        "children": [],
+                                                                                        "classes": [],
+                                                                                        "content": {
+                                                                                            "slot": true,
+                                                                                            "slots": {},
+                                                                                            "target": "nuxt-ui>Element/Button"
+                                                                                        },
+                                                                                        "element": "plugin/nuxt-ui",
+                                                                                        "events": [],
+                                                                                        "properties": {
+                                                                                            "square": {
+                                                                                                "type": "constant",
+                                                                                                "value": true,
+                                                                                                "token": "",
+                                                                                                "access": []
+                                                                                            },
+                                                                                            "color": {
+                                                                                                "type": "constant",
+                                                                                                "value": "neutral",
+                                                                                                "token": "",
+                                                                                                "access": []
+                                                                                            },
+                                                                                            "variant": {
+                                                                                                "type": "constant",
+                                                                                                "value": "ghost",
+                                                                                                "token": "",
+                                                                                                "access": []
+                                                                                            },
+                                                                                            "icon": {
+                                                                                                "type": "constant",
+                                                                                                "value": "lucide:bell",
+                                                                                                "token": "",
+                                                                                                "access": []
+                                                                                            }
+                                                                                        },
+                                                                                        "style": {},
+                                                                                        "tag": "template"
+                                                                                    }
+                                                                                ],
+                                                                                "classes": [],
+                                                                                "content": {
+                                                                                    "slot": true,
+                                                                                    "slots": {},
+                                                                                    "target": "nuxt-ui>Element/Chip"
+                                                                                },
+                                                                                "element": "plugin/nuxt-ui",
+                                                                                "events": [],
+                                                                                "properties": {
+                                                                                    "inset": {
+                                                                                        "type": "constant",
+                                                                                        "value": true,
+                                                                                        "token": "",
+                                                                                        "access": []
+                                                                                    },
+                                                                                    "color": {
+                                                                                        "type": "constant",
+                                                                                        "value": "error",
+                                                                                        "token": "",
+                                                                                        "access": []
+                                                                                    }
+                                                                                },
+                                                                                "style": {},
+                                                                                "tag": "template"
+                                                                            }
+                                                                        ],
+                                                                        "classes": [],
+                                                                        "content": {
+                                                                            "slot": true,
+                                                                            "slots": {},
+                                                                            "target": "nuxt-ui>Overlay/Tooltip"
+                                                                        },
+                                                                        "element": "plugin/nuxt-ui",
+                                                                        "events": [],
+                                                                        "properties": {
+                                                                            "text": {
+                                                                                "type": "constant",
+                                                                                "value": "Notifications",
+                                                                                "token": "",
+                                                                                "access": []
+                                                                            }
+                                                                        },
+                                                                        "style": {},
+                                                                        "tag": "template"
+                                                                    },
+                                                                    {
+                                                                        "id": "1590bba8-a622-4209-ac69-c724c60f5201",
+                                                                        "name": "",
+                                                                        "children": [],
+                                                                        "classes": [],
+                                                                        "content": {
+                                                                            "slot": true,
+                                                                            "slots": {},
+                                                                            "target": "nuxt-ui>Element/Button"
+                                                                        },
+                                                                        "element": "plugin/nuxt-ui",
+                                                                        "events": [],
+                                                                        "properties": {
+                                                                            "icon": {
+                                                                                "type": "constant",
+                                                                                "value": "lucide:plus",
+                                                                                "token": "",
+                                                                                "access": []
+                                                                            }
+                                                                        },
+                                                                        "style": {},
+                                                                        "tag": "template"
+                                                                    }
+                                                                ],
+                                                                "classes": [],
+                                                                "element": "div",
+                                                                "events": [],
+                                                                "properties": {},
+                                                                "style": {
+                                                                    "base": {
+                                                                        "default": {
+                                                                            "display": {
+                                                                                "display": {
+                                                                                    "type": "constant",
+                                                                                    "value": "flex",
+                                                                                    "token": ""
+                                                                                },
+                                                                                "direction": {
+                                                                                    "type": "constant",
+                                                                                    "value": "row",
+                                                                                    "token": ""
+                                                                                },
+                                                                                "gap": {
+                                                                                    "type": "token",
+                                                                                    "value": "",
+                                                                                    "token": "fw/length/m"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "tag": "div"
+                                                            }
+                                                        ],
+                                                        "classes": [],
+                                                        "element": "slot",
+                                                        "events": [],
+                                                        "properties": {},
+                                                        "style": {},
+                                                        "tag": "div"
+                                                    }
+                                                },
+                                                "target": "nuxt-ui>Dashboard/DashboardNavbar"
+                                            },
+                                            "element": "plugin/nuxt-ui",
+                                            "events": [],
+                                            "properties": {
+                                                "title": {
+                                                    "type": "constant",
+                                                    "value": "Home",
+                                                    "token": "",
+                                                    "access": []
+                                                }
+                                            },
+                                            "style": {},
+                                            "tag": "template"
+                                        },
+                                        {
+                                            "id": "4d9a3394-ca84-418f-87e6-2de4f97cedb0",
+                                            "name": "",
+                                            "children": [],
+                                            "classes": [],
+                                            "content": {
+                                                "slot": true,
+                                                "slots": {
+                                                    "left": {
+                                                        "id": "079cff92-c678-4da4-9e07-e3b780f7fe9b",
+                                                        "name": "left",
+                                                        "children": [
+                                                            {
+                                                                "id": "080f7e01-0f2a-4515-ae66-65ad4b66cd9b",
+                                                                "name": "",
+                                                                "children": [],
+                                                                "classes": [],
+                                                                "content": {
+                                                                    "slot": true,
+                                                                    "slots": {},
+                                                                    "target": "nuxt-ui>Form/InputDate"
+                                                                },
+                                                                "element": "plugin/nuxt-ui",
+                                                                "events": [],
+                                                                "model": [],
+                                                                "properties": {
+                                                                    "icon": {
+                                                                        "type": "constant",
+                                                                        "value": "lucide:calendar",
+                                                                        "token": "",
+                                                                        "access": []
+                                                                    }
+                                                                },
+                                                                "style": {},
+                                                                "tag": "template"
+                                                            }
+                                                        ],
+                                                        "classes": [],
+                                                        "element": "slot",
+                                                        "events": [],
+                                                        "properties": {},
+                                                        "style": {},
+                                                        "tag": "div"
+                                                    }
+                                                },
+                                                "target": "nuxt-ui>Dashboard/DashboardToolbar"
+                                            },
+                                            "element": "plugin/nuxt-ui",
+                                            "events": [],
+                                            "properties": {},
+                                            "style": {},
+                                            "tag": "template"
+                                        }
+                                    ],
+                                    "classes": [],
+                                    "element": "slot",
+                                    "events": [],
+                                    "properties": {},
+                                    "style": {},
+                                    "tag": "div"
+                                },
+                                "body": {
+                                    "id": "41474578-1db3-4f6e-830c-c6112b5f6de5",
+                                    "name": "body",
+                                    "children": [
+                                        {
+                                            "id": "e580676b-4af4-4143-9ef1-adf82400a116",
+                                            "name": "",
+                                            "children": [],
+                                            "classes": [],
+                                            "content": {
+                                                "id": "544a9ca3-8c4d-4220-89bc-6f072b8df011",
+                                                "slot": false,
+                                                "slots": {}
+                                            },
+                                            "element": "component",
+                                            "events": [],
+                                            "properties": {},
+                                            "style": {},
+                                            "tag": "template"
+                                        },
+                                        {
+                                            "id": "308cdb6e-9efb-40cd-9c7a-92b6f160c971",
+                                            "name": "",
+                                            "children": [],
+                                            "classes": [],
+                                            "content": {
+                                                "id": "c802cbd2-a805-4030-9ac5-8350d9c0b137",
+                                                "slot": false,
+                                                "slots": {}
+                                            },
+                                            "element": "component",
+                                            "events": [],
+                                            "properties": {},
+                                            "style": {},
+                                            "tag": "template"
+                                        }
+                                    ],
+                                    "classes": [],
+                                    "element": "slot",
+                                    "events": [],
+                                    "properties": {},
+                                    "style": {},
+                                    "tag": "div"
+                                }
+                            },
+                            "target": "nuxt-ui>Dashboard/DashboardPanel"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {},
+                        "style": {},
+                        "tag": "template"
+                    },
+                    "logics": {
+                        "main": {
+                            "name": "Main",
+                            "type": "main",
+                            "graph": {
+                                "canvas": {
+                                    "location": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "zoom": 0
+                                },
+                                "nodes": {},
+                                "wires": {}
+                            },
+                            "values": {
+                                "variables": {}
+                            }
+                        }
+                    },
+                    "options": {
+                        "type": "component",
+                        "path": "",
+                        "preview": "stretch",
+                        "previewSize": "auto"
+                    },
+                    "state": {
+                        "expand": true,
+                        "panel": "preview"
+                    },
+                    "values": {
+                        "computed": {},
+                        "events": {},
+                        "properties": {},
+                        "variables": {}
+                    }
+                },
+                "544a9ca3-8c4d-4220-89bc-6f072b8df011": {
+                    "name": "Stats",
+                    "type": "component",
+                    "layout": {
+                        "id": "45ee2fac-62b7-4e59-b34c-fb4bd51bb75b",
+                        "name": "",
+                        "children": [
+                            {
+                                "id": "46dc445b-bbd9-4ca0-82f2-aadc2c6b6903",
+                                "name": "",
+                                "children": [
+                                    {
+                                        "id": "cdb9b8c4-78a7-4284-8a7f-d44ba542b3f5",
+                                        "name": "",
+                                        "children": [
+                                            {
+                                                "id": "70d3a167-1fdc-4e3f-83e2-ac9bf6c35d6e",
+                                                "name": "",
+                                                "children": [],
+                                                "classes": [],
+                                                "content": {
+                                                    "text": {
+                                                        "content": "1245",
+                                                        "key": "root"
+                                                    },
+                                                    "variables": []
+                                                },
+                                                "element": "customText",
+                                                "events": [],
+                                                "properties": {},
+                                                "style": {
+                                                    "base": {
+                                                        "default": {
+                                                            "font": {
+                                                                "size": {
+                                                                    "type": "token",
+                                                                    "value": "0px",
+                                                                    "token": "plugin/nuxt-ui/text-3xl"
+                                                                },
+                                                                "weight": {
+                                                                    "type": "constant",
+                                                                    "value": "bold",
+                                                                    "token": ""
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "tag": "div"
+                                            },
+                                            {
+                                                "id": "e168dde3-e414-4abe-9ce6-9a42854db81e",
+                                                "name": "",
+                                                "children": [
+                                                    {
+                                                        "id": "1ca2e031-fd43-4d3e-a2b3-4aa9cf4b47d0",
+                                                        "name": "",
+                                                        "children": [],
+                                                        "classes": [],
+                                                        "content": {
+                                                            "text": {
+                                                                "content": "+4%",
+                                                                "key": "root"
+                                                            },
+                                                            "variables": []
+                                                        },
+                                                        "element": "customText",
+                                                        "events": [],
+                                                        "properties": {},
+                                                        "style": {},
+                                                        "tag": "div"
+                                                    }
+                                                ],
+                                                "classes": [],
+                                                "content": {
+                                                    "slot": true,
+                                                    "slots": {},
+                                                    "target": "nuxt-ui>Element/Badge"
+                                                },
+                                                "element": "plugin/nuxt-ui",
+                                                "events": [],
+                                                "properties": {
+                                                    "color": {
+                                                        "type": "constant",
+                                                        "value": "success",
+                                                        "token": "",
+                                                        "access": []
+                                                    },
+                                                    "variant": {
+                                                        "type": "constant",
+                                                        "value": "subtle",
+                                                        "token": "",
+                                                        "access": []
+                                                    }
+                                                },
+                                                "style": {},
+                                                "tag": "template"
+                                            }
+                                        ],
+                                        "classes": [],
+                                        "element": "div",
+                                        "events": [],
+                                        "properties": {},
+                                        "style": {
+                                            "base": {
+                                                "default": {
+                                                    "display": {
+                                                        "display": {
+                                                            "type": "constant",
+                                                            "value": "flex",
+                                                            "token": ""
+                                                        },
+                                                        "direction": {
+                                                            "type": "constant",
+                                                            "value": "row",
+                                                            "token": ""
+                                                        },
+                                                        "gap": {
+                                                            "type": "token",
+                                                            "value": "",
+                                                            "token": "fw/length/xs"
+                                                        },
+                                                        "alignItems": {
+                                                            "type": "constant",
+                                                            "value": "flex-end",
+                                                            "token": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "tag": "div"
+                                    }
+                                ],
+                                "classes": [],
+                                "content": {
+                                    "slot": true,
+                                    "slots": {},
+                                    "target": "nuxt-ui>Page/PageCard"
+                                },
+                                "element": "plugin/nuxt-ui",
+                                "events": [],
+                                "properties": {
+                                    "variant": {
+                                        "type": "constant",
+                                        "value": "subtle",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "title": {
+                                        "type": "constant",
+                                        "value": "Customers",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "icon": {
+                                        "type": "constant",
+                                        "value": "lucide:users",
+                                        "token": "",
+                                        "access": []
+                                    }
+                                },
+                                "style": {},
+                                "tag": "template"
+                            },
+                            {
+                                "id": "52026a85-955e-4195-8fbf-b8042e3808de",
+                                "name": "",
+                                "children": [
+                                    {
+                                        "id": "611440f4-433b-45c8-97a9-0714975e66dc",
+                                        "name": "",
+                                        "children": [
+                                            {
+                                                "id": "ca2089b9-a3a0-4fb0-b12d-8aa0315f4f13",
+                                                "name": "",
+                                                "children": [],
+                                                "classes": [],
+                                                "content": {
+                                                    "text": {
+                                                        "content": "859",
+                                                        "key": "root"
+                                                    },
+                                                    "variables": []
+                                                },
+                                                "element": "customText",
+                                                "events": [],
+                                                "properties": {},
+                                                "style": {
+                                                    "base": {
+                                                        "default": {
+                                                            "font": {
+                                                                "size": {
+                                                                    "type": "token",
+                                                                    "value": "0px",
+                                                                    "token": "plugin/nuxt-ui/text-3xl"
+                                                                },
+                                                                "weight": {
+                                                                    "type": "constant",
+                                                                    "value": "bold",
+                                                                    "token": ""
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "tag": "div"
+                                            },
+                                            {
+                                                "id": "5da7cad0-68b2-4e26-ae2b-0edef3f09e31",
+                                                "name": "",
+                                                "children": [
+                                                    {
+                                                        "id": "530bd78d-5a84-4da9-8779-8f8213b16100",
+                                                        "name": "",
+                                                        "children": [],
+                                                        "classes": [],
+                                                        "content": {
+                                                            "text": {
+                                                                "content": "\\--3%",
+                                                                "key": "root"
+                                                            },
+                                                            "variables": []
+                                                        },
+                                                        "element": "customText",
+                                                        "events": [],
+                                                        "properties": {},
+                                                        "style": {},
+                                                        "tag": "div"
+                                                    }
+                                                ],
+                                                "classes": [],
+                                                "content": {
+                                                    "slot": true,
+                                                    "slots": {},
+                                                    "target": "nuxt-ui>Element/Badge"
+                                                },
+                                                "element": "plugin/nuxt-ui",
+                                                "events": [],
+                                                "properties": {
+                                                    "color": {
+                                                        "type": "constant",
+                                                        "value": "error",
+                                                        "token": "",
+                                                        "access": []
+                                                    },
+                                                    "variant": {
+                                                        "type": "constant",
+                                                        "value": "subtle",
+                                                        "token": "",
+                                                        "access": []
+                                                    }
+                                                },
+                                                "style": {},
+                                                "tag": "template"
+                                            }
+                                        ],
+                                        "classes": [],
+                                        "element": "div",
+                                        "events": [],
+                                        "properties": {},
+                                        "style": {
+                                            "base": {
+                                                "default": {
+                                                    "display": {
+                                                        "display": {
+                                                            "type": "constant",
+                                                            "value": "flex",
+                                                            "token": ""
+                                                        },
+                                                        "direction": {
+                                                            "type": "constant",
+                                                            "value": "row",
+                                                            "token": ""
+                                                        },
+                                                        "gap": {
+                                                            "type": "token",
+                                                            "value": "",
+                                                            "token": "fw/length/xs"
+                                                        },
+                                                        "alignItems": {
+                                                            "type": "constant",
+                                                            "value": "flex-end",
+                                                            "token": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "tag": "div"
+                                    }
+                                ],
+                                "classes": [],
+                                "content": {
+                                    "slot": true,
+                                    "slots": {},
+                                    "target": "nuxt-ui>Page/PageCard"
+                                },
+                                "element": "plugin/nuxt-ui",
+                                "events": [],
+                                "properties": {
+                                    "variant": {
+                                        "type": "constant",
+                                        "value": "subtle",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "title": {
+                                        "type": "constant",
+                                        "value": "Conversions",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "icon": {
+                                        "type": "constant",
+                                        "value": "lucide:chart-pie",
+                                        "token": "",
+                                        "access": []
+                                    }
+                                },
+                                "style": {},
+                                "tag": "template"
+                            },
+                            {
+                                "id": "bec00f25-baa5-428f-ac82-1a9095b44087",
+                                "name": "",
+                                "children": [
+                                    {
+                                        "id": "caead2c3-8ee7-4740-9226-d991aeeb74e9",
+                                        "name": "",
+                                        "children": [
+                                            {
+                                                "id": "f49c686f-5161-42d5-9212-f08cf2174702",
+                                                "name": "",
+                                                "children": [],
+                                                "classes": [],
+                                                "content": {
+                                                    "text": {
+                                                        "content": "24 084€",
+                                                        "key": "root"
+                                                    },
+                                                    "variables": []
+                                                },
+                                                "element": "customText",
+                                                "events": [],
+                                                "properties": {},
+                                                "style": {
+                                                    "base": {
+                                                        "default": {
+                                                            "font": {
+                                                                "size": {
+                                                                    "type": "token",
+                                                                    "value": "0px",
+                                                                    "token": "plugin/nuxt-ui/text-3xl"
+                                                                },
+                                                                "weight": {
+                                                                    "type": "constant",
+                                                                    "value": "bold",
+                                                                    "token": ""
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "tag": "div"
+                                            },
+                                            {
+                                                "id": "befe4393-2dad-4864-90bb-60777ead1945",
+                                                "name": "",
+                                                "children": [
+                                                    {
+                                                        "id": "6da950a0-32dd-49ae-b246-34cc94cc3274",
+                                                        "name": "",
+                                                        "children": [],
+                                                        "classes": [],
+                                                        "content": {
+                                                            "text": {
+                                                                "content": "+17%",
+                                                                "key": "root"
+                                                            },
+                                                            "variables": []
+                                                        },
+                                                        "element": "customText",
+                                                        "events": [],
+                                                        "properties": {},
+                                                        "style": {},
+                                                        "tag": "div"
+                                                    }
+                                                ],
+                                                "classes": [],
+                                                "content": {
+                                                    "slot": true,
+                                                    "slots": {},
+                                                    "target": "nuxt-ui>Element/Badge"
+                                                },
+                                                "element": "plugin/nuxt-ui",
+                                                "events": [],
+                                                "properties": {
+                                                    "color": {
+                                                        "type": "constant",
+                                                        "value": "success",
+                                                        "token": "",
+                                                        "access": []
+                                                    },
+                                                    "variant": {
+                                                        "type": "constant",
+                                                        "value": "subtle",
+                                                        "token": "",
+                                                        "access": []
+                                                    }
+                                                },
+                                                "style": {},
+                                                "tag": "template"
+                                            }
+                                        ],
+                                        "classes": [],
+                                        "element": "div",
+                                        "events": [],
+                                        "properties": {},
+                                        "style": {
+                                            "base": {
+                                                "default": {
+                                                    "display": {
+                                                        "display": {
+                                                            "type": "constant",
+                                                            "value": "flex",
+                                                            "token": ""
+                                                        },
+                                                        "direction": {
+                                                            "type": "constant",
+                                                            "value": "row",
+                                                            "token": ""
+                                                        },
+                                                        "gap": {
+                                                            "type": "token",
+                                                            "value": "",
+                                                            "token": "fw/length/xs"
+                                                        },
+                                                        "alignItems": {
+                                                            "type": "constant",
+                                                            "value": "flex-end",
+                                                            "token": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "tag": "div"
+                                    }
+                                ],
+                                "classes": [],
+                                "content": {
+                                    "slot": true,
+                                    "slots": {},
+                                    "target": "nuxt-ui>Page/PageCard"
+                                },
+                                "element": "plugin/nuxt-ui",
+                                "events": [],
+                                "properties": {
+                                    "variant": {
+                                        "type": "constant",
+                                        "value": "subtle",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "title": {
+                                        "type": "constant",
+                                        "value": "Revenue",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "icon": {
+                                        "type": "constant",
+                                        "value": "lucide:coins",
+                                        "token": "",
+                                        "access": []
+                                    }
+                                },
+                                "style": {},
+                                "tag": "template"
+                            },
+                            {
+                                "id": "a90c1bf6-8582-429d-8d09-75d9d15c624a",
+                                "name": "",
+                                "children": [
+                                    {
+                                        "id": "6fecbdcf-0f21-4c14-a5b5-e8ded0d42a8f",
+                                        "name": "",
+                                        "children": [
+                                            {
+                                                "id": "e23c5a5c-a728-4254-9f1c-5e3ded1ef891",
+                                                "name": "",
+                                                "children": [],
+                                                "classes": [],
+                                                "content": {
+                                                    "text": {
+                                                        "content": "325",
+                                                        "key": "root"
+                                                    },
+                                                    "variables": []
+                                                },
+                                                "element": "customText",
+                                                "events": [],
+                                                "properties": {},
+                                                "style": {
+                                                    "base": {
+                                                        "default": {
+                                                            "font": {
+                                                                "size": {
+                                                                    "type": "token",
+                                                                    "value": "0px",
+                                                                    "token": "plugin/nuxt-ui/text-3xl"
+                                                                },
+                                                                "weight": {
+                                                                    "type": "constant",
+                                                                    "value": "bold",
+                                                                    "token": ""
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "tag": "div"
+                                            },
+                                            {
+                                                "id": "3b7831b4-0ae6-45a5-92ec-98094e603b71",
+                                                "name": "",
+                                                "children": [
+                                                    {
+                                                        "id": "c917790b-cf9f-4c64-8a47-5db7813e185a",
+                                                        "name": "",
+                                                        "children": [],
+                                                        "classes": [],
+                                                        "content": {
+                                                            "text": {
+                                                                "content": "+8%",
+                                                                "key": "root"
+                                                            },
+                                                            "variables": []
+                                                        },
+                                                        "element": "customText",
+                                                        "events": [],
+                                                        "properties": {},
+                                                        "style": {},
+                                                        "tag": "div"
+                                                    }
+                                                ],
+                                                "classes": [],
+                                                "content": {
+                                                    "slot": true,
+                                                    "slots": {},
+                                                    "target": "nuxt-ui>Element/Badge"
+                                                },
+                                                "element": "plugin/nuxt-ui",
+                                                "events": [],
+                                                "properties": {
+                                                    "color": {
+                                                        "type": "constant",
+                                                        "value": "success",
+                                                        "token": "",
+                                                        "access": []
+                                                    },
+                                                    "variant": {
+                                                        "type": "constant",
+                                                        "value": "subtle",
+                                                        "token": "",
+                                                        "access": []
+                                                    }
+                                                },
+                                                "style": {},
+                                                "tag": "template"
+                                            }
+                                        ],
+                                        "classes": [],
+                                        "element": "div",
+                                        "events": [],
+                                        "properties": {},
+                                        "style": {
+                                            "base": {
+                                                "default": {
+                                                    "display": {
+                                                        "display": {
+                                                            "type": "constant",
+                                                            "value": "flex",
+                                                            "token": ""
+                                                        },
+                                                        "direction": {
+                                                            "type": "constant",
+                                                            "value": "row",
+                                                            "token": ""
+                                                        },
+                                                        "gap": {
+                                                            "type": "token",
+                                                            "value": "",
+                                                            "token": "fw/length/xs"
+                                                        },
+                                                        "alignItems": {
+                                                            "type": "constant",
+                                                            "value": "flex-end",
+                                                            "token": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "tag": "div"
+                                    }
+                                ],
+                                "classes": [],
+                                "content": {
+                                    "slot": true,
+                                    "slots": {},
+                                    "target": "nuxt-ui>Page/PageCard"
+                                },
+                                "element": "plugin/nuxt-ui",
+                                "events": [],
+                                "properties": {
+                                    "variant": {
+                                        "type": "constant",
+                                        "value": "subtle",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "title": {
+                                        "type": "constant",
+                                        "value": "Orders",
+                                        "token": "",
+                                        "access": []
+                                    },
+                                    "icon": {
+                                        "type": "constant",
+                                        "value": "lucide:shopping-cart",
+                                        "token": "",
+                                        "access": []
+                                    }
+                                },
+                                "style": {},
+                                "tag": "template"
+                            }
+                        ],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {},
+                            "target": "nuxt-ui>Page/PageGrid"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {},
+                        "style": {
+                            "base": {
+                                "default": {
+                                    "display": {
+                                        "display": {
+                                            "type": "constant",
+                                            "value": "grid",
+                                            "token": ""
+                                        },
+                                        "gridColumns": {
+                                            "type": "constant",
+                                            "value": "4fr",
+                                            "token": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "tag": "template"
+                    },
+                    "logics": {
+                        "main": {
+                            "name": "Main",
+                            "type": "main",
+                            "graph": {
+                                "canvas": {
+                                    "location": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "zoom": 0
+                                },
+                                "nodes": {},
+                                "wires": {}
+                            },
+                            "values": {
+                                "variables": {}
+                            }
+                        }
+                    },
+                    "options": {
+                        "type": "component",
+                        "path": "",
+                        "preview": "stretch",
+                        "previewSize": "auto"
+                    },
+                    "state": {
+                        "expand": true,
+                        "panel": "preview"
+                    },
+                    "values": {
+                        "computed": {},
+                        "events": {},
+                        "properties": {},
+                        "variables": {}
+                    }
+                },
+                "c802cbd2-a805-4030-9ac5-8350d9c0b137": {
+                    "name": "Table",
+                    "type": "component",
+                    "layout": {
+                        "id": "86f91eeb-c2a0-4486-855d-97570d37950a",
+                        "name": "",
+                        "children": [],
+                        "classes": [],
+                        "content": {
+                            "slot": false,
+                            "slots": {
+                                "status-cell": {
+                                    "id": "26c003b3-f223-4c82-95c0-3411f5974578",
+                                    "name": "status-cell",
+                                    "children": [
+                                        {
+                                            "id": "0ee22062-44f2-4973-b23a-a6178f752bb8",
+                                            "name": "",
+                                            "children": [],
+                                            "classes": [],
+                                            "content": {
+                                                "id": "b5204446-5c56-44e0-8bd1-9622a548b227",
+                                                "slot": false,
+                                                "slots": {}
+                                            },
+                                            "element": "component",
+                                            "events": [],
+                                            "properties": {
+                                                "ee61ff72-8ab4-4388-a292-4e8f149cdc5e": {
+                                                    "type": "dynamic",
+                                                    "value": "",
+                                                    "token": "",
+                                                    "access": [
+                                                        "26c003b3-f223-4c82-95c0-3411f5974578",
+                                                        "row",
+                                                        "original",
+                                                        "ef873b54-ef50-41c5-b27a-a373de8c286d"
+                                                    ]
+                                                }
+                                            },
+                                            "style": {},
+                                            "tag": "template"
+                                        }
+                                    ],
+                                    "classes": [],
+                                    "element": "slot",
+                                    "events": [],
+                                    "properties": {},
+                                    "style": {},
+                                    "tag": "div"
+                                }
+                            },
+                            "target": "nuxt-ui>Data/Table"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {
+                            "data": {
+                                "type": "dynamic",
+                                "value": [
+                                    {
+                                        "id": 2084,
+                                        "date": "Dec 8, 16:23",
+                                        "status": "paid",
+                                        "mail": "sample@example.com"
+                                    },
+                                    {
+                                        "id": 2083,
+                                        "date": "Dec 8, 09:46",
+                                        "status": "refunded",
+                                        "mail": "sample@example.com"
+                                    },
+                                    {
+                                        "id": 2082,
+                                        "date": "Dec 8, 06:46",
+                                        "status": "paid",
+                                        "mail": "sample@example.com"
+                                    },
+                                    {
+                                        "id": 2081,
+                                        "date": "Dec 7, 23:46",
+                                        "status": "failed",
+                                        "mail": "sample@example.com"
+                                    }
+                                ],
+                                "token": "",
+                                "access": [
+                                    "f0e0328f-2310-4cea-8e99-c989587f1378"
+                                ]
+                            },
+                            "columns": {
+                                "type": "constant",
+                                "value": [
+                                    {
+                                        "id": "id",
+                                        "header": "ID",
+                                        "accessorKey": "id"
+                                    },
+                                    {
+                                        "id": "date",
+                                        "header": "Date",
+                                        "accessorKey": "date"
+                                    },
+                                    {
+                                        "id": "status",
+                                        "header": "Status"
+                                    },
+                                    {
+                                        "id": "mail",
+                                        "header": "Mail",
+                                        "accessorKey": "mail"
+                                    }
+                                ],
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    },
+                    "logics": {
+                        "main": {
+                            "name": "Main",
+                            "type": "main",
+                            "graph": {
+                                "canvas": {
+                                    "location": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "zoom": 0
+                                },
+                                "nodes": {},
+                                "wires": {}
+                            },
+                            "values": {
+                                "variables": {}
+                            }
+                        }
+                    },
+                    "options": {
+                        "type": "component",
+                        "path": "",
+                        "preview": "compact",
+                        "previewSize": "auto"
+                    },
+                    "state": {
+                        "expand": true,
+                        "panel": "preview"
+                    },
+                    "values": {
+                        "computed": {},
+                        "events": {},
+                        "properties": {},
+                        "variables": {
+                            "f0e0328f-2310-4cea-8e99-c989587f1378": {
+                                "name": "data",
+                                "type": "array",
+                                "items": {
+                                    "name": "",
+                                    "type": "object",
+                                    "properties": {
+                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": {
+                                            "name": "id",
+                                            "type": "number"
+                                        },
+                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": {
+                                            "name": "date",
+                                            "type": "string"
+                                        },
+                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": {
+                                            "name": "status",
+                                            "type": "string"
+                                        },
+                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": {
+                                            "name": "mail",
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "default": [
+                                    {
+                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": 2084,
+                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": "Dec 8, 16:23",
+                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": "paid",
+                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": "sample@example.com"
+                                    },
+                                    {
+                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": 2083,
+                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": "Dec 8, 09:46",
+                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": "refunded",
+                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": "sample@example.com"
+                                    },
+                                    {
+                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": 2082,
+                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": "Dec 8, 06:46",
+                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": "paid",
+                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": "sample@example.com"
+                                    },
+                                    {
+                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": 2081,
+                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": "Dec 7, 23:46",
+                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": "failed",
+                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": "sample@example.com"
+                                    }
+                                ],
+                                "id": "f0e0328f-2310-4cea-8e99-c989587f1378"
+                            }
+                        }
+                    }
+                },
+                "b5204446-5c56-44e0-8bd1-9622a548b227": {
+                    "name": "TableStatus",
+                    "type": "component",
+                    "layout": {
+                        "id": "e09557ed-3d5e-452d-81cf-568d48fc2f2f",
+                        "name": "",
+                        "children": [
+                            {
+                                "id": "3029979d-ffa3-4054-ad42-1fd67258c997",
+                                "name": "",
+                                "children": [],
+                                "classes": [],
+                                "content": {
+                                    "var": {
+                                        "type": "dynamic",
+                                        "value": "",
+                                        "token": "",
+                                        "access": [
+                                            "ee61ff72-8ab4-4388-a292-4e8f149cdc5e"
+                                        ]
+                                    }
+                                },
+                                "element": "variable",
+                                "events": [],
+                                "properties": {},
+                                "style": {},
+                                "tag": "template"
+                            }
+                        ],
+                        "classes": [],
+                        "content": {
+                            "slot": true,
+                            "slots": {},
+                            "target": "nuxt-ui>Element/Badge"
+                        },
+                        "element": "plugin/nuxt-ui",
+                        "events": [],
+                        "properties": {
+                            "color": {
+                                "type": "dynamic",
+                                "value": "primary",
+                                "token": "",
+                                "access": [
+                                    "b9ea03f6-3b13-42ad-a8f6-117832020ceb"
+                                ]
+                            },
+                            "variant": {
+                                "type": "constant",
+                                "value": "subtle",
+                                "token": "",
+                                "access": []
+                            }
+                        },
+                        "style": {},
+                        "tag": "template"
+                    },
+                    "logics": {
+                        "main": {
+                            "name": "Main",
+                            "type": "main",
+                            "graph": {
+                                "canvas": {
+                                    "location": {
+                                        "x": -231,
+                                        "y": -316
+                                    },
+                                    "zoom": 0
+                                },
+                                "nodes": {
+                                    "954f90b1-690a-4552-8512-0da64722caa0": {
+                                        "data": {
+                                            "config": {
+                                                "deep": false
+                                            },
+                                            "reset": false,
+                                            "customTypes": {
+                                                "in_watch": {
+                                                    "name": "Watch"
+                                                },
+                                                "in_l_value": {
+                                                    "name": ""
+                                                },
+                                                "out_value": {
+                                                    "name": ""
+                                                }
+                                            }
+                                        },
+                                        "internal": {
+                                            "inputs": {
+                                                "in_l_value": ""
+                                            }
+                                        },
+                                        "location": {
+                                            "x": 0,
+                                            "y": 0
+                                        },
+                                        "logic": "computed/set/b9ea03f6-3b13-42ad-a8f6-117832020ceb"
+                                    },
+                                    "e97dfceb-b268-4bce-a871-659e9345fa63": {
+                                        "data": {
+                                            "config": {
+                                                "internal": {
+                                                    "in_f9070e17-94d7-4526-b2ee-c0ffec3ff482": "failed",
+                                                    "in_20b0e159-ec6d-4795-82db-e7496da6ca74": "paid"
+                                                }
+                                            },
+                                            "reset": false,
+                                            "customTypes": {
+                                                "out_object": {
+                                                    "name": "object",
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "f9070e17-94d7-4526-b2ee-c0ffec3ff482": {
+                                                            "name": "failed",
+                                                            "type": "string"
+                                                        },
+                                                        "20b0e159-ec6d-4795-82db-e7496da6ca74": {
+                                                            "name": "paid",
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "internal": {
+                                            "inputs": {
+                                                "in_f9070e17-94d7-4526-b2ee-c0ffec3ff482": "error",
+                                                "in_20b0e159-ec6d-4795-82db-e7496da6ca74": "success"
+                                            }
+                                        },
+                                        "location": {
+                                            "x": -1,
+                                            "y": 12
+                                        },
+                                        "logic": "object/create"
+                                    },
+                                    "d86af90f-1dfa-4f62-9af8-c1fc7cefb948": {
+                                        "data": {
+                                            "optionals": {
+                                                "in_2default": true
+                                            },
+                                            "reset": false,
+                                            "customTypes": {
+                                                "in_2default": {
+                                                    "name": "default"
+                                                },
+                                                "out_value": {
+                                                    "name": "value",
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "internal": {
+                                            "inputs": {
+                                                "in_1property": "",
+                                                "in_2default": "neutral"
+                                            }
+                                        },
+                                        "location": {
+                                            "x": 14,
+                                            "y": 12
+                                        },
+                                        "logic": "object/getAnyProperty"
+                                    },
+                                    "51d84d65-c618-4c4b-97cb-3a241e8abb55": {
+                                        "data": {
+                                            "_size": {
+                                                "x": 6,
+                                                "y": 3
+                                            },
+                                            "reset": false
+                                        },
+                                        "location": {
+                                            "x": 3,
+                                            "y": 21
+                                        },
+                                        "logic": "property/get/ee61ff72-8ab4-4388-a292-4e8f149cdc5e"
+                                    }
+                                },
+                                "wires": {
+                                    "759c927a-acc3-4012-8c06-74872e0d2208": {
+                                        "from": {
+                                            "key": "out_object",
+                                            "node": "e97dfceb-b268-4bce-a871-659e9345fa63"
+                                        },
+                                        "to": {
+                                            "key": "in_0object",
+                                            "node": "d86af90f-1dfa-4f62-9af8-c1fc7cefb948"
+                                        }
+                                    },
+                                    "c4cb11fe-4c88-4272-b0b8-9dcc815026f6": {
+                                        "from": {
+                                            "key": "out_get",
+                                            "node": "51d84d65-c618-4c4b-97cb-3a241e8abb55"
+                                        },
+                                        "to": {
+                                            "key": "in_1property",
+                                            "node": "d86af90f-1dfa-4f62-9af8-c1fc7cefb948"
+                                        }
+                                    },
+                                    "ba3ba1a8-d451-4856-9c3b-7601813135aa": {
+                                        "from": {
+                                            "key": "out_value",
+                                            "node": "d86af90f-1dfa-4f62-9af8-c1fc7cefb948"
+                                        },
+                                        "to": {
+                                            "key": "in_l_value",
+                                            "node": "954f90b1-690a-4552-8512-0da64722caa0"
+                                        }
+                                    }
+                                }
+                            },
+                            "values": {
+                                "variables": {}
+                            }
+                        }
+                    },
+                    "options": {
+                        "type": "component",
+                        "path": "",
+                        "preview": "compact",
+                        "previewSize": "auto"
+                    },
+                    "state": {
+                        "expand": true,
+                        "panel": "builder"
+                    },
+                    "values": {
+                        "computed": {
+                            "b9ea03f6-3b13-42ad-a8f6-117832020ceb": {
+                                "name": "color",
+                                "type": "string",
+                                "id": "b9ea03f6-3b13-42ad-a8f6-117832020ceb"
+                            }
+                        },
+                        "events": {},
+                        "properties": {
+                            "ee61ff72-8ab4-4388-a292-4e8f149cdc5e": {
+                                "name": "status",
+                                "type": "string",
+                                "default": "",
+                                "id": "ee61ff72-8ab4-4388-a292-4e8f149cdc5e"
+                            }
+                        },
+                        "variables": {}
+                    }
+                }
+            },
+            "state": {
+                "expand": true
+            }
+        }
+    },
+    "state": {
+        "expand": false
+    }
+}

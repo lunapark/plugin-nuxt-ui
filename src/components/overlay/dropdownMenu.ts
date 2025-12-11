@@ -4,6 +4,7 @@ import DropdownMenu from "@nuxt/ui/components/DropdownMenu.vue";
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { KbdProps } from "@/components/element/kbd.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
+import { MaybeArray } from "@/lib/value.ts";
 import { color, size } from "@/lib/variants.ts";
 
 const DropdownMenuItem = LogicUtil.partial(LogicType.object({
@@ -42,11 +43,11 @@ const dropdownMenu = {
         descriptionKey: LogicType.union([LogicType.string(), LogicType.number()]),
         disabled: LogicType.boolean(),
         externalIcon: LogicType.union([LogicType.string(), LogicType.boolean()], { description: "The icon displayed when the item is an external link." }),
-        items: LogicType.array(DropdownMenuItem),
+        items: MaybeArray(LogicType.array(DropdownMenuItem)),
         labelKey: LogicType.union([LogicType.string(), LogicType.number()]),
         loadingIcon: LogicType.string({ description: "The icon displayed when an item is loading." }),
         modal: LogicType.boolean({ description: "The modality of the dropdown menu." }),
-        portal: LogicType.boolean({ description: "Render the menu in a portal." }),
+        portal: LogicType.union([LogicType.string(), LogicType.boolean()], { description: "Render the menu in a portal." }),
         size
     },
     slots: {
