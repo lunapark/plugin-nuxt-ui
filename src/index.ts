@@ -28,10 +28,10 @@ export default makePlugin({
         ],
         wrapper: ({ mode }) => {
             if (mode === "build") {
-                return UApp;
+                return { component: UApp, name: "UApp" };
             }
 
-            return LWrapper;
+            return { component: LWrapper, name: "Wrapper" };
         }
     },
     icon,
