@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Drawer from "@nuxt/ui/components/Drawer.vue";
 
 const drawer = {
+    build: {
+        name: "UDrawer"
+    },
     component: Drawer,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/drawer"

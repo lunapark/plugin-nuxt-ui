@@ -37,6 +37,9 @@ export const CommandPaletteGroup = LogicUtil.partial(LogicType.object({
 }));
 
 const commandPalette = {
+    build: {
+        name: "UCommandPalette"
+    },
     component: CommandPalette,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/command-palette"

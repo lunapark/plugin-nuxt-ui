@@ -24,6 +24,9 @@ const PricingTableSection = LogicType.object({
 });
 
 const pricingTable = {
+    build: {
+        name: "UPricingTable"
+    },
     component: PricingTable,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/pricing-table"

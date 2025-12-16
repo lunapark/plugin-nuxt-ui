@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import DashboardPanel from "@nuxt/ui/components/DashboardPanel.vue";
 
 const dashboardPanel = {
+    build: {
+        name: "UDashboardPanel"
+    },
     component: DashboardPanel,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-panel"

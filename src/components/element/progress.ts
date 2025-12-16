@@ -5,6 +5,9 @@ import { animation } from "@/lib/animation.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const progress = {
+    build: {
+        name: "UProgress"
+    },
     component: Progress,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/progress"

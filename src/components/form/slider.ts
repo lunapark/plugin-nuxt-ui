@@ -4,6 +4,9 @@ import Slider from "@nuxt/ui/components/Slider.vue";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const slider = {
+    build: {
+        name: "USlider"
+    },
     component: Slider,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/slider"

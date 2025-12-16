@@ -2,6 +2,9 @@ import { LogicType, type TComponent } from "@luna-park/plugin";
 import Collapsible from "@nuxt/ui/components/Collapsible.vue";
 
 const collapsible = {
+    build: {
+        name: "UCollapsible"
+    },
     component: Collapsible,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/collapsible"

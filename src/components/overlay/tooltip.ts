@@ -26,6 +26,9 @@ const TooltipArrowProps = LogicType.object({
 });
 
 export const tooltip: TComponent = {
+    build: {
+        name: "UTooltip"
+    },
     component: Tooltip,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/tooltip"

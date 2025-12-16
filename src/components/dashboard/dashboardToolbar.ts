@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import DashboardToolbar from "@nuxt/ui/components/DashboardToolbar.vue";
 
 const dashboardToolbar = {
+    build: {
+        name: "UDashboardToolbar"
+    },
     component: DashboardToolbar,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-toolbar"

@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Page from "@nuxt/ui/components/Page.vue";
 
 const page = {
+    build: {
+        name: "UPage"
+    },
     component: Page,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page"

@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { menuProp } from "@/lib/menu.ts";
 
 const dashboardSidebar = {
+    build: {
+        name: "UDashboardSidebar"
+    },
     component: DashboardSidebar,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-sidebar"

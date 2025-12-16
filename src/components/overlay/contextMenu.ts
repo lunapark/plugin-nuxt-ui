@@ -25,6 +25,9 @@ const ContextMenuItem = LogicUtil.partial(LogicType.object({
 ContextMenuItem.properties.children = LogicType.array(ContextMenuItem, { optional: true });
 
 const contextMenu = {
+    build: {
+        name: "UContextMenu"
+    },
     component: ContextMenu,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/context-menu"

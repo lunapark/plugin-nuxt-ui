@@ -2,6 +2,9 @@ import { LogicType, type TComponent } from "@luna-park/plugin";
 import Icon from "@nuxt/ui/components/Icon.vue";
 
 const icon = {
+    build: {
+        name: "UIcon"
+    },
     component: Icon,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/icon"

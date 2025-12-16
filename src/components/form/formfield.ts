@@ -4,6 +4,9 @@ import FormField from "@nuxt/ui/components/FormField.vue";
 import { size } from "@/lib/variants.ts";
 
 const formField = {
+    build: {
+        name: "UFormField"
+    },
     component: FormField,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/form-field"

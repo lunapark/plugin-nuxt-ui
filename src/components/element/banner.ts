@@ -6,6 +6,9 @@ import { LinkProps } from "@/components/navigation/link.ts";
 import { color } from "@/lib/variants.ts";
 
 const banner = {
+    build: {
+        name: "UBanner"
+    },
     component: Banner,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/banner"

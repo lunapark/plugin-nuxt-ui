@@ -5,6 +5,9 @@ import { LinkProps } from "@/components/navigation/link.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pageFeature = {
+    build: {
+        name: "UPageFeature"
+    },
     component: PageFeature,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-feature"

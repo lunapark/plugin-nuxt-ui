@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { orientation, variant } from "@/lib/variants.ts";
 
 const pageCTA = {
+    build: {
+        name: "UPageCTA"
+    },
     component: PageCTA,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-cta"

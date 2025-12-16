@@ -6,6 +6,9 @@ import { PageFeatureProps } from "@/components/page/pageFeature.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pageSection = {
+    build: {
+        name: "UPageSection"
+    },
     component: PageSection,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-section"

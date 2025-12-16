@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import DashboardGroup from "@nuxt/ui/components/DashboardGroup.vue";
 
 const dashboardGroup = {
+    build: {
+        name: "UDashboardGroup"
+    },
     component: DashboardGroup,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-group"

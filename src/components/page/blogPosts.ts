@@ -5,6 +5,9 @@ import { BlogPostProps } from "@/components/page/blogPost.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const blogPosts = {
+    build: {
+        name: "UBlogPosts"
+    },
     component: BlogPosts,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/blog-posts"

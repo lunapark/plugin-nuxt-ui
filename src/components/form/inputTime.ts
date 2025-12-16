@@ -8,6 +8,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 const Time = LogicType.unknown();
 
 const inputTime = {
+    build: {
+        name: "UInputTime"
+    },
     component: InputTime,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/input-time"

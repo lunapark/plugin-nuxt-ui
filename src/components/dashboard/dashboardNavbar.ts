@@ -4,6 +4,9 @@ import DashboardNavbar from "@nuxt/ui/components/DashboardNavbar.vue";
 import { ButtonProps } from "@/components/element/button.ts";
 
 const dashboardNavbar = {
+    build: {
+        name: "UDashboardNavbar"
+    },
     component: DashboardNavbar,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-navbar"

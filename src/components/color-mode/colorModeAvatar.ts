@@ -4,6 +4,9 @@ import ColorModeAvatar from "@nuxt/ui/components/color-mode/ColorModeAvatar.vue"
 import { AvatarProps } from "@/components/element/avatar.ts";
 
 const colorModeAvatar = {
+    build: {
+        name: "UColorModeAvatar"
+    },
     component: ColorModeAvatar,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/color-mode-avatar"

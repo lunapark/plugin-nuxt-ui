@@ -4,7 +4,6 @@ import Pagination from "@nuxt/ui/components/Pagination.vue";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const pagination = {
-    component: Pagination,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/pagination"
     },

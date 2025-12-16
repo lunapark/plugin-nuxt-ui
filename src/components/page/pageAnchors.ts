@@ -10,6 +10,9 @@ const PageAnchor = LogicType.object({
 });
 
 const pageAnchors = {
+    build: {
+        name: "UPageAnchors"
+    },
     component: PageAnchors,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-anchors"

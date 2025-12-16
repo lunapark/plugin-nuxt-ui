@@ -33,6 +33,9 @@ const NavigationMenuChildItem = LogicType.object({
 NavigationMenuItem.properties.children = LogicType.array(NavigationMenuChildItem, { optional: true });
 
 const navigationMenu = {
+    build: {
+        name: "UNavigationMenu"
+    },
     component: NavigationMenu,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/navigation-menu"

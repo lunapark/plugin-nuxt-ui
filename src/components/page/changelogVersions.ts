@@ -16,6 +16,9 @@ const SpringOptions = LogicUtil.partial(LogicType.object({
 }));
 
 const changelogVersions = {
+    build: {
+        name: "UChangelogVersions"
+    },
     component: ChangelogVersions,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/changelog-versions"

@@ -11,6 +11,9 @@ const carouselItems = LogicType.union([
 ]);
 
 const carousel = {
+    build: {
+        name: "UCarousel"
+    },
     component: Carousel,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/carousel"

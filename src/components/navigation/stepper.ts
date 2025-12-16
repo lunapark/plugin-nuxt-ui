@@ -14,7 +14,6 @@ const StepperItem = LogicUtil.partial(LogicType.object({
 }));
 
 const stepper = {
-    component: Stepper,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/stepper"
     },

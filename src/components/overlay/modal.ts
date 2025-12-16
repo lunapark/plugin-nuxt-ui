@@ -4,6 +4,9 @@ import Modal from "@nuxt/ui/components/Modal.vue";
 import { ButtonProps } from "@/components/element/button.ts";
 
 const modal = {
+    build: {
+        name: "UModal"
+    },
     component: Modal,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/modal"

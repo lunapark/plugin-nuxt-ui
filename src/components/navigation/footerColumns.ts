@@ -15,6 +15,9 @@ const FooterColumn = LogicType.object({
 });
 
 const footerColumns = {
+    build: {
+        name: "UFooterColumns"
+    },
     component: FooterColumns,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/footer-columns"

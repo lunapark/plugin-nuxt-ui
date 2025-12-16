@@ -4,6 +4,9 @@ import Marquee from "@nuxt/ui/components/Marquee.vue";
 import { orientation } from "@/lib/variants.ts";
 
 export const marquee = {
+    build: {
+        name: "UMarquee"
+    },
     component: Marquee,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/marquee"

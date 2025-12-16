@@ -4,6 +4,9 @@ import ColorModeButton from "@nuxt/ui/components/color-mode/ColorModeButton.vue"
 import { ButtonProps } from "@/components/element/button.ts";
 
 const colorModeButton = {
+    build: {
+        name: "UColorModeButton"
+    },
     component: ColorModeButton,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/color-mode-button"

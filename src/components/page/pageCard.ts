@@ -5,6 +5,9 @@ import { LinkProps } from "@/components/navigation/link.ts";
 import { color, orientation, variant } from "@/lib/variants.ts";
 
 const pageCard = {
+    build: {
+        name: "UPageCard"
+    },
     component: PageCard,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-card"

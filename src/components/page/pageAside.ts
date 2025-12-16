@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageAside from "@nuxt/ui/components/PageAside.vue";
 
 const pageAside = {
+    build: {
+        name: "UPageAside"
+    },
     component: PageAside,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-aside"

@@ -28,6 +28,9 @@ const DropdownMenuItem = LogicUtil.partial(LogicType.object({
 DropdownMenuItem.properties.children = LogicType.array(DropdownMenuItem, { optional: true });
 
 const dropdownMenu = {
+    build: {
+        name: "UDropdownMenu"
+    },
     component: DropdownMenu,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dropdown-menu"

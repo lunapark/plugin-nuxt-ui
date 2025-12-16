@@ -13,6 +13,9 @@ const AuthFormField = LogicUtil.partial(LogicType.object({
 })); // TODO: Add real field types
 
 const authForm = {
+    build: {
+        name: "UAuthForm"
+    },
     component: AuthForm,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/auth-form"

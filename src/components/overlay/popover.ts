@@ -29,6 +29,9 @@ const PopoverArrowProps = LogicUtil.partial(LogicType.object({
 }));
 
 export const popover: TComponent = {
+    build: {
+        name: "UPopover"
+    },
     component: Popover,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/popover"

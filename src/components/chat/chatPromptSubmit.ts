@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { color, variant } from "@/lib/variants.ts";
 
 const chatPromptSubmit = {
+    build: {
+        name: "UChatPromptSubmit"
+    },
     component: ChatPromptSubmit,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/chat-prompt-submit"

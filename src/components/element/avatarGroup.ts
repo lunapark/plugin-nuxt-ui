@@ -4,6 +4,9 @@ import AvatarGroup from "@nuxt/ui/components/AvatarGroup.vue";
 import { size } from "@/lib/variants.ts";
 
 const avatarGroup = {
+    build: {
+        name: "UAvatarGroup"
+    },
     component: AvatarGroup,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/avatar-group"

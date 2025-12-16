@@ -4,6 +4,9 @@ import Error from "@nuxt/ui/components/Error.vue";
 import { ButtonProps } from "@/components/element/button.ts";
 
 const error = {
+    build: {
+        name: "UError"
+    },
     component: Error,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/error"

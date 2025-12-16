@@ -6,6 +6,9 @@ import { CommandPaletteGroup, CommandPaletteItem } from "@/components/navigation
 import { ModalProps } from "@/components/overlay/modal.ts";
 
 const dashboardSearch = {
+    build: {
+        name: "UDashboardSearch"
+    },
     component: DashboardSearch,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-search"

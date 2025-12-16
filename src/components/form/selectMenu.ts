@@ -7,6 +7,9 @@ import { AcceptableValues } from "@/lib/value.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const selectMenu = {
+    build: {
+        name: "USelectMenu"
+    },
     component: SelectMenu,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/select-menu"

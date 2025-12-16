@@ -18,6 +18,9 @@ const TabsItem = LogicUtil.partial(LogicType.object({
 }));
 
 const tabs = {
+    build: {
+        name: "UTabs"
+    },
     component: Tabs,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/tabs"

@@ -7,6 +7,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { UIMessage } from "@/lib/ai.ts";
 
 const chatMessages = {
+    build: {
+        name: "UChatMessages"
+    },
     component: ChatMessages,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/chat-messages"

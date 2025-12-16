@@ -4,6 +4,9 @@ import Switch from "@nuxt/ui/components/Switch.vue";
 import { color, size } from "@/lib/variants.ts";
 
 const switch_ = {
+    build: {
+        name: "USwitch"
+    },
     component: Switch,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/switch"

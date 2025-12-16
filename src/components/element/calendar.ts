@@ -4,6 +4,9 @@ import Calendar from "@nuxt/ui/components/Calendar.vue";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const calendar = {
+    build: {
+        name: "UCalender"
+    },
     component: Calendar,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/calendar"

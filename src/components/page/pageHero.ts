@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pageHero = {
+    build: {
+        name: "UPageHero"
+    },
     component: PageHero,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-hero"

@@ -7,6 +7,9 @@ import { LinkProps } from "@/components/navigation/link.ts";
 import { orientation, variant } from "@/lib/variants.ts";
 
 const blogPost = {
+    build: {
+        name: "UBlogPost"
+    },
     component: BlogPost,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/blog-post"

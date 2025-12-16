@@ -6,6 +6,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { size, variant } from "@/lib/variants.ts";
 
 const empty = {
+    build: {
+        name: "UEmpty"
+    },
     component: Empty,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/empty"

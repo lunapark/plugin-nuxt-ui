@@ -6,6 +6,9 @@ import { BadgeProps } from "@/components/element/badge.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
 
 const changelogVersion = {
+    build: {
+        name: "UChangelogVersion"
+    },
     component: ChangelogVersion,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/changelog-version"

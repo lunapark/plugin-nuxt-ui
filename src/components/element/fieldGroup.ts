@@ -4,6 +4,9 @@ import FieldGroup from "@nuxt/ui/components/FieldGroup.vue";
 import { orientation, size } from "@/lib/variants.ts";
 
 const fieldGroup = {
+    build: {
+        name: "UFieldGroup"
+    },
     component: FieldGroup,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/field-group"

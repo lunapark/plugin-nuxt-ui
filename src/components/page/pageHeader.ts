@@ -4,6 +4,9 @@ import PageHeader from "@nuxt/ui/components/PageHeader.vue";
 import { ButtonProps } from "@/components/element/button.ts";
 
 const pageHeader = {
+    build: {
+        name: "UPageHeader"
+    },
     component: PageHeader,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-header"

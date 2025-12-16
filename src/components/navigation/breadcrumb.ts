@@ -13,6 +13,9 @@ const BreadcrumbItem = LogicUtil.partial(LogicType.object({
 }));
 
 const breadcrumb = {
+    build: {
+        name: "UBreadcrumb"
+    },
     component: Breadcrumb,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/breadcrumb"

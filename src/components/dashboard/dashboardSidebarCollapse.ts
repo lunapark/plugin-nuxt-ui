@@ -4,6 +4,9 @@ import DashboardSidebarCollapse from "@nuxt/ui/components/DashboardSidebarCollap
 import { ButtonProps } from "@/components/element/button.ts";
 
 const dashboardSidebarCollapse = {
+    build: {
+        name: "UDashboardSidebarCollapse"
+    },
     component: DashboardSidebarCollapse,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-sidebar-collapse"

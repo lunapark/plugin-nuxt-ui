@@ -4,6 +4,9 @@ import DashboardSidebarToggle from "@nuxt/ui/components/DashboardSidebarToggle.v
 import { ButtonProps } from "@/components/element/button.ts";
 
 const dashboardSidebarToggle = {
+    build: {
+        name: "UDashboardSidebarToggle"
+    },
     component: DashboardSidebarToggle,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-sidebar-toggle"

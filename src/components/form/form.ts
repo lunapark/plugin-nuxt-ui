@@ -4,6 +4,9 @@ import Form from "@nuxt/ui/components/Form.vue";
 const FormError = LogicType.object({ message: LogicType.string(), name: LogicType.string({ optional: true }) });
 
 const form = {
+    build: {
+        name: "UForm"
+    },
     component: Form,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/form"

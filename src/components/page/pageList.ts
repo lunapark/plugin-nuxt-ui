@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageList from "@nuxt/ui/components/PageList.vue";
 
 const pageList = {
+    build: {
+        name: "UPageList"
+    },
     component: PageList,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-list"

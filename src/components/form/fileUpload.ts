@@ -4,6 +4,9 @@ import FileUpload from "@nuxt/ui/components/FileUpload.vue";
 import { color, size } from "@/lib/variants.ts";
 
 const fileUpload = {
+    build: {
+        name: "UFileUpload"
+    },
     component: FileUpload,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/file-upload"

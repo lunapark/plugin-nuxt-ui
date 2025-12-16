@@ -5,6 +5,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { menuProp } from "@/lib/menu.ts";
 
 const header = {
+    build: {
+        name: "UHeader"
+    },
     component: Header,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/header"

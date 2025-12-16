@@ -4,6 +4,9 @@ import ChatPrompt from "@nuxt/ui/components/ChatPrompt.vue";
 import { TextareaProps } from "@/components/form/textarea.ts";
 
 const chatPrompt = {
+    build: {
+        name: "UChatPrompt"
+    },
     component: ChatPrompt,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/chat-prompt"

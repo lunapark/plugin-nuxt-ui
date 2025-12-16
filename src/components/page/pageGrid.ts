@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageGrid from "@nuxt/ui/components/PageGrid.vue";
 
 const pageGrid = {
+    build: {
+        name: "UPageGrid"
+    },
     component: PageGrid,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-grid"

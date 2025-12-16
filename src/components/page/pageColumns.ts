@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageColumns from "@nuxt/ui/components/PageColumns.vue";
 
 const pageColumns = {
+    build: {
+        name: "UPageColumns"
+    },
     component: PageColumns,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-column"

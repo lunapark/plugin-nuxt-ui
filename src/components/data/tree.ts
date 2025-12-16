@@ -15,6 +15,9 @@ const TreeItem = LogicUtil.partial(LogicType.object({
 TreeItem.properties.children = LogicType.array(TreeItem, { optional: true });
 
 export const tree = {
+    build: {
+        name: "UTree"
+    },
     component: Tree,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/tree"

@@ -4,6 +4,9 @@ import PinInput from "@nuxt/ui/components/PinInput.vue";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const pinInput = {
+    build: {
+        name: "UPinInput"
+    },
     component: PinInput,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/pin-input"

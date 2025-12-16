@@ -12,6 +12,9 @@ const AccordionItem = LogicUtil.partial(LogicType.object({
 }));
 
 const accordion = {
+    build: {
+        name: "UAccordion"
+    },
     component: Accordion,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/accordion"

@@ -22,6 +22,9 @@ export const SelectItem = LogicType.union([
 ]);
 
 const select = {
+    build: {
+        name: "USelect"
+    },
     component: Select,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/select"

@@ -13,6 +13,9 @@ const TableColumn = LogicUtil.partial(LogicType.object({
 }));
 
 const table = {
+    build: {
+        name: "UTable"
+    },
     component: Table,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/table"

@@ -4,6 +4,9 @@ import InputNumber from "@nuxt/ui/components/InputNumber.vue";
 import { color, orientation, size, variant } from "@/lib/variants.ts";
 
 const inputNumber = {
+    build: {
+        name: "UInputNumber"
+    },
     component: InputNumber,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/input-number"

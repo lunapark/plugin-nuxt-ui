@@ -4,6 +4,9 @@ import Checkbox from "@nuxt/ui/components/Checkbox.vue";
 import { color, indicator, size } from "@/lib/variants.ts";
 
 const checkbox = {
+    build: {
+        name: "UCheckbox"
+    },
     component: Checkbox,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/checkbox"

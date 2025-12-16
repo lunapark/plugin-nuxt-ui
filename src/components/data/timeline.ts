@@ -15,6 +15,9 @@ const TimelineItem = LogicUtil.partial(LogicType.object({
 }));
 
 export const timeline = {
+    build: {
+        name: "UTimeline"
+    },
     component: Timeline,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/timeline"

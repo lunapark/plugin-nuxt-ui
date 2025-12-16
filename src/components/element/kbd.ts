@@ -4,6 +4,9 @@ import Kbd from "@nuxt/ui/components/Kbd.vue";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const kbd = {
+    build: {
+        name: "UKbd"
+    },
     component: Kbd,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/kbd"

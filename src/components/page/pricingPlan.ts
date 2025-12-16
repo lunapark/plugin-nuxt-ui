@@ -6,6 +6,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pricingPlan = {
+    build: {
+        name: "UPricingPlan"
+    },
     component: PricingPlan,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/pricing-plan"

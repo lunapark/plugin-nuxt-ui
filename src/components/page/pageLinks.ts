@@ -10,6 +10,9 @@ const PageLink = LogicType.object({
 });
 
 const pageLinks = {
+    build: {
+        name: "UPageLinks"
+    },
     component: PageLinks,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-links"

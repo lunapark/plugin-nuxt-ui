@@ -5,6 +5,9 @@ import { ComponentIconsProps } from "@/lib/icon.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const input = {
+    build: {
+        name: "UInput"
+    },
     component: Input,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/input"

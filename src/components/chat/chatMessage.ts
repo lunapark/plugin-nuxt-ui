@@ -7,6 +7,7 @@ import { UIMessage } from "@/lib/ai.ts";
 import { variant } from "@/lib/variants.ts";
 
 const chatMessage = {
+    build: {},
     component: ChatMessage,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/chat-message"

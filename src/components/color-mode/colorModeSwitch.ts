@@ -4,6 +4,9 @@ import ColorModeSwitch from "@nuxt/ui/components/color-mode/ColorModeSwitch.vue"
 import { SwitchProps } from "@/components/form/switch.ts";
 
 const colorModeSwitch = {
+    build: {
+        name: "UColorModeSwitch"
+    },
     component: ColorModeSwitch,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/color-mode-switch"

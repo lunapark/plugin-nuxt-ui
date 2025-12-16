@@ -6,6 +6,9 @@ import { ComponentIconsProps } from "@/lib/icon.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const button = {
+    build: {
+        name: "UButton"
+    },
     component: Button,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/button"

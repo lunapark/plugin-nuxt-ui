@@ -10,6 +10,9 @@ export const NuxtLinkProps = LogicUtil.partial(LogicType.object({
 }));
 
 const link = {
+    build: {
+        name: "ULink"
+    },
     component: Link,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/link"

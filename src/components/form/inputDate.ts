@@ -8,6 +8,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 const DateValue = LogicType.unknown(); // TODO
 
 const inputDate = {
+    build: {
+        name: "UInputDate"
+    },
     component: InputDate,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/input-date"

@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Footer from "@nuxt/ui/components/Footer.vue";
 
 const footer = {
+    build: {
+        name: "UFooter"
+    },
     component: Footer,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/footer"

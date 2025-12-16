@@ -4,6 +4,9 @@ import Slideover from "@nuxt/ui/components/Slideover.vue";
 import { ButtonProps } from "@/components/element/button";
 
 export const slideover: TComponent = {
+    build: {
+        name: "USlideover"
+    },
     component: Slideover,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/slideover"

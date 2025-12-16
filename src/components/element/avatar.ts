@@ -4,6 +4,9 @@ import Avatar from "@nuxt/ui/components/Avatar.vue";
 import { size } from "@/lib/variants.ts";
 
 const avatar = {
+    build: {
+        name: "UAvatar"
+    },
     component: Avatar,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/avatar"

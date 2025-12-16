@@ -1,4 +1,4 @@
-import { makePlugin } from "@luna-park/plugin";
+import { EInjectionKey, makePlugin } from "@luna-park/plugin";
 import UApp from "@nuxt/ui/components/App.vue";
 import ui from "@nuxt/ui/vue-plugin";
 
@@ -15,6 +15,33 @@ import { fontSizeTokens } from "@/tokens/fontSize.ts";
 import { lengthTokens } from "@/tokens/length.ts";
 
 export default makePlugin({
+    build: {
+        frontImports: [
+            { name: "@nuxt/ui", version: "^4.2.1" },
+            { name: "tailwindcss", version: "^4.1.18" },
+            { name: "vue-router", version: "^4.6.4" },
+            { name: "@unhead/vue", version: "^2.0.19" }
+        ],
+        injections: ({ config }) => {
+            const ui = {
+                ui: {
+                    colors: {
+                        neutral: config.neutral,
+                        primary: config.primary,
+                        secondary: config.secondary
+                    }
+                }
+            };
+
+            return {
+                [EInjectionKey.ViteImport]: "import ui from '@nuxt/ui/vite';",
+                [EInjectionKey.VitePlugin]: `ui(${ JSON.stringify(ui) }),`,
+                [EInjectionKey.AppImport]: "import ui from '@nuxt/ui/vue-plugin';",
+                [EInjectionKey.AppBody]: "app.use(ui);",
+                [EInjectionKey.Style]: "@import \"tailwindcss\";\n@import \"@nuxt/ui\";\n"
+            };
+        }
+    },
     config,
     description: "Nuxt UI is a collection of reusable components and utilities for building apps.",
     editor: {

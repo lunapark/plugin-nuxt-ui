@@ -5,6 +5,9 @@ import { AvatarProps } from "@/components/element/avatar.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const separator = {
+    build: {
+        name: "USeparator"
+    },
     component: Separator,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/separator"

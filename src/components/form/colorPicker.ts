@@ -4,6 +4,9 @@ import ColorPicker from "@nuxt/ui/components/ColorPicker.vue";
 import { size } from "@/lib/variants.ts";
 
 const colorPicker = {
+    build: {
+        name: "UColorPicker"
+    },
     component: ColorPicker,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/color-picker"

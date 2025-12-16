@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageBody from "@nuxt/ui/components/PageBody.vue";
 
 const pageBody = {
+    build: {
+        name: "UPageBody"
+    },
     component: PageBody,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-body"

@@ -2,6 +2,9 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Main from "@nuxt/ui/components/Main.vue";
 
 const main = {
+    build: {
+        name: "UMain"
+    },
     component: Main,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/main"

@@ -7,6 +7,9 @@ import { LinkProps } from "@/components/navigation/link.ts";
 import { orientation, size } from "@/lib/variants.ts";
 
 export const user = {
+    build: {
+        name: "UUser"
+    },
     component: User,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/user"

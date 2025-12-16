@@ -6,6 +6,9 @@ import { ButtonProps } from "@/components/element/button";
 import { color, orientation } from "@/lib/variants.ts";
 
 export const toast: TComponent = {
+    build: {
+        name: "UToast"
+    },
     component: Toast,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/toast"

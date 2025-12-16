@@ -6,6 +6,9 @@ import { KbdProps } from "@/components/element/kbd.ts";
 import { TooltipProps } from "@/components/overlay/tooltip.ts";
 
 const dashboardSearchButton = {
+    build: {
+        name: "UDashboardSearchButton"
+    },
     component: DashboardSearchButton,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-search-button"

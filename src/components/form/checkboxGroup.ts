@@ -15,6 +15,9 @@ const CheckboxGroupItem = LogicType.union([
 ]);
 
 const checkboxGroup = {
+    build: {
+        name: "UCheckboxGroup"
+    },
     component: CheckboxGroup,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/checbox-group"

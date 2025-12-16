@@ -7,6 +7,9 @@ import { color, size, variant } from "@/lib/variants.ts";
 const InputTagItem = LogicType.union([LogicType.string(), LogicType.number()]);
 
 const inputTags = {
+    build: {
+        name: "UInputTags"
+    },
     component: InputTags,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/input-tags"

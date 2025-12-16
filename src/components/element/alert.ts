@@ -6,6 +6,9 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { color, orientation, variant } from "@/lib/variants.ts";
 
 const alert = {
+    build: {
+        name: "UAlert"
+    },
     component: Alert,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/alert"

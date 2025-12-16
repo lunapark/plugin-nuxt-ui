@@ -21,6 +21,9 @@ const InputMenuItem = LogicType.union([
 ]);
 
 const inputMenu = {
+    build: {
+        name: "UInputMenu"
+    },
     component: InputMenu,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/input-menu"

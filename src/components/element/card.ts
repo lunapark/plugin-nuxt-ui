@@ -4,6 +4,9 @@ import Card from "@nuxt/ui/components/Card.vue";
 import { variant } from "@/lib/variants.ts";
 
 const card = {
+    build: {
+        name: "UCard"
+    },
     component: Card,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/card"
