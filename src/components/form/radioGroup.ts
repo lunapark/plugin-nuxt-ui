@@ -40,7 +40,7 @@ const radioGroup = {
         orientation,
         required: LogicType.boolean(),
         size,
-        variant
+        variant: LogicType.string({ default: "list", enum: ["list", "card", "table"] })
     },
     slots: {
         description: LogicType.object({ item: RadioGroupItem }),
