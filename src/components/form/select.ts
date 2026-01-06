@@ -42,6 +42,7 @@ const select = {
         defaultOpen: LogicType.boolean(),
         disabled: LogicType.boolean(),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
+        items: LogicType.array(SelectItem),
         multiple: LogicType.boolean(),
         name: LogicType.string(),
         placeholder: LogicType.string({ description: "The placeholder text when the select is empty." }),
