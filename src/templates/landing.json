@@ -66,12 +66,7 @@
                         "element": "plugin/nuxt-ui",
                         "events": [],
                         "properties": {
-                            "icon": {
-                                "type": "constant",
-                                "value": "lucide:roller-coaster",
-                                "token": "",
-                                "access": []
-                            }
+                            "icon": "lucide:roller-coaster"
                         },
                         "style": {},
                         "tag": "template"
@@ -158,35 +153,30 @@
                         "events": [],
                         "model": [],
                         "properties": {
-                            "items": {
-                                "type": "constant",
-                                "value": [
-                                    {
-                                        "label": "Home",
-                                        "to": "/",
-                                        "icon": "fa7-solid:house"
-                                    },
-                                    {
-                                        "label": "Pricing",
-                                        "to": "/pricing",
-                                        "icon": "fa7-solid:money-bill"
-                                    },
-                                    {
-                                        "label": "Forum",
-                                        "to": "https://forum.luna-park.app/",
-                                        "target": "_blank",
-                                        "icon": "fa7-solid:users"
-                                    },
-                                    {
-                                        "label": "GitHub",
-                                        "to": "https://github.com/lunapark",
-                                        "target": "_blank",
-                                        "icon": "fa7-brands:github"
-                                    }
-                                ],
-                                "token": "",
-                                "access": []
-                            }
+                            "items": [
+                                {
+                                    "label": "Home",
+                                    "to": "/",
+                                    "icon": "fa7-solid:house"
+                                },
+                                {
+                                    "label": "Pricing",
+                                    "to": "/pricing",
+                                    "icon": "fa7-solid:money-bill"
+                                },
+                                {
+                                    "label": "Forum",
+                                    "to": "https://forum.luna-park.app/",
+                                    "target": "_blank",
+                                    "icon": "fa7-solid:users"
+                                },
+                                {
+                                    "label": "GitHub",
+                                    "to": "https://github.com/lunapark",
+                                    "target": "_blank",
+                                    "icon": "fa7-brands:github"
+                                }
+                            ]
                         },
                         "style": {},
                         "tag": "template"
@@ -230,12 +220,7 @@
                 "element": "plugin/nuxt-ui",
                 "events": [],
                 "properties": {
-                    "title": {
-                        "type": "constant",
-                        "value": "Roller Coaster",
-                        "token": "",
-                        "access": []
-                    }
+                    "title": "Roller Coaster"
                 },
                 "style": {},
                 "tag": "template"
@@ -298,21 +283,16 @@
                         "events": [],
                         "model": [],
                         "properties": {
-                            "items": {
-                                "type": "constant",
-                                "value": [
-                                    {
-                                        "label": "Privacy Policy",
-                                        "to": "/privacy"
-                                    },
-                                    {
-                                        "label": "Terms of Use",
-                                        "to": "/terms"
-                                    }
-                                ],
-                                "token": "",
-                                "access": []
-                            }
+                            "items": [
+                                {
+                                    "label": "Privacy Policy",
+                                    "to": "/privacy"
+                                },
+                                {
+                                    "label": "Terms of Use",
+                                    "to": "/terms"
+                                }
+                            ]
                         },
                         "style": {},
                         "tag": "template"
@@ -347,13 +327,13 @@
                                                 "font": {
                                                     "color": {
                                                         "type": "token",
-                                                        "value": "",
-                                                        "token": "plugin/nuxt-ui/ui-text-muted"
+                                                        "token": "plugin/nuxt-ui/ui-text-muted",
+                                                        "_dynamic": true
                                                     },
                                                     "size": {
                                                         "type": "token",
-                                                        "value": "0px",
-                                                        "token": "plugin/nuxt-ui/text-sm"
+                                                        "token": "plugin/nuxt-ui/text-sm",
+                                                        "_dynamic": true
                                                     }
                                                 }
                                             }
@@ -386,36 +366,11 @@
                                     "element": "plugin/nuxt-ui",
                                     "events": [],
                                     "properties": {
-                                        "color": {
-                                            "type": "constant",
-                                            "value": "neutral",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "variant": {
-                                            "type": "constant",
-                                            "value": "ghost",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "to": {
-                                            "type": "constant",
-                                            "value": "https://discord.gg/2eAk2AHvdw",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "target": {
-                                            "type": "constant",
-                                            "value": "_blank",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "icon": {
-                                            "type": "constant",
-                                            "value": "fa7-brands:discord",
-                                            "token": "",
-                                            "access": []
-                                        }
+                                        "color": "neutral",
+                                        "variant": "ghost",
+                                        "to": "https://discord.gg/2eAk2AHvdw",
+                                        "target": "_blank",
+                                        "icon": "fa7-brands:discord"
                                     },
                                     "style": {},
                                     "tag": "template"
@@ -433,36 +388,11 @@
                                     "element": "plugin/nuxt-ui",
                                     "events": [],
                                     "properties": {
-                                        "color": {
-                                            "type": "constant",
-                                            "value": "neutral",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "variant": {
-                                            "type": "constant",
-                                            "value": "ghost",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "to": {
-                                            "type": "constant",
-                                            "value": "https://github.com/lunapark",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "target": {
-                                            "type": "constant",
-                                            "value": "_blank",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "icon": {
-                                            "type": "constant",
-                                            "value": "fa7-brands:github",
-                                            "token": "",
-                                            "access": []
-                                        }
+                                        "color": "neutral",
+                                        "variant": "ghost",
+                                        "to": "https://github.com/lunapark",
+                                        "target": "_blank",
+                                        "icon": "fa7-brands:github"
                                     },
                                     "style": {},
                                     "tag": "template"
@@ -480,36 +410,11 @@
                                     "element": "plugin/nuxt-ui",
                                     "events": [],
                                     "properties": {
-                                        "color": {
-                                            "type": "constant",
-                                            "value": "neutral",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "variant": {
-                                            "type": "constant",
-                                            "value": "ghost",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "to": {
-                                            "type": "constant",
-                                            "value": "https://bsky.app/profile/luna-park.app",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "target": {
-                                            "type": "constant",
-                                            "value": "_blank",
-                                            "token": "",
-                                            "access": []
-                                        },
-                                        "icon": {
-                                            "type": "constant",
-                                            "value": "fa7-brands:bluesky",
-                                            "token": "",
-                                            "access": []
-                                        }
+                                        "color": "neutral",
+                                        "variant": "ghost",
+                                        "to": "https://bsky.app/profile/luna-park.app",
+                                        "target": "_blank",
+                                        "icon": "fa7-brands:bluesky"
                                     },
                                     "style": {},
                                     "tag": "template"
@@ -673,35 +578,20 @@
                         "element": "plugin/nuxt-ui",
                         "events": [],
                         "properties": {
-                            "title": {
-                                "type": "constant",
-                                "value": "Nuxt Starter Template",
-                                "token": "",
-                                "access": []
-                            },
-                            "description": {
-                                "type": "constant",
-                                "value": "Use this starter template to quickly start building your application.",
-                                "token": "",
-                                "access": []
-                            },
-                            "links": {
-                                "type": "constant",
-                                "value": [
-                                    {
-                                        "label": "Start now",
-                                        "icon": "fa7-solid:paper-plane"
-                                    },
-                                    {
-                                        "label": "Documentation",
-                                        "icon": "fa7-solid:book",
-                                        "color": "neutral",
-                                        "variant": "subtle"
-                                    }
-                                ],
-                                "token": "",
-                                "access": []
-                            }
+                            "title": "Nuxt Starter Template",
+                            "description": "Use this starter template to quickly start building your application.",
+                            "links": [
+                                {
+                                    "label": "Start now",
+                                    "icon": "fa7-solid:paper-plane"
+                                },
+                                {
+                                    "label": "Documentation",
+                                    "icon": "fa7-solid:book",
+                                    "color": "neutral",
+                                    "variant": "subtle"
+                                }
+                            ]
                         },
                         "style": {},
                         "tag": "template"
@@ -719,55 +609,40 @@
                         "element": "plugin/nuxt-ui",
                         "events": [],
                         "properties": {
-                            "title": {
-                                "type": "constant",
-                                "value": "Everything you need to build modern apps",
-                                "token": "",
-                                "access": []
-                            },
-                            "description": {
-                                "type": "constant",
-                                "value": "Start with a solid foundation. This template includes all the essentials for building production-ready applications with Nuxt UI's powerful component system.",
-                                "token": "",
-                                "access": []
-                            },
-                            "features": {
-                                "type": "constant",
-                                "value": [
-                                    {
-                                        "title": "Production-ready from day one",
-                                        "icon": "fa7-solid:rocket",
-                                        "description": "Preconfigured with Luna Park to be ready to use. Focus on building features, not setting up tooling."
-                                    },
-                                    {
-                                        "title": "Beautiful by default",
-                                        "description": "Powered by Nuxt UI with automatic dark mode, consistent spacing, and polished components that look great out of the box.",
-                                        "icon": "fa7-solid:palette"
-                                    },
-                                    {
-                                        "title": "Lightning fast",
-                                        "description": "Optimized with Vite's blazing fast HMR, automatic code splitting, and tree-shaking. Your users will love the speed.",
-                                        "icon": "fa7-solid:zap"
-                                    },
-                                    {
-                                        "title": "100+ components included",
-                                        "description": "Access Nuxt UI's comprehensive component library. From forms to navigation, everything is accessible, responsive, and customizable.",
-                                        "icon": "fa7-solid:cubes"
-                                    },
-                                    {
-                                        "title": "Designed for No-Code Creators",
-                                        "description": "Update and customize  the style of your app in seconds, so you can focus on shipping more feature instead of building boilerplate.",
-                                        "icon": "fa7-solid:hammer"
-                                    },
-                                    {
-                                        "title": "Built for scale",
-                                        "description": "Future-proof with modern architecture, proper error handling, and security best practices built-in.",
-                                        "icon": "fa7-solid:shield-alt"
-                                    }
-                                ],
-                                "token": "",
-                                "access": []
-                            }
+                            "title": "Everything you need to build modern apps",
+                            "description": "Start with a solid foundation. This template includes all the essentials for building production-ready applications with Nuxt UI's powerful component system.",
+                            "features": [
+                                {
+                                    "title": "Production-ready from day one",
+                                    "icon": "fa7-solid:rocket",
+                                    "description": "Preconfigured with Luna Park to be ready to use. Focus on building features, not setting up tooling."
+                                },
+                                {
+                                    "title": "Beautiful by default",
+                                    "description": "Powered by Nuxt UI with automatic dark mode, consistent spacing, and polished components that look great out of the box.",
+                                    "icon": "fa7-solid:palette"
+                                },
+                                {
+                                    "title": "Lightning fast",
+                                    "description": "Optimized with Vite's blazing fast HMR, automatic code splitting, and tree-shaking. Your users will love the speed.",
+                                    "icon": "fa7-solid:zap"
+                                },
+                                {
+                                    "title": "100+ components included",
+                                    "description": "Access Nuxt UI's comprehensive component library. From forms to navigation, everything is accessible, responsive, and customizable.",
+                                    "icon": "fa7-solid:cubes"
+                                },
+                                {
+                                    "title": "Designed for No-Code Creators",
+                                    "description": "Update and customize  the style of your app in seconds, so you can focus on shipping more feature instead of building boilerplate.",
+                                    "icon": "fa7-solid:hammer"
+                                },
+                                {
+                                    "title": "Built for scale",
+                                    "description": "Future-proof with modern architecture, proper error handling, and security best practices built-in.",
+                                    "icon": "fa7-solid:shield-alt"
+                                }
+                            ]
                         },
                         "style": {},
                         "tag": "template"
@@ -789,42 +664,22 @@
                                 "element": "plugin/nuxt-ui",
                                 "events": [],
                                 "properties": {
-                                    "title": {
-                                        "type": "constant",
-                                        "value": "Ready to build your next app?",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "variant": {
-                                        "type": "constant",
-                                        "value": "subtle",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "description": {
-                                        "type": "constant",
-                                        "value": "Copy this ready-to-use template and start shipping today.",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "links": {
-                                        "type": "constant",
-                                        "value": [
-                                            {
-                                                "label": "Start building",
-                                                "color": "neutral",
-                                                "trailingIcon": "fa7-solid:arrow-right"
-                                            },
-                                            {
-                                                "label": "View demo",
-                                                "color": "neutral",
-                                                "variant": "outline",
-                                                "icon": "fa7-solid:eye"
-                                            }
-                                        ],
-                                        "token": "",
-                                        "access": []
-                                    }
+                                    "title": "Ready to build your next app?",
+                                    "variant": "subtle",
+                                    "description": "Copy this ready-to-use template and start shipping today.",
+                                    "links": [
+                                        {
+                                            "label": "Start building",
+                                            "color": "neutral",
+                                            "trailingIcon": "fa7-solid:arrow-right"
+                                        },
+                                        {
+                                            "label": "View demo",
+                                            "color": "neutral",
+                                            "variant": "outline",
+                                            "icon": "fa7-solid:eye"
+                                        }
+                                    ]
                                 },
                                 "style": {},
                                 "tag": "template"

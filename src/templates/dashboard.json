@@ -131,42 +131,12 @@
                                 "element": "plugin/nuxt-ui",
                                 "events": [],
                                 "properties": {
-                                    "trailingIcon": {
-                                        "type": "constant",
-                                        "value": "lucide:chevrons-up-down",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "color": {
-                                        "type": "constant",
-                                        "value": "neutral",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "variant": {
-                                        "type": "constant",
-                                        "value": "ghost",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "block": {
-                                        "type": "constant",
-                                        "value": true,
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "icon": {
-                                        "type": "constant",
-                                        "value": "lucide:roller-coaster",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "label": {
-                                        "type": "constant",
-                                        "value": "Roller Coaster",
-                                        "token": "",
-                                        "access": []
-                                    }
+                                    "trailingIcon": "lucide:chevrons-up-down",
+                                    "color": "neutral",
+                                    "variant": "ghost",
+                                    "block": true,
+                                    "icon": "lucide:roller-coaster",
+                                    "label": "Roller Coaster"
                                 },
                                 "style": {},
                                 "tag": "template"
@@ -181,37 +151,32 @@
                         "element": "plugin/nuxt-ui",
                         "events": [],
                         "properties": {
-                            "items": {
-                                "type": "constant",
-                                "value": [
-                                    [
-                                        {
-                                            "label": "Roller Coaster",
-                                            "icon": "lucide:roller-coaster"
-                                        },
-                                        {
-                                            "label": "Ferris Wheel",
-                                            "icon": "lucide:ferris-wheel"
-                                        },
-                                        {
-                                            "label": "Drop Tower",
-                                            "icon": "lucide:tower-control"
-                                        }
-                                    ],
-                                    [
-                                        {
-                                            "label": "Create team",
-                                            "icon": "lucide:circle-plus"
-                                        },
-                                        {
-                                            "label": "Manage teams",
-                                            "icon": "lucide:settings"
-                                        }
-                                    ]
+                            "items": [
+                                [
+                                    {
+                                        "label": "Roller Coaster",
+                                        "icon": "lucide:roller-coaster"
+                                    },
+                                    {
+                                        "label": "Ferris Wheel",
+                                        "icon": "lucide:ferris-wheel"
+                                    },
+                                    {
+                                        "label": "Drop Tower",
+                                        "icon": "lucide:tower-control"
+                                    }
                                 ],
-                                "token": "",
-                                "access": []
-                            }
+                                [
+                                    {
+                                        "label": "Create team",
+                                        "icon": "lucide:circle-plus"
+                                    },
+                                    {
+                                        "label": "Manage teams",
+                                        "icon": "lucide:settings"
+                                    }
+                                ]
+                            ]
                         },
                         "style": {},
                         "tag": "template"
@@ -270,49 +235,39 @@
                         "events": [],
                         "model": [],
                         "properties": {
-                            "items": {
-                                "type": "constant",
-                                "value": [
-                                    {
-                                        "label": "Home",
-                                        "to": "/",
-                                        "icon": "lucide:house"
-                                    },
-                                    {
-                                        "label": "Inbox",
-                                        "icon": "lucide:inbox",
-                                        "badge": 12
-                                    },
-                                    {
-                                        "label": "Customers",
-                                        "icon": "lucide:users"
-                                    },
-                                    {
-                                        "label": "Settings",
-                                        "icon": "lucide:settings",
-                                        "children": [
-                                            {
-                                                "label": "General"
-                                            },
-                                            {
-                                                "label": "Notifications"
-                                            },
-                                            {
-                                                "label": "Security"
-                                            }
-                                        ],
-                                        "defaultOpen": true
-                                    }
-                                ],
-                                "token": "",
-                                "access": []
-                            },
-                            "orientation": {
-                                "type": "constant",
-                                "value": "vertical",
-                                "token": "",
-                                "access": []
-                            }
+                            "items": [
+                                {
+                                    "label": "Home",
+                                    "to": "/",
+                                    "icon": "lucide:house"
+                                },
+                                {
+                                    "label": "Inbox",
+                                    "icon": "lucide:inbox",
+                                    "badge": 12
+                                },
+                                {
+                                    "label": "Customers",
+                                    "icon": "lucide:users"
+                                },
+                                {
+                                    "label": "Settings",
+                                    "icon": "lucide:settings",
+                                    "children": [
+                                        {
+                                            "label": "General"
+                                        },
+                                        {
+                                            "label": "Notifications"
+                                        },
+                                        {
+                                            "label": "Security"
+                                        }
+                                    ],
+                                    "defaultOpen": true
+                                }
+                            ],
+                            "orientation": "vertical"
                         },
                         "style": {},
                         "tag": "template"
@@ -432,18 +387,8 @@
                         "element": "plugin/nuxt-ui",
                         "events": [],
                         "properties": {
-                            "collapsible": {
-                                "type": "constant",
-                                "value": true,
-                                "token": "",
-                                "access": []
-                            },
-                            "resizable": {
-                                "type": "constant",
-                                "value": true,
-                                "token": "",
-                                "access": []
-                            }
+                            "collapsible": true,
+                            "resizable": true
                         },
                         "style": {},
                         "tag": "template"
@@ -574,30 +519,10 @@
                                                                                         "element": "plugin/nuxt-ui",
                                                                                         "events": [],
                                                                                         "properties": {
-                                                                                            "square": {
-                                                                                                "type": "constant",
-                                                                                                "value": true,
-                                                                                                "token": "",
-                                                                                                "access": []
-                                                                                            },
-                                                                                            "color": {
-                                                                                                "type": "constant",
-                                                                                                "value": "neutral",
-                                                                                                "token": "",
-                                                                                                "access": []
-                                                                                            },
-                                                                                            "variant": {
-                                                                                                "type": "constant",
-                                                                                                "value": "ghost",
-                                                                                                "token": "",
-                                                                                                "access": []
-                                                                                            },
-                                                                                            "icon": {
-                                                                                                "type": "constant",
-                                                                                                "value": "lucide:bell",
-                                                                                                "token": "",
-                                                                                                "access": []
-                                                                                            }
+                                                                                            "square": true,
+                                                                                            "color": "neutral",
+                                                                                            "variant": "ghost",
+                                                                                            "icon": "lucide:bell"
                                                                                         },
                                                                                         "style": {},
                                                                                         "tag": "template"
@@ -612,18 +537,8 @@
                                                                                 "element": "plugin/nuxt-ui",
                                                                                 "events": [],
                                                                                 "properties": {
-                                                                                    "inset": {
-                                                                                        "type": "constant",
-                                                                                        "value": true,
-                                                                                        "token": "",
-                                                                                        "access": []
-                                                                                    },
-                                                                                    "color": {
-                                                                                        "type": "constant",
-                                                                                        "value": "error",
-                                                                                        "token": "",
-                                                                                        "access": []
-                                                                                    }
+                                                                                    "inset": true,
+                                                                                    "color": "error"
                                                                                 },
                                                                                 "style": {},
                                                                                 "tag": "template"
@@ -638,12 +553,7 @@
                                                                         "element": "plugin/nuxt-ui",
                                                                         "events": [],
                                                                         "properties": {
-                                                                            "text": {
-                                                                                "type": "constant",
-                                                                                "value": "Notifications",
-                                                                                "token": "",
-                                                                                "access": []
-                                                                            }
+                                                                            "text": "Notifications"
                                                                         },
                                                                         "style": {},
                                                                         "tag": "template"
@@ -661,12 +571,7 @@
                                                                         "element": "plugin/nuxt-ui",
                                                                         "events": [],
                                                                         "properties": {
-                                                                            "icon": {
-                                                                                "type": "constant",
-                                                                                "value": "lucide:plus",
-                                                                                "token": "",
-                                                                                "access": []
-                                                                            }
+                                                                            "icon": "lucide:plus"
                                                                         },
                                                                         "style": {},
                                                                         "tag": "template"
@@ -680,20 +585,12 @@
                                                                     "base": {
                                                                         "default": {
                                                                             "display": {
-                                                                                "display": {
-                                                                                    "type": "constant",
-                                                                                    "value": "flex",
-                                                                                    "token": ""
-                                                                                },
-                                                                                "direction": {
-                                                                                    "type": "constant",
-                                                                                    "value": "row",
-                                                                                    "token": ""
-                                                                                },
+                                                                                "display": "flex",
+                                                                                "direction": "row",
                                                                                 "gap": {
                                                                                     "type": "token",
-                                                                                    "value": "",
-                                                                                    "token": "fw/length/m"
+                                                                                    "token": "fw/length/m",
+                                                                                    "_dynamic": true
                                                                                 }
                                                                             }
                                                                         }
@@ -715,12 +612,7 @@
                                             "element": "plugin/nuxt-ui",
                                             "events": [],
                                             "properties": {
-                                                "title": {
-                                                    "type": "constant",
-                                                    "value": "Home",
-                                                    "token": "",
-                                                    "access": []
-                                                }
+                                                "title": "Home"
                                             },
                                             "style": {},
                                             "tag": "template"
@@ -751,12 +643,7 @@
                                                                 "events": [],
                                                                 "model": [],
                                                                 "properties": {
-                                                                    "icon": {
-                                                                        "type": "constant",
-                                                                        "value": "lucide:calendar",
-                                                                        "token": "",
-                                                                        "access": []
-                                                                    }
+                                                                    "icon": "lucide:calendar"
                                                                 },
                                                                 "style": {},
                                                                 "tag": "template"
@@ -912,14 +799,10 @@
                                                             "font": {
                                                                 "size": {
                                                                     "type": "token",
-                                                                    "value": "0px",
-                                                                    "token": "plugin/nuxt-ui/text-3xl"
+                                                                    "token": "plugin/nuxt-ui/text-3xl",
+                                                                    "_dynamic": true
                                                                 },
-                                                                "weight": {
-                                                                    "type": "constant",
-                                                                    "value": "bold",
-                                                                    "token": ""
-                                                                }
+                                                                "weight": "bold"
                                                             }
                                                         }
                                                     }
@@ -958,18 +841,8 @@
                                                 "element": "plugin/nuxt-ui",
                                                 "events": [],
                                                 "properties": {
-                                                    "color": {
-                                                        "type": "constant",
-                                                        "value": "success",
-                                                        "token": "",
-                                                        "access": []
-                                                    },
-                                                    "variant": {
-                                                        "type": "constant",
-                                                        "value": "subtle",
-                                                        "token": "",
-                                                        "access": []
-                                                    }
+                                                    "color": "success",
+                                                    "variant": "subtle"
                                                 },
                                                 "style": {},
                                                 "tag": "template"
@@ -983,26 +856,14 @@
                                             "base": {
                                                 "default": {
                                                     "display": {
-                                                        "display": {
-                                                            "type": "constant",
-                                                            "value": "flex",
-                                                            "token": ""
-                                                        },
-                                                        "direction": {
-                                                            "type": "constant",
-                                                            "value": "row",
-                                                            "token": ""
-                                                        },
+                                                        "display": "flex",
+                                                        "direction": "row",
                                                         "gap": {
                                                             "type": "token",
-                                                            "value": "",
-                                                            "token": "fw/length/xs"
+                                                            "token": "fw/length/xs",
+                                                            "_dynamic": true
                                                         },
-                                                        "alignItems": {
-                                                            "type": "constant",
-                                                            "value": "flex-end",
-                                                            "token": ""
-                                                        }
+                                                        "alignItems": "flex-end"
                                                     }
                                                 }
                                             }
@@ -1019,24 +880,9 @@
                                 "element": "plugin/nuxt-ui",
                                 "events": [],
                                 "properties": {
-                                    "variant": {
-                                        "type": "constant",
-                                        "value": "subtle",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "title": {
-                                        "type": "constant",
-                                        "value": "Customers",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "icon": {
-                                        "type": "constant",
-                                        "value": "lucide:users",
-                                        "token": "",
-                                        "access": []
-                                    }
+                                    "variant": "subtle",
+                                    "title": "Customers",
+                                    "icon": "lucide:users"
                                 },
                                 "style": {},
                                 "tag": "template"
@@ -1070,14 +916,10 @@
                                                             "font": {
                                                                 "size": {
                                                                     "type": "token",
-                                                                    "value": "0px",
-                                                                    "token": "plugin/nuxt-ui/text-3xl"
+                                                                    "token": "plugin/nuxt-ui/text-3xl",
+                                                                    "_dynamic": true
                                                                 },
-                                                                "weight": {
-                                                                    "type": "constant",
-                                                                    "value": "bold",
-                                                                    "token": ""
-                                                                }
+                                                                "weight": "bold"
                                                             }
                                                         }
                                                     }
@@ -1116,18 +958,8 @@
                                                 "element": "plugin/nuxt-ui",
                                                 "events": [],
                                                 "properties": {
-                                                    "color": {
-                                                        "type": "constant",
-                                                        "value": "error",
-                                                        "token": "",
-                                                        "access": []
-                                                    },
-                                                    "variant": {
-                                                        "type": "constant",
-                                                        "value": "subtle",
-                                                        "token": "",
-                                                        "access": []
-                                                    }
+                                                    "color": "error",
+                                                    "variant": "subtle"
                                                 },
                                                 "style": {},
                                                 "tag": "template"
@@ -1141,26 +973,14 @@
                                             "base": {
                                                 "default": {
                                                     "display": {
-                                                        "display": {
-                                                            "type": "constant",
-                                                            "value": "flex",
-                                                            "token": ""
-                                                        },
-                                                        "direction": {
-                                                            "type": "constant",
-                                                            "value": "row",
-                                                            "token": ""
-                                                        },
+                                                        "display": "flex",
+                                                        "direction": "row",
                                                         "gap": {
                                                             "type": "token",
-                                                            "value": "",
-                                                            "token": "fw/length/xs"
+                                                            "token": "fw/length/xs",
+                                                            "_dynamic": true
                                                         },
-                                                        "alignItems": {
-                                                            "type": "constant",
-                                                            "value": "flex-end",
-                                                            "token": ""
-                                                        }
+                                                        "alignItems": "flex-end"
                                                     }
                                                 }
                                             }
@@ -1177,24 +997,9 @@
                                 "element": "plugin/nuxt-ui",
                                 "events": [],
                                 "properties": {
-                                    "variant": {
-                                        "type": "constant",
-                                        "value": "subtle",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "title": {
-                                        "type": "constant",
-                                        "value": "Conversions",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "icon": {
-                                        "type": "constant",
-                                        "value": "lucide:chart-pie",
-                                        "token": "",
-                                        "access": []
-                                    }
+                                    "variant": "subtle",
+                                    "title": "Conversions",
+                                    "icon": "lucide:chart-pie"
                                 },
                                 "style": {},
                                 "tag": "template"
@@ -1228,14 +1033,10 @@
                                                             "font": {
                                                                 "size": {
                                                                     "type": "token",
-                                                                    "value": "0px",
-                                                                    "token": "plugin/nuxt-ui/text-3xl"
+                                                                    "token": "plugin/nuxt-ui/text-3xl",
+                                                                    "_dynamic": true
                                                                 },
-                                                                "weight": {
-                                                                    "type": "constant",
-                                                                    "value": "bold",
-                                                                    "token": ""
-                                                                }
+                                                                "weight": "bold"
                                                             }
                                                         }
                                                     }
@@ -1274,18 +1075,8 @@
                                                 "element": "plugin/nuxt-ui",
                                                 "events": [],
                                                 "properties": {
-                                                    "color": {
-                                                        "type": "constant",
-                                                        "value": "success",
-                                                        "token": "",
-                                                        "access": []
-                                                    },
-                                                    "variant": {
-                                                        "type": "constant",
-                                                        "value": "subtle",
-                                                        "token": "",
-                                                        "access": []
-                                                    }
+                                                    "color": "success",
+                                                    "variant": "subtle"
                                                 },
                                                 "style": {},
                                                 "tag": "template"
@@ -1299,26 +1090,14 @@
                                             "base": {
                                                 "default": {
                                                     "display": {
-                                                        "display": {
-                                                            "type": "constant",
-                                                            "value": "flex",
-                                                            "token": ""
-                                                        },
-                                                        "direction": {
-                                                            "type": "constant",
-                                                            "value": "row",
-                                                            "token": ""
-                                                        },
+                                                        "display": "flex",
+                                                        "direction": "row",
                                                         "gap": {
                                                             "type": "token",
-                                                            "value": "",
-                                                            "token": "fw/length/xs"
+                                                            "token": "fw/length/xs",
+                                                            "_dynamic": true
                                                         },
-                                                        "alignItems": {
-                                                            "type": "constant",
-                                                            "value": "flex-end",
-                                                            "token": ""
-                                                        }
+                                                        "alignItems": "flex-end"
                                                     }
                                                 }
                                             }
@@ -1335,24 +1114,9 @@
                                 "element": "plugin/nuxt-ui",
                                 "events": [],
                                 "properties": {
-                                    "variant": {
-                                        "type": "constant",
-                                        "value": "subtle",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "title": {
-                                        "type": "constant",
-                                        "value": "Revenue",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "icon": {
-                                        "type": "constant",
-                                        "value": "lucide:coins",
-                                        "token": "",
-                                        "access": []
-                                    }
+                                    "variant": "subtle",
+                                    "title": "Revenue",
+                                    "icon": "lucide:coins"
                                 },
                                 "style": {},
                                 "tag": "template"
@@ -1386,14 +1150,10 @@
                                                             "font": {
                                                                 "size": {
                                                                     "type": "token",
-                                                                    "value": "0px",
-                                                                    "token": "plugin/nuxt-ui/text-3xl"
+                                                                    "token": "plugin/nuxt-ui/text-3xl",
+                                                                    "_dynamic": true
                                                                 },
-                                                                "weight": {
-                                                                    "type": "constant",
-                                                                    "value": "bold",
-                                                                    "token": ""
-                                                                }
+                                                                "weight": "bold"
                                                             }
                                                         }
                                                     }
@@ -1432,18 +1192,8 @@
                                                 "element": "plugin/nuxt-ui",
                                                 "events": [],
                                                 "properties": {
-                                                    "color": {
-                                                        "type": "constant",
-                                                        "value": "success",
-                                                        "token": "",
-                                                        "access": []
-                                                    },
-                                                    "variant": {
-                                                        "type": "constant",
-                                                        "value": "subtle",
-                                                        "token": "",
-                                                        "access": []
-                                                    }
+                                                    "color": "success",
+                                                    "variant": "subtle"
                                                 },
                                                 "style": {},
                                                 "tag": "template"
@@ -1457,26 +1207,14 @@
                                             "base": {
                                                 "default": {
                                                     "display": {
-                                                        "display": {
-                                                            "type": "constant",
-                                                            "value": "flex",
-                                                            "token": ""
-                                                        },
-                                                        "direction": {
-                                                            "type": "constant",
-                                                            "value": "row",
-                                                            "token": ""
-                                                        },
+                                                        "display": "flex",
+                                                        "direction": "row",
                                                         "gap": {
                                                             "type": "token",
-                                                            "value": "",
-                                                            "token": "fw/length/xs"
+                                                            "token": "fw/length/xs",
+                                                            "_dynamic": true
                                                         },
-                                                        "alignItems": {
-                                                            "type": "constant",
-                                                            "value": "flex-end",
-                                                            "token": ""
-                                                        }
+                                                        "alignItems": "flex-end"
                                                     }
                                                 }
                                             }
@@ -1493,24 +1231,9 @@
                                 "element": "plugin/nuxt-ui",
                                 "events": [],
                                 "properties": {
-                                    "variant": {
-                                        "type": "constant",
-                                        "value": "subtle",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "title": {
-                                        "type": "constant",
-                                        "value": "Orders",
-                                        "token": "",
-                                        "access": []
-                                    },
-                                    "icon": {
-                                        "type": "constant",
-                                        "value": "lucide:shopping-cart",
-                                        "token": "",
-                                        "access": []
-                                    }
+                                    "variant": "subtle",
+                                    "title": "Orders",
+                                    "icon": "lucide:shopping-cart"
                                 },
                                 "style": {},
                                 "tag": "template"
@@ -1529,16 +1252,8 @@
                             "base": {
                                 "default": {
                                     "display": {
-                                        "display": {
-                                            "type": "constant",
-                                            "value": "grid",
-                                            "token": ""
-                                        },
-                                        "gridColumns": {
-                                            "type": "constant",
-                                            "value": "4fr",
-                                            "token": ""
-                                        }
+                                        "display": "grid",
+                                        "gridColumns": "4fr"
                                     }
                                 }
                             }
@@ -1612,14 +1327,13 @@
                                             "properties": {
                                                 "ee61ff72-8ab4-4388-a292-4e8f149cdc5e": {
                                                     "type": "dynamic",
-                                                    "value": "",
-                                                    "token": "",
                                                     "access": [
                                                         "26c003b3-f223-4c82-95c0-3411f5974578",
                                                         "row",
                                                         "original",
                                                         "ef873b54-ef50-41c5-b27a-a373de8c286d"
-                                                    ]
+                                                    ],
+                                                    "_dynamic": true
                                                 }
                                             },
                                             "style": {},
@@ -1641,63 +1355,32 @@
                         "properties": {
                             "data": {
                                 "type": "dynamic",
-                                "value": [
-                                    {
-                                        "id": 2084,
-                                        "date": "Dec 8, 16:23",
-                                        "status": "paid",
-                                        "mail": "sample@example.com"
-                                    },
-                                    {
-                                        "id": 2083,
-                                        "date": "Dec 8, 09:46",
-                                        "status": "refunded",
-                                        "mail": "sample@example.com"
-                                    },
-                                    {
-                                        "id": 2082,
-                                        "date": "Dec 8, 06:46",
-                                        "status": "paid",
-                                        "mail": "sample@example.com"
-                                    },
-                                    {
-                                        "id": 2081,
-                                        "date": "Dec 7, 23:46",
-                                        "status": "failed",
-                                        "mail": "sample@example.com"
-                                    }
-                                ],
-                                "token": "",
                                 "access": [
                                     "f0e0328f-2310-4cea-8e99-c989587f1378"
-                                ]
-                            },
-                            "columns": {
-                                "type": "constant",
-                                "value": [
-                                    {
-                                        "id": "id",
-                                        "header": "ID",
-                                        "accessorKey": "id"
-                                    },
-                                    {
-                                        "id": "date",
-                                        "header": "Date",
-                                        "accessorKey": "date"
-                                    },
-                                    {
-                                        "id": "status",
-                                        "header": "Status"
-                                    },
-                                    {
-                                        "id": "mail",
-                                        "header": "Mail",
-                                        "accessorKey": "mail"
-                                    }
                                 ],
-                                "token": "",
-                                "access": []
-                            }
+                                "_dynamic": true
+                            },
+                            "columns": [
+                                {
+                                    "id": "id",
+                                    "header": "ID",
+                                    "accessorKey": "id"
+                                },
+                                {
+                                    "id": "date",
+                                    "header": "Date",
+                                    "accessorKey": "date"
+                                },
+                                {
+                                    "id": "status",
+                                    "header": "Status"
+                                },
+                                {
+                                    "id": "mail",
+                                    "header": "Mail",
+                                    "accessorKey": "mail"
+                                }
+                            ]
                         },
                         "style": {},
                         "tag": "template"
@@ -1808,11 +1491,10 @@
                                 "content": {
                                     "var": {
                                         "type": "dynamic",
-                                        "value": "",
-                                        "token": "",
                                         "access": [
                                             "ee61ff72-8ab4-4388-a292-4e8f149cdc5e"
-                                        ]
+                                        ],
+                                        "_dynamic": true
                                     }
                                 },
                                 "element": "variable",
@@ -1833,18 +1515,12 @@
                         "properties": {
                             "color": {
                                 "type": "dynamic",
-                                "value": "primary",
-                                "token": "",
                                 "access": [
                                     "b9ea03f6-3b13-42ad-a8f6-117832020ceb"
-                                ]
+                                ],
+                                "_dynamic": true
                             },
-                            "variant": {
-                                "type": "constant",
-                                "value": "subtle",
-                                "token": "",
-                                "access": []
-                            }
+                            "variant": "subtle"
                         },
                         "style": {},
                         "tag": "template"
