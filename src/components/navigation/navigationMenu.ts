@@ -1,11 +1,13 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
-import NavigationMenu, { type NavigationMenuChildItem } from "@nuxt/ui/components/NavigationMenu.vue";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
+import NavigationMenu from "@nuxt/ui/components/NavigationMenu.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { BadgeProps } from "@/components/element/badge.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
 import { PopoverProps } from "@/components/overlay/popover.ts";
 import { TooltipProps } from "@/components/overlay/tooltip.ts";
+import { MaybeArray } from "@/lib/value.ts";
 import { color, orientation } from "@/lib/variants.ts";
 
 const NavigationMenuItem = LogicUtil.partial(LogicType.object({
@@ -59,7 +61,7 @@ const navigationMenu = {
         externalIcon: LogicType.union([LogicType.string(), LogicType.boolean()], { description: "The icon displayed when the item is an external link." }),
         highlight: LogicType.boolean({ description: "Display a line next to the active item." }),
         highlightColor: color,
-        items: LogicType.array(NavigationMenuItem),
+        items: LogicType.array(MaybeArray([NavigationMenuItem])),
         labelKey: LogicType.string(),
         orientation,
         popover: LogicType.union([LogicType.boolean(), PopoverProps], { description: "Display a popover on the items when the menu is collapsed." }),

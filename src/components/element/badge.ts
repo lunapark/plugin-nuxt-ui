@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Badge from "@nuxt/ui/components/Badge.vue";
 
 import { ComponentIconsProps } from "@/lib/icon.ts";

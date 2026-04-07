@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import CheckboxGroup from "@nuxt/ui/components/CheckboxGroup.vue";
 
 import { AcceptableValues } from "@/lib/value.ts";
@@ -20,7 +21,7 @@ const checkboxGroup = {
     },
     component: CheckboxGroup,
     documentation: {
-        link: "https://ui.nuxt.com/docs/components/checbox-group"
+        link: "https://ui.nuxt.com/docs/components/checkbox-group"
     },
     models: {
         modelValue: LogicType.array(LogicType.union([LogicType.string(), LogicType.number(), LogicType.boolean()]))
