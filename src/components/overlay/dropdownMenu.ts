@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import DropdownMenu from "@nuxt/ui/components/DropdownMenu.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -46,7 +47,7 @@ const dropdownMenu = {
         descriptionKey: LogicType.union([LogicType.string(), LogicType.number()]),
         disabled: LogicType.boolean(),
         externalIcon: LogicType.union([LogicType.string(), LogicType.boolean()], { description: "The icon displayed when the item is an external link." }),
-        items: MaybeArray(LogicType.array(DropdownMenuItem)),
+        items: LogicType.array(MaybeArray(DropdownMenuItem)),
         labelKey: LogicType.union([LogicType.string(), LogicType.number()]),
         loadingIcon: LogicType.string({ description: "The icon displayed when an item is loading." }),
         modal: LogicType.boolean({ description: "The modality of the dropdown menu." }),

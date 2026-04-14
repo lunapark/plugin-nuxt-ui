@@ -61,7 +61,7 @@ const navigationMenu = {
         externalIcon: LogicType.union([LogicType.string(), LogicType.boolean()], { description: "The icon displayed when the item is an external link." }),
         highlight: LogicType.boolean({ description: "Display a line next to the active item." }),
         highlightColor: color,
-        items: LogicType.array(MaybeArray([NavigationMenuItem])),
+        items: LogicType.array(MaybeArray(NavigationMenuItem)),
         labelKey: LogicType.string(),
         orientation,
         popover: LogicType.union([LogicType.boolean(), PopoverProps], { description: "Display a popover on the items when the menu is collapsed." }),
