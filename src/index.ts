@@ -6,6 +6,7 @@ import { colorMode } from "@/color.ts";
 import { getComponents } from "@/components";
 import config from "@/config";
 import baseStyle from "@/index.css?inline";
+import llm from "@/llm.md?raw";
 import icon from "@/logo.svg";
 import LWrapper from "@/LWrapper.vue";
 import nodes from "@/nodes";
@@ -85,5 +86,6 @@ export default makePlugin({
             colorMode.value = config.colorMode;
         }
     },
+    llm,
     name: "Nuxt UI"
 });
