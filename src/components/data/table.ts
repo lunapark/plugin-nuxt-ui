@@ -1,6 +1,8 @@
-import { LogicType, LogicUtil, type TComponent, type TSlot } from "@luna-park/plugin";
+import type { TComponent, TSlot } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Table from "@nuxt/ui/components/Table.vue";
 
+import llm from "@/components/data/table.md?raw";
 import { animation } from "@/lib/animation.ts";
 import { color } from "@/lib/variants.ts";
 
@@ -20,6 +22,7 @@ const table = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/table"
     },
+    llm,
     name: "Data/Table",
     properties: {
         caption: LogicType.string(),

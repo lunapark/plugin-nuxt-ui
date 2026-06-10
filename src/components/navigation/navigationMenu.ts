@@ -5,6 +5,7 @@ import NavigationMenu from "@nuxt/ui/components/NavigationMenu.vue";
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { BadgeProps } from "@/components/element/badge.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
+import llm from "@/components/navigation/navigationMenu.md?raw";
 import { PopoverProps } from "@/components/overlay/popover.ts";
 import { TooltipProps } from "@/components/overlay/tooltip.ts";
 import { MaybeArray } from "@/lib/value.ts";
@@ -42,8 +43,9 @@ const navigationMenu = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/navigation-menu"
     },
+    llm,
     models: {
-        modelValue: LogicType.union([LogicType.string(), LogicType.array(LogicType.string())])
+        modelValue: MaybeArray(LogicType.string())
     },
     name: "Navigation/NavigationMenu",
     properties: {

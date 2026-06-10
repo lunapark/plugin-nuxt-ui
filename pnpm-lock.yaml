@@ -35,7 +35,7 @@ importers:
         specifier: ^1.2.6
         version: 1.2.6(4c5fc10fd788687c6d76aa7d8761cacc)
       '@luna-park/plugin':
-        specifier: link:..\core\packages\plugin
+        specifier: link:../core/packages/plugin
         version: link:../core/packages/plugin
       '@types/node':
         specifier: ^25.6.0

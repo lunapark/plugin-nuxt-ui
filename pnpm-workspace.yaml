@@ -1,4 +1,11 @@
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
+  vue-demi: true
 onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
   - vue-demi
+overrides:
+  "@luna-park/plugin": "link:../core/packages/plugin"
+  "reka-ui": "link:../../reka-ui/packages/core"
