@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChatPrompt from "@nuxt/ui/components/ChatPrompt.vue";
 
 import { TextareaProps } from "@/components/form/textarea.ts";
@@ -12,8 +13,8 @@ const chatPrompt = {
         link: "https://ui.nuxt.com/docs/components/chat-prompt"
     },
     emits: {
-        close: LogicType.function(LogicType.object({ event: LogicType.interface("Event") }), LogicType.void()),
-        submit: LogicType.function(LogicType.object({ event: LogicType.interface("Event") }), LogicType.void())
+        close: LogicType.object({ event: LogicType.interface("Event") }),
+        submit: LogicType.object({ event: LogicType.interface("Event") })
     },
     models: {
         modelValue: LogicType.string()

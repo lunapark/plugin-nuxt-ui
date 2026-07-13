@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Alert from "@nuxt/ui/components/Alert.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -14,7 +15,7 @@ const alert = {
         link: "https://ui.nuxt.com/docs/components/alert"
     },
     emits: {
-        "update:open": LogicType.function(LogicType.object({ value: LogicType.boolean() }), LogicType.unknown())
+        "update:open": LogicType.object({ value: LogicType.boolean() })
     },
     name: "Element/Alert",
     properties: {

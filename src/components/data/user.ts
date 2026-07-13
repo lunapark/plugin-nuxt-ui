@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import User from "@nuxt/ui/components/User.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -15,7 +16,7 @@ export const user = {
         link: "https://ui.nuxt.com/docs/components/user"
     },
     emits: {
-        click: LogicType.union([LogicType.function(LogicType.object({ event: LogicType.interface("MouseEvent") }), LogicType.interface("void")), LogicType.interface("void")])
+        click: LogicType.object({ event: LogicType.interface("MouseEvent") })
     },
     name: "Data/User",
     properties: {

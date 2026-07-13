@@ -8,4 +8,3 @@ onlyBuiltDependencies:
   - vue-demi
 overrides:
   "@luna-park/plugin": "link:../core/packages/plugin"
-  "reka-ui": "link:../../reka-ui/packages/core"

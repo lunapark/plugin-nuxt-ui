@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ContextMenu from "@nuxt/ui/components/ContextMenu.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -33,7 +34,7 @@ const contextMenu = {
         link: "https://ui.nuxt.com/docs/components/context-menu"
     },
     emits: {
-        "update:open": LogicType.function(LogicType.object({ value: LogicType.boolean() }), LogicType.void())
+        "update:open": LogicType.object({ value: LogicType.boolean() })
     },
     name: "Overlay/ContextMenu",
     properties: {

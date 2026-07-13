@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Input from "@nuxt/ui/components/Input.vue";
 
 import { ComponentIconsProps } from "@/lib/icon.ts";
@@ -13,8 +14,8 @@ const input = {
         link: "https://ui.nuxt.com/docs/components/input"
     },
     emits: {
-        blur: LogicType.function(),
-        change: LogicType.function()
+        blur: LogicType.void(),
+        change: LogicType.void()
     },
     models: {
         modelValue: LogicType.union([LogicType.string(), LogicType.number()])

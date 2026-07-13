@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Form from "@nuxt/ui/components/Form.vue";
 
 const FormError = LogicType.object({ message: LogicType.string(), name: LogicType.string({ optional: true }) });
@@ -12,8 +13,8 @@ const form = {
         link: "https://ui.nuxt.com/docs/components/form"
     },
     emits: {
-        error: LogicType.function(),
-        submit: LogicType.function()
+        error: LogicType.void(),
+        submit: LogicType.void()
     },
     name: "Form/Form",
     properties: {

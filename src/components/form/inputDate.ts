@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import InputDate from "@nuxt/ui/components/InputDate.vue";
 
 import { ComponentIconsProps } from "@/lib/icon.ts";
@@ -16,9 +17,9 @@ const inputDate = {
         link: "https://ui.nuxt.com/docs/components/input-date"
     },
     emits: {
-        blur: LogicType.function(),
-        change: LogicType.function(),
-        focus: LogicType.function()
+        blur: LogicType.void(),
+        change: LogicType.void(),
+        focus: LogicType.void()
     },
     models: {
         modelValue: DateValue // TODO: add dynamic for range

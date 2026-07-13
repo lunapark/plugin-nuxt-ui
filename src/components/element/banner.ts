@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Banner from "@nuxt/ui/components/Banner.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -14,7 +15,7 @@ const banner = {
         link: "https://ui.nuxt.com/docs/components/banner"
     },
     emits: {
-        close: LogicType.function()
+        close: LogicType.void()
     },
     name: "Element/Banner",
     properties: {

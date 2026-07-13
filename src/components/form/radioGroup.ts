@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import RadioGroup from "@nuxt/ui/components/RadioGroup.vue";
 
 import { AcceptableValues } from "@/lib/value.ts";
@@ -23,7 +24,7 @@ const radioGroup = {
         link: "https://ui.nuxt.com/docs/components/radio-group"
     },
     emits: {
-        change: LogicType.function()
+        change: LogicType.void()
     },
     models: {
         modelValue: AcceptableValues

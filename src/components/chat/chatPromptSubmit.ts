@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChatPromptSubmit from "@nuxt/ui/components/ChatPromptSubmit.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -13,8 +14,8 @@ const chatPromptSubmit = {
         link: "https://ui.nuxt.com/docs/components/chat-prompt-submit"
     },
     emits: {
-        reload: LogicType.function(),
-        stop: LogicType.function()
+        reload: LogicType.void(),
+        stop: LogicType.void()
     },
     name: "Chat/ChatPromptSubmit",
     properties: {

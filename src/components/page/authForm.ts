@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import AuthForm from "@nuxt/ui/components/AuthForm.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -21,7 +22,7 @@ const authForm = {
         link: "https://ui.nuxt.com/docs/components/auth-form"
     },
     emits: {
-        submit: LogicType.function(LogicType.object({ payload: LogicType.unknown() }), LogicType.void())
+        submit: LogicType.object({ payload: LogicType.unknown() })
     },
     name: "Page/AuthForm",
     properties: {

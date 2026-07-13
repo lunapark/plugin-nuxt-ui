@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Carousel from "@nuxt/ui/components/Carousel.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -19,7 +20,7 @@ const carousel = {
         link: "https://ui.nuxt.com/docs/components/carousel"
     },
     emits: {
-        select: LogicType.function(LogicType.object({ selectedIndex: LogicType.number() }), LogicType.unknown())
+        select: LogicType.object({ selectedIndex: LogicType.number() })
     },
     name: "Data/Carousel",
     properties: {

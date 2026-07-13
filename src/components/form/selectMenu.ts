@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import SelectMenu from "@nuxt/ui/components/SelectMenu.vue";
 
 import { SelectItem } from "@/components/form/select.ts";
@@ -15,7 +16,7 @@ const selectMenu = {
         link: "https://ui.nuxt.com/docs/components/select-menu"
     },
     emits: {
-        create: LogicType.function(LogicType.object({ item: LogicType.string() }), LogicType.unknown())
+        create: LogicType.object({ item: LogicType.string() })
     },
     models: {
         modelValue: AcceptableValues

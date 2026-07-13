@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Tree from "@nuxt/ui/components/Tree.vue";
 
 import { color, size } from "@/lib/variants.ts";
@@ -23,8 +24,8 @@ export const tree = {
         link: "https://ui.nuxt.com/docs/components/tree"
     },
     emits: {
-        select: LogicType.function(LogicType.object({ e: LogicType.interface("SelectEvent"), item: LogicType.array(LogicType.interface("T")) }), LogicType.interface("void")),
-        toggle: LogicType.function(LogicType.object({ e: LogicType.interface("ToggleEvent"), item: LogicType.array(LogicType.interface("T")) }), LogicType.interface("void"))
+        select: LogicType.object({ e: LogicType.interface("SelectEvent"), item: LogicType.array(LogicType.interface("T")) }),
+        toggle: LogicType.object({ e: LogicType.interface("ToggleEvent"), item: LogicType.array(LogicType.interface("T")) })
     },
     models: {
         expanded: LogicType.array(LogicType.string(), { description: "The controlled value of the expanded item. Can be binded with with `v-model`." }),

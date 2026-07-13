@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import PinInput from "@nuxt/ui/components/PinInput.vue";
 
 import { color, size, variant } from "@/lib/variants.ts";
@@ -12,7 +13,7 @@ const pinInput = {
         link: "https://ui.nuxt.com/docs/components/pin-input"
     },
     emits: {
-        complete: LogicType.function(LogicType.object({ value: LogicType.array(LogicType.string()) }), LogicType.unknown())
+        complete: LogicType.object({ value: LogicType.array(LogicType.string()) })
     },
     models: {
         modelValue: LogicType.array(LogicType.array(LogicType.string()))

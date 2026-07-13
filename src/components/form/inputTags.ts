@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import InputTags from "@nuxt/ui/components/InputTags.vue";
 
 import { ComponentIconsProps } from "@/lib/icon.ts";
@@ -15,9 +16,9 @@ const inputTags = {
         link: "https://ui.nuxt.com/docs/components/input-tags"
     },
     emits: {
-        addTag: LogicType.function(LogicType.object({ item: InputTagItem }), LogicType.unknown()),
-        invalid: LogicType.function(LogicType.object({ item: InputTagItem }), LogicType.unknown()),
-        removeTag: LogicType.function(LogicType.object({ item: InputTagItem }), LogicType.unknown())
+        addTag: LogicType.object({ item: InputTagItem }),
+        invalid: LogicType.object({ item: InputTagItem }),
+        removeTag: LogicType.object({ item: InputTagItem })
     },
     models: {
         modelValue: LogicType.array(InputTagItem)
