@@ -22,6 +22,9 @@ export default defineConfig(() => {
                 external: [...Object.keys(packageDefinition.peerDependencies || {})]
             }
         },
+        define: {
+            "process.env.NODE_ENV": JSON.stringify("development")
+        },
         plugins: [
             vue(),
             ui()

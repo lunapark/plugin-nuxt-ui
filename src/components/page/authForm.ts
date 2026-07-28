@@ -22,18 +22,18 @@ const authForm = {
         link: "https://ui.nuxt.com/docs/components/auth-form"
     },
     emits: {
-        submit: LogicType.object({ payload: LogicType.unknown() })
+        submit: LogicType.object({payload: LogicType.unknown()})
     },
     name: "Page/AuthForm",
     properties: {
         description: LogicType.string(),
         disabled: LogicType.boolean(),
         fields: LogicType.array(AuthFormField),
-        icon: LogicType.string({ description: "The icon displayed above the title." }),
+        icon: LogicType.string({description: "The icon displayed above the title."}),
         loading: LogicType.boolean(),
-        providers: LogicType.array(ButtonProps, { description: "Display a list of Button under the description." }),
+        providers: LogicType.array(ButtonProps, {description: "Display a list of Button under the description."}),
         schema: LogicType.unknown(),
-        separator: LogicType.union([LogicType.string(), SeparatorProps], { description: "The text displayed in the separator." }),
+        separator: LogicType.union([LogicType.string(), SeparatorProps], {description: "The text displayed in the separator."}),
         submit: ButtonProps,
         title: LogicType.string()
     },
@@ -43,7 +43,7 @@ const authForm = {
         header: LogicType.void(),
         leading: LogicType.void(),
         providers: LogicType.void(),
-        submit: LogicType.void(),
+        submit: LogicType.object({loading: LogicType.boolean()}),
         title: LogicType.void(),
         validation: LogicType.void()
     }
