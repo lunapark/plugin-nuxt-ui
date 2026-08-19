@@ -1,13 +1,26 @@
 import ui from "@nuxt/ui/vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
-import { defineConfig, type UserConfig } from "vite";
+import { defineConfig, type Plugin, type UserConfig } from "vite";
 
 import packageDefinition from "./package.json";
 
 const alias = {
     "@": path.resolve(__dirname, "src")
 };
+
+function replaceDocumentBodyPlugin(): Plugin {
+    return {
+        apply: "build",
+        name: "replace-document-body",
+        renderChunk(code) {
+            return code.replaceAll(
+                ".body.style.pointerEvents",
+                ".querySelector('[data-root]').style.pointerEvents"
+            );
+        }
+    };
+}
 
 export default defineConfig(() => {
     const config: UserConfig = {
@@ -27,7 +40,8 @@ export default defineConfig(() => {
         },
         plugins: [
             vue(),
-            ui()
+            ui(),
+            replaceDocumentBodyPlugin()
         ],
         preview: {
             allowedHosts: [
