@@ -179,7 +179,7 @@ function select(icon: string, hide: () => void) {
     flex-direction: column;
     gap: var(--length-xs);
     width: 280px;
-    padding: var(--length-s);
+    padding: var(--length-xs);
     color: var(--color-content);
 
     .search {
