@@ -4,6 +4,7 @@ import Banner from "@nuxt/ui/components/Banner.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color } from "@/lib/variants.ts";
 
 const banner = {
@@ -24,7 +25,7 @@ const banner = {
         close: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a close button to dismiss the banner." }),
         closeIcon: LogicType.union([LogicType.string(), LogicType.interface("object")], { description: "The icon displayed in the close button." }),
         color,
-        icon: LogicType.string({ description: "The icon displayed next to the title." }),
+        icon: iconType({ description: "The icon displayed next to the title." }),
         title: LogicType.string()
     },
     slots: {

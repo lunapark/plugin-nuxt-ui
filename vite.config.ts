@@ -2,6 +2,7 @@ import ui from "@nuxt/ui/vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
 import { defineConfig, type Plugin, type UserConfig } from "vite";
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 
 import packageDefinition from "./package.json";
 
@@ -41,6 +42,7 @@ export default defineConfig(() => {
         plugins: [
             vue(),
             ui(),
+            cssInjectedByJsPlugin(),
             replaceDocumentBodyPlugin()
         ],
         preview: {

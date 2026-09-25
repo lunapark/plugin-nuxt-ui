@@ -3,6 +3,7 @@ import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChatPromptSubmit from "@nuxt/ui/components/ChatPromptSubmit.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, variant } from "@/lib/variants.ts";
 
 const chatPromptSubmit = {
@@ -21,14 +22,14 @@ const chatPromptSubmit = {
     properties: {
         ...ButtonProps.properties,
         errorColor: { ...color, default: "error", description: "The color of the button when the status is `error`." },
-        errorIcon: LogicType.string({ description: "The icon displayed in the button when the status is `error`." }),
+        errorIcon: iconType({ description: "The icon displayed in the button when the status is `error`." }),
         errorVariant: LogicType.string({ description: "The variant of the button when the status is `error`." }),
         status: LogicType.string({ enum: ["submitted", "streaming", "ready", "error"] }),
         streamingColor: { ...color, default: "neutral", description: "The color of the button when the status is `streaming`." },
-        streamingIcon: LogicType.string({ description: "The icon displayed in the button when the status is `streaming`." }),
+        streamingIcon: iconType({ description: "The icon displayed in the button when the status is `streaming`." }),
         streamingVariant: { ...variant, default: "subtle", description: "The variant of the button when the status is `streaming`." },
         submittedColor: { ...color, default: "neutral", description: "The color of the button when the status is `submitted`." },
-        submittedIcon: LogicType.string({ description: "The icon displayed in the button when the status is `submitted`." }),
+        submittedIcon: iconType({ description: "The icon displayed in the button when the status is `submitted`." }),
         submittedVariant: { ...variant, default: "subtle", description: "The variant of the button when the status is `submitted`." }
     },
     slots: {

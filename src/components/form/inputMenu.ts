@@ -3,7 +3,7 @@ import InputMenu from "@nuxt/ui/components/InputMenu.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ChipProps } from "@/components/element/chip.ts";
-import { ComponentIconsProps } from "@/lib/icon.ts";
+import { ComponentIconsProps, iconType } from "@/lib/icon.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const InputMenuItem = LogicType.union([
@@ -14,7 +14,7 @@ const InputMenuItem = LogicType.union([
         chip: ChipProps,
         description: LogicType.string(),
         disabled: LogicType.boolean(),
-        icon: LogicType.string(),
+        icon: iconType(),
         label: LogicType.string(),
         type: LogicType.string({ enum: ["label", "separator", "item"] })
     })

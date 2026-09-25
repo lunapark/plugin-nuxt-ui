@@ -5,6 +5,7 @@ import { ChatMessageProps } from "@/components/chat/chatMessage.ts";
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ButtonProps } from "@/components/element/button.ts";
 import { UIMessage } from "@/lib/ai.ts";
+import { iconType } from "@/lib/icon.ts";
 
 const chatMessages = {
     build: {
@@ -18,7 +19,7 @@ const chatMessages = {
     properties: {
         assistant: LogicUtil.pick(ChatMessageProps, ["variant", "icon", "avatar", "side", "actions"]),
         autoScroll: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display an auto scroll button." }),
-        autoScrollIcon: LogicType.string({ description: "The icon displayed in the auto scroll button." }),
+        autoScrollIcon: iconType({ description: "The icon displayed in the auto scroll button." }),
         compact: LogicType.boolean({ description: "Render the messages in a compact style." }),
         messages: LogicType.array(UIMessage, { description: "The messages to display." }),
         shouldAutoScroll: LogicType.boolean({ description: "Whether to automatically scroll to the bottom when a message is streaming." }),

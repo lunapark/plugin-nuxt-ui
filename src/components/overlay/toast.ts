@@ -3,6 +3,7 @@ import Toast from "@nuxt/ui/components/Toast.vue";
 
 import { AvatarProps } from "@/components/element/avatar";
 import { ButtonProps } from "@/components/element/button";
+import { iconType } from "@/lib/icon.ts";
 import { color, orientation } from "@/lib/variants.ts";
 
 export const toast: TComponent = {
@@ -18,11 +19,11 @@ export const toast: TComponent = {
         actions: LogicType.array(ButtonProps, { description: "Display a list of actions." }),
         avatar: AvatarProps,
         close: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a close button to dismiss the toast." }),
-        closeIcon: LogicType.string({ description: "The icon displayed in the close button." }),
+        closeIcon: iconType({ description: "The icon displayed in the close button." }),
         color,
         description: LogicType.string(),
         duration: LogicType.number({ description: "Time in milliseconds that toast should remain visible for." }),
-        icon: LogicType.string(),
+        icon: iconType(),
         orientation: { ...orientation, default: "vertical", description: "The orientation between the content and the actions." },
         progress: LogicType.union([LogicType.boolean(), LogicType.object({ color })], { description: "Display a progress bar showing the toast's remaining duration." }),
         title: LogicType.string(),

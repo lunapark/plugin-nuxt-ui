@@ -2,13 +2,14 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Timeline from "@nuxt/ui/components/Timeline.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const TimelineItem = LogicUtil.partial(LogicType.object({
     avatar: AvatarProps,
     date: LogicType.string(),
     description: LogicType.string(),
-    icon: LogicType.string(),
+    icon: iconType(),
     slot: LogicType.string(),
     title: LogicType.string(),
     value: LogicType.union([LogicType.string(), LogicType.number()])

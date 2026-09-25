@@ -2,6 +2,7 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Separator from "@nuxt/ui/components/Separator.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const separator = {
@@ -17,7 +18,7 @@ const separator = {
         avatar: AvatarProps,
         color,
         decorative: LogicType.boolean({ description: "When true, mark as decorative for a11y." }),
-        icon: LogicType.string({ description: "Display an icon in the middle." }),
+        icon: iconType({ description: "Display an icon in the middle." }),
         label: LogicType.string({ description: "Display a label in the middle." }),
         orientation,
         size,

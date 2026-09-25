@@ -2,6 +2,7 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageCard from "@nuxt/ui/components/PageCard.vue";
 
 import { LinkProps } from "@/components/navigation/link.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, orientation, variant } from "@/lib/variants.ts";
 
 const pageCard = {
@@ -18,7 +19,7 @@ const pageCard = {
         description: LogicType.string(),
         highlight: LogicType.boolean({ description: "Display a line around the page card." }),
         highlightColor: color,
-        icon: LogicType.string({ description: "The icon displayed above the title." }),
+        icon: iconType({ description: "The icon displayed above the title." }),
         orientation,
         reverse: LogicType.boolean({ description: "Reverse the order of the default slot." }),
         spotlight: LogicType.boolean({ description: "Display a spotlight effect that follows your mouse cursor and highlights borders on hover." }),

@@ -2,6 +2,7 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Slideover from "@nuxt/ui/components/Slideover.vue";
 
 import { ButtonProps } from "@/components/element/button";
+import { iconType } from "@/lib/icon.ts";
 
 export const slideover: TComponent = {
     build: {
@@ -17,7 +18,7 @@ export const slideover: TComponent = {
     name: "Overlay/Slideover",
     properties: {
         close: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a close button to dismiss the slideover." }),
-        closeIcon: LogicType.string({ description: "The icon displayed in the close button." }),
+        closeIcon: iconType({ description: "The icon displayed in the close button." }),
         defaultOpen: LogicType.boolean({ description: "The open state of the dialog when it is initially rendered." }),
         description: LogicType.string(),
         dismissible: LogicType.boolean({ description: "When `false`, the slideover will not close when clicking outside or pressing escape." }),

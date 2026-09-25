@@ -2,6 +2,7 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageFeature from "@nuxt/ui/components/PageFeature.vue";
 
 import { LinkProps } from "@/components/navigation/link.ts";
+import { iconType } from "@/lib/icon.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pageFeature = {
@@ -16,7 +17,7 @@ const pageFeature = {
     properties: {
         ...LogicUtil.pick(LinkProps, ["to", "target"]).properties,
         description: LogicType.string(),
-        icon: LogicType.string({ description: "The icon displayed next to the title." }),
+        icon: iconType({ description: "The icon displayed next to the title." }),
         orientation,
         title: LogicType.string()
     },

@@ -7,4 +7,5 @@ onlyBuiltDependencies:
   - unrs-resolver
   - vue-demi
 overrides:
+  "@luna-park/design": "link:../core/packages/design"
   "@luna-park/plugin": "link:../core/packages/plugin"

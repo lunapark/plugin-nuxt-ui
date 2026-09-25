@@ -1,13 +1,14 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Stepper from "@nuxt/ui/components/Stepper.vue";
 
+import { iconType } from "@/lib/icon.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const StepperItem = LogicUtil.partial(LogicType.object({
     content: LogicType.string(),
     description: LogicType.string(),
     disabled: LogicType.boolean(),
-    icon: LogicType.string(),
+    icon: iconType(),
     slot: LogicType.string(),
     title: LogicType.string(),
     value: LogicType.union([LogicType.string(), LogicType.number()])

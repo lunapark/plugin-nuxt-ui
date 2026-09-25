@@ -2,15 +2,16 @@ import type { TComponent } from "@luna-park/plugin";
 import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Tree from "@nuxt/ui/components/Tree.vue";
 
+import { iconType } from "@/lib/icon.ts";
 import { color, size } from "@/lib/variants.ts";
 
 const TreeItem = LogicUtil.partial(LogicType.object({
     defaultExpanded: LogicType.boolean(),
     disabled: LogicType.boolean(),
-    icon: LogicType.string(),
+    icon: iconType(),
     label: LogicType.string(),
     slot: LogicType.string(),
-    trailingIcon: LogicType.string()
+    trailingIcon: iconType()
 }));
 
 TreeItem.properties.children = LogicType.array(TreeItem, { optional: true });
@@ -34,12 +35,12 @@ export const tree = {
     name: "Data/Tree",
     properties: {
         bubbleSelect: LogicType.boolean({ description: "When `true`, selecting children will update the parent state." }),
-        collapsedIcon: LogicType.string({ description: "The icon displayed when a parent node is collapsed." }),
+        collapsedIcon: iconType({ description: "The icon displayed when a parent node is collapsed." }),
         color,
         defaultExpanded: LogicType.array(LogicType.string(), { description: "The value of the expanded tree when initially rendered. Use when you do not need to control the state of the expanded tree" }),
         defaultValue: LogicType.array(LogicType.array(LogicType.boolean()), { description: "The value of the Tree when initially rendered. Use when you do not need to control the state of the Tree." }),
         disabled: LogicType.boolean({ description: "When `true`, prevents the user from interacting with tree" }),
-        expandedIcon: LogicType.string({ description: "The icon displayed when a parent node is expanded." }),
+        expandedIcon: iconType({ description: "The icon displayed when a parent node is expanded." }),
         items: LogicType.array(TreeItem),
         labelKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "label", description: "The key used to get the label from the item." }),
         multiple: LogicType.boolean({ description: "Whether multiple options can be selected or not." }),
@@ -47,7 +48,7 @@ export const tree = {
         propagateSelect: LogicType.boolean({ description: "When `true`, selecting parent will select the descendants." }),
         selectionBehavior: LogicType.string({ description: "How multiple selection should behave in the collection.", enum: ["replace", "toggle"] }),
         size,
-        trailingIcon: LogicType.string({ description: "The icon displayed on the right side of a parent node." }),
+        trailingIcon: iconType({ description: "The icon displayed on the right side of a parent node." }),
         virtualize: LogicType.boolean({ description: "Enable virtualization for large lists.\nNote: when enabled, the tree structure is flattened like if `nested` was set to `false`." })
     },
     slots: {

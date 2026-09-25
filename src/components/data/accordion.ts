@@ -1,13 +1,15 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Accordion from "@nuxt/ui/components/Accordion.vue";
 
+import { iconType } from "@/lib/icon.ts";
+
 const AccordionItem = LogicUtil.partial(LogicType.object({
     content: LogicType.string(),
     disabled: LogicType.boolean(),
-    icon: LogicType.string(),
+    icon: iconType(),
     label: LogicType.string(),
     slot: LogicType.string(),
-    trailingIcon: LogicType.string(),
+    trailingIcon: iconType(),
     value: LogicType.string()
 }));
 
@@ -29,7 +31,7 @@ const accordion = {
         disabled: LogicType.boolean({ description: "When `true`, prevents the user from interacting with the accordion and all its items" }),
         items: LogicType.array(AccordionItem),
         labelKey: LogicType.union([LogicType.string(), LogicType.number()]),
-        trailingIcon: LogicType.string(),
+        trailingIcon: iconType(),
         type: LogicType.string({ enum: ["single", "multiple"] }),
         unmountOnHide: LogicType.boolean({ description: "When `true`, the element will be unmounted on closed state." })
     },

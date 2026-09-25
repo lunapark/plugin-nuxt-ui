@@ -3,6 +3,7 @@ import PageSection from "@nuxt/ui/components/PageSection.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
 import { PageFeatureProps } from "@/components/page/pageFeature.ts";
+import { iconType } from "@/lib/icon.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pageSection = {
@@ -18,7 +19,7 @@ const pageSection = {
         description: LogicType.string(),
         features: LogicType.array(PageFeatureProps, { description: "Display a list of PageFeature under the description." }),
         headline: LogicType.string({ description: "The headline displayed above the title." }),
-        icon: LogicType.string({ description: "The icon displayed above the title." }),
+        icon: iconType({ description: "The icon displayed above the title." }),
         links: LogicType.array(ButtonProps, { description: "Display a list of Button under the description." }),
         orientation: { ...orientation, default: "vertical" },
         reverse: LogicType.boolean({ description: "Reverse the order of the default slot." }),

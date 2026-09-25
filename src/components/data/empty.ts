@@ -3,6 +3,7 @@ import Empty from "@nuxt/ui/components/Empty.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 import { size, variant } from "@/lib/variants.ts";
 
 const empty = {
@@ -18,7 +19,7 @@ const empty = {
         actions: LogicType.array(ButtonProps, { description: "Display a list of Button in the body." }),
         avatar: AvatarProps,
         description: LogicType.string(),
-        icon: LogicType.string({ description: "The icon displayed above the title." }),
+        icon: iconType({ description: "The icon displayed above the title." }),
         size,
         title: LogicType.string(),
         variant

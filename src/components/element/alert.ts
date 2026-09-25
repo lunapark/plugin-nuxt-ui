@@ -4,6 +4,7 @@ import Alert from "@nuxt/ui/components/Alert.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, orientation, variant } from "@/lib/variants.ts";
 
 const alert = {
@@ -25,7 +26,7 @@ const alert = {
         closeIcon: LogicType.union([LogicType.string(), LogicType.interface("object")], { description: "The icon displayed in the close button." }),
         color,
         description: LogicType.string(),
-        icon: LogicType.string(),
+        icon: iconType(),
         orientation: { ...orientation, description: "The orientation between the content and the actions." },
         title: LogicType.string(),
         variant

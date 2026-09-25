@@ -1,6 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Avatar from "@nuxt/ui/components/Avatar.vue";
 
+import { iconType } from "@/lib/icon.ts";
 import { size } from "@/lib/variants.ts";
 
 const avatar = {
@@ -15,7 +16,7 @@ const avatar = {
     properties: {
         alt: LogicType.string(),
         chip: LogicType.boolean(),
-        icon: LogicType.string(),
+        icon: iconType(),
         size,
         src: LogicType.string(),
         text: LogicType.string()

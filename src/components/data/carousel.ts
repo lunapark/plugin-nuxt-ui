@@ -3,6 +3,7 @@ import { LogicType } from "@luna-park/plugin";
 import Carousel from "@nuxt/ui/components/Carousel.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 import { AcceptableValues } from "@/lib/value.ts";
 import { orientation } from "@/lib/variants.ts";
 
@@ -41,10 +42,10 @@ const carousel = {
         items: LogicType.array(carouselItems),
         loop: LogicType.boolean(),
         next: ButtonProps,
-        nextIcon: LogicType.string({ description: "The icon displayed in the next button." }),
+        nextIcon: iconType({ description: "The icon displayed in the next button." }),
         orientation: { ...orientation, description: "The orientation of the carousel." },
         prev: ButtonProps,
-        prevIcon: LogicType.string({ description: "The icon displayed in the prev button." }),
+        prevIcon: iconType({ description: "The icon displayed in the prev button." }),
         skipSnaps: LogicType.boolean(),
         slidesToScroll: LogicType.union([LogicType.number(), LogicType.string({ enum: ["auto"] })], { default: 1 }),
         startIndex: LogicType.number(),

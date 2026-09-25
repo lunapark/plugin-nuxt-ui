@@ -6,6 +6,7 @@ import { colorMode } from "@/color.ts";
 import { getComponents } from "@/components";
 import config from "@/config";
 import baseStyle from "@/index.css?inline";
+import IconInput from "@/inputs/IconInput.vue";
 import llm from "@/llm.md?raw";
 import icon from "@/logo.svg";
 import LWrapper from "@/LWrapper.vue";
@@ -47,6 +48,9 @@ export default makePlugin({
     description: "Nuxt UI is a collection of reusable components and utilities for building apps.",
     editor: {
         components: getComponents,
+        inputs: {
+            icon: IconInput
+        },
         nodes,
         templates,
         tokens: [

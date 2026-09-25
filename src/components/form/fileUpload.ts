@@ -1,6 +1,7 @@
 import { LogicType, type TComponent } from "@luna-park/plugin";
 import FileUpload from "@nuxt/ui/components/FileUpload.vue";
 
+import { iconType } from "@/lib/icon.ts";
 import { color, size } from "@/lib/variants.ts";
 
 const fileUpload = {
@@ -22,7 +23,7 @@ const fileUpload = {
         disabled: LogicType.boolean(),
         dropzone: LogicType.boolean({ description: "Create a zone that allows the user to drop files onto it." }),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
-        icon: LogicType.string({ description: "The icon to display." }),
+        icon: iconType({ description: "The icon to display." }),
         interactive: LogicType.boolean({ description: "Make the dropzone interactive when the user is clicking on it." }),
         label: LogicType.string(),
         layout: LogicType.string({ default: "grid", description: "The layout of how files are displayed.\nOnly works when `variant` is `area`.", enum: ["list", "grid"] }),

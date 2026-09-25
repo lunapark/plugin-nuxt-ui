@@ -2,7 +2,7 @@ import type { TComponent } from "@luna-park/plugin";
 import { LogicType } from "@luna-park/plugin";
 import InputDate from "@nuxt/ui/components/InputDate.vue";
 
-import { ComponentIconsProps } from "@/lib/icon.ts";
+import { ComponentIconsProps, iconType } from "@/lib/icon.ts";
 import { DateStep } from "@/lib/time.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
@@ -44,7 +44,7 @@ const inputDate = {
         range: LogicType.boolean({ description: "Allow selecting a range of dates." }),
         readonly: LogicType.boolean(),
         required: LogicType.boolean(),
-        separatorIcon: LogicType.string({ description: "Icon to use as range separator." }),
+        separatorIcon: iconType({ description: "Icon to use as range separator." }),
         size,
         step: DateStep,
         variant

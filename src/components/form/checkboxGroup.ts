@@ -2,6 +2,7 @@ import type { TComponent } from "@luna-park/plugin";
 import { LogicType, LogicUtil } from "@luna-park/plugin";
 import CheckboxGroup from "@nuxt/ui/components/CheckboxGroup.vue";
 
+import { iconType } from "@/lib/icon.ts";
 import { AcceptableValues } from "@/lib/value.ts";
 import { color, indicator, orientation, size } from "@/lib/variants.ts";
 
@@ -31,7 +32,7 @@ const checkboxGroup = {
         color,
         description: LogicType.string(),
         descriptionKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "description", description: "When `items` is an array of objects, select the field to use as the description." }),
-        icon: LogicType.string(),
+        icon: iconType(),
         id: LogicType.string(),
         indicator,
         items: LogicType.array(CheckboxGroupItem),

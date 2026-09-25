@@ -3,6 +3,7 @@ import PricingPlan from "@nuxt/ui/components/PricingPlan.vue";
 
 import { BadgeProps } from "@/components/element/badge.ts";
 import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 import { orientation } from "@/lib/variants.ts";
 
 const pricingPlan = {
@@ -24,7 +25,7 @@ const pricingPlan = {
         features: LogicType.array(LogicType.union([
             LogicType.string(),
             LogicType.object({
-                icon: LogicType.string({ optional: true }),
+                icon: iconType({ optional: true }),
                 title: LogicType.string()
             })
         ]), { description: "Display a list of features under the price." }),

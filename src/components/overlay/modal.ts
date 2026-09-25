@@ -2,6 +2,7 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Modal from "@nuxt/ui/components/Modal.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 
 const modal = {
     build: {
@@ -17,7 +18,7 @@ const modal = {
     name: "Overlay/Modal",
     properties: {
         close: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a close button to dismiss the modal." }),
-        closeIcon: LogicType.string({ description: "The icon displayed in the close button." }),
+        closeIcon: iconType({ description: "The icon displayed in the close button." }),
         defaultOpen: LogicType.boolean({ description: "The open state of the dialog when it is initially rendered." }),
         description: LogicType.string(),
         dismissible: LogicType.boolean({ description: "When `false`, the modal will not close when clicking outside or pressing escape." }),

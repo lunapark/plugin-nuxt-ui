@@ -2,10 +2,11 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import PageAnchors from "@nuxt/ui/components/PageAnchors.vue";
 
 import { LinkProps } from "@/components/navigation/link.ts";
+import { iconType } from "@/lib/icon.ts";
 
 const PageAnchor = LogicType.object({
     ...LogicUtil.omit(LinkProps, ["custom"]).properties,
-    icon: LogicType.string({ optional: true }),
+    icon: iconType({ optional: true }),
     label: LogicType.string()
 });
 

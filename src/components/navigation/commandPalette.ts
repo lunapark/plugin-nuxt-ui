@@ -6,6 +6,7 @@ import { ButtonProps } from "@/components/element/button.ts";
 import { ChipProps } from "@/components/element/chip.ts";
 import { KbdProps } from "@/components/element/kbd.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
+import { iconType } from "@/lib/icon.ts";
 
 export const CommandPaletteItem = LogicUtil.partial(LogicType.object({
     ...LogicUtil.omit(LinkProps, ["type", "raw", "custom"]).properties,
@@ -14,7 +15,7 @@ export const CommandPaletteItem = LogicUtil.partial(LogicType.object({
     chip: ChipProps,
     description: LogicType.string(),
     disabled: LogicType.boolean(),
-    icon: LogicType.string(),
+    icon: iconType(),
     kbds: LogicType.array(KbdProps),
     label: LogicType.string(),
     loading: LogicType.boolean(),
@@ -28,7 +29,7 @@ export const CommandPaletteItem = LogicUtil.partial(LogicType.object({
 CommandPaletteItem.properties.children = LogicType.array(CommandPaletteItem, { optional: true });
 
 export const CommandPaletteGroup = LogicUtil.partial(LogicType.object({
-    highlightedIcon: LogicType.string(),
+    highlightedIcon: iconType(),
     id: LogicType.string({ required: true }),
     ignoreFilter: LogicType.boolean(),
     items: LogicType.array(CommandPaletteItem),
@@ -48,26 +49,26 @@ const commandPalette = {
     properties: {
         autofocus: LogicType.boolean({ description: "Automatically focus the input when component is mounted." }),
         back: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a button to navigate back in history." }),
-        backIcon: LogicType.string({ description: "The icon displayed in the back button." }),
-        childrenIcon: LogicType.string({ description: "The icon displayed when an item has children." }),
+        backIcon: iconType({ description: "The icon displayed in the back button." }),
+        childrenIcon: iconType({ description: "The icon displayed when an item has children." }),
         close: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a close button in the input." }),
-        closeIcon: LogicType.string({ description: "The icon displayed in the close button." }),
+        closeIcon: iconType({ description: "The icon displayed in the close button." }),
         descriptionKey: LogicType.string(),
         disabled: LogicType.boolean({ description: "When `true`, prevents the user from interacting with listbox" }),
         groups: LogicType.array(CommandPaletteGroup),
         highlightOnHover: LogicType.boolean({ description: "When `true`, hover over item will trigger highlight" }),
-        icon: LogicType.string({ description: "The icon displayed in the input." }),
+        icon: iconType({ description: "The icon displayed in the input." }),
         labelKey: LogicType.string(),
         loading: LogicType.boolean({ description: "When `true`, the loading icon will be displayed." }),
-        loadingIcon: LogicType.string({ description: "The icon when the `loading` prop is `true`." }),
+        loadingIcon: iconType({ description: "The icon when the `loading` prop is `true`." }),
         modelValue: LogicType.unknown({ description: "The controlled value of the listbox." }),
         multiple: LogicType.boolean({ description: "Whether multiple options can be selected or not." }),
         placeholder: LogicType.string({ description: "The placeholder text for the input." }),
         preserveGroupOrder: LogicType.boolean({ description: "Whether to preserve the order of groups." }),
         searchTerm: LogicType.string(),
-        selectedIcon: LogicType.string({ description: "The icon displayed when an item is selected." }),
+        selectedIcon: iconType({ description: "The icon displayed when an item is selected." }),
         selectionBehavior: LogicType.string({ default: "toggle", description: "How multiple selection should behave.", enum: ["replace", "toggle"] }),
-        trailingIcon: LogicType.string({ description: "The icon displayed on the right side of the input." }),
+        trailingIcon: iconType({ description: "The icon displayed on the right side of the input." }),
         virtualize: LogicType.union([LogicType.boolean(), LogicType.object({
             estimateSize: LogicType.number({ optional: true }),
             overscan: LogicType.number({ optional: true })

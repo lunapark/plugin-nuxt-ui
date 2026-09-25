@@ -4,6 +4,7 @@ import ChatMessage from "@nuxt/ui/components/ChatMessage.vue";
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ButtonProps } from "@/components/element/button.ts";
 import { UIMessage } from "@/lib/ai.ts";
+import { iconType } from "@/lib/icon.ts";
 import { variant } from "@/lib/variants.ts";
 
 const chatMessage = {
@@ -19,7 +20,7 @@ const chatMessage = {
         avatar: LogicType.union([AvatarProps, LogicType.object()], { description: "The avatar displayed in the message." }),
         compact: LogicType.boolean({ description: "Render the message in a compact style." }),
         content: LogicType.string({ description: "The content of the message." }),
-        icon: LogicType.string({ description: "The icon displayed in the message." }),
+        icon: iconType({ description: "The icon displayed in the message." }),
         side: LogicType.string({ default: "left", description: "The side of the message.", enum: ["left", "right"] }),
         variant: { ...variant, default: "naked", description: "The variant of the message." }
     },

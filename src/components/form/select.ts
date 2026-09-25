@@ -3,7 +3,7 @@ import Select from "@nuxt/ui/components/Select.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ChipProps } from "@/components/element/chip.ts";
-import { ComponentIconsProps } from "@/lib/icon.ts";
+import { ComponentIconsProps, iconType } from "@/lib/icon.ts";
 import { AcceptableValues } from "@/lib/value.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
@@ -14,7 +14,7 @@ export const SelectItem = LogicType.union([
         chip: ChipProps,
         description: LogicType.string(),
         disabled: LogicType.boolean(),
-        icon: LogicType.string(),
+        icon: iconType(),
         label: LogicType.string(),
         type: LogicType.string({ enum: ["label", "separator", "item"] }),
         value: AcceptableValues

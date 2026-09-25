@@ -8,6 +8,7 @@ import { LinkProps } from "@/components/navigation/link.ts";
 import llm from "@/components/navigation/navigationMenu.md?raw";
 import { PopoverProps } from "@/components/overlay/popover.ts";
 import { TooltipProps } from "@/components/overlay/tooltip.ts";
+import { iconType } from "@/lib/icon.ts";
 import { MaybeArray } from "@/lib/value.ts";
 import { color, orientation } from "@/lib/variants.ts";
 
@@ -16,14 +17,14 @@ const NavigationMenuItem = LogicUtil.partial(LogicType.object({
     avatar: AvatarProps,
     badge: LogicType.union([LogicType.string(), LogicType.number(), BadgeProps]),
     defaultOpen: LogicType.boolean(),
-    icon: LogicType.string(),
+    icon: iconType(),
     label: LogicType.string(),
     onSelect: LogicType.function(LogicType.object({ event: LogicType.interface("Event") }), LogicType.void()),
     open: LogicType.boolean(),
     popover: LogicType.union([LogicType.boolean(), PopoverProps]),
     slot: LogicType.string(),
     tooltip: LogicType.union([LogicType.boolean(), TooltipProps]),
-    trailingIcon: LogicType.string(),
+    trailingIcon: iconType(),
     type: LogicType.string({ enum: ["label", "trigger", "link"] }),
     value: LogicType.string()
 }));
@@ -69,7 +70,7 @@ const navigationMenu = {
         popover: LogicType.union([LogicType.boolean(), PopoverProps], { description: "Display a popover on the items when the menu is collapsed." }),
         skipDelayDuration: LogicType.number({ default: 300, description: "How much time a user has to enter another trigger without incurring a delay again." }),
         tooltip: LogicType.union([LogicType.boolean(), TooltipProps], { description: "Display a tooltip on the items when the menu is collapsed." }),
-        trailingIcon: LogicType.string({ description: "The icon displayed to open the menu." }),
+        trailingIcon: iconType({ description: "The icon displayed to open the menu." }),
         type: LogicType.string({ default: "multiple", enum: ["single", "multiple"] }),
         unmountOnHide: LogicType.boolean({ description: "When `true`, the element will be unmounted on closed state." }),
         variant: LogicType.string({ default: "pill", enum: ["pill", "link"] })

@@ -4,6 +4,7 @@ import AuthForm from "@nuxt/ui/components/AuthForm.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
 import { SeparatorProps } from "@/components/element/separator.ts";
+import { iconType } from "@/lib/icon.ts";
 
 const AuthFormField = LogicUtil.partial(LogicType.object({
     label: LogicType.string(),
@@ -29,7 +30,7 @@ const authForm = {
         description: LogicType.string(),
         disabled: LogicType.boolean(),
         fields: LogicType.array(AuthFormField),
-        icon: LogicType.string({description: "The icon displayed above the title."}),
+        icon: iconType({description: "The icon displayed above the title."}),
         loading: LogicType.boolean(),
         providers: LogicType.array(ButtonProps, {description: "Display a list of Button under the description."}),
         schema: LogicType.unknown(),

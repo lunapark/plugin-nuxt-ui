@@ -3,6 +3,7 @@ import Tabs from "@nuxt/ui/components/Tabs.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { BadgeProps } from "@/components/element/badge.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const TabsItem = LogicUtil.partial(LogicType.object({
@@ -11,7 +12,7 @@ const TabsItem = LogicUtil.partial(LogicType.object({
     content: LogicType.string(),
     description: LogicType.string(),
     disabled: LogicType.boolean(),
-    icon: LogicType.string(),
+    icon: iconType(),
     label: LogicType.string(),
     slot: LogicType.string(),
     value: LogicType.union([LogicType.string(), LogicType.number()], { description: "A unique value for the tab item. Defaults to the index." })

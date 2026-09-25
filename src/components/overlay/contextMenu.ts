@@ -4,6 +4,7 @@ import ContextMenu from "@nuxt/ui/components/ContextMenu.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { KbdProps } from "@/components/element/kbd.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, size } from "@/lib/variants.ts";
 
 const ContextMenuItem = LogicUtil.partial(LogicType.object({
@@ -13,7 +14,7 @@ const ContextMenuItem = LogicUtil.partial(LogicType.object({
     defaultOpen: LogicType.boolean(),
     description: LogicType.string(),
     disabled: LogicType.boolean(),
-    icon: LogicType.string(),
+    icon: iconType(),
     kbds: LogicType.array(LogicType.union([LogicType.string(), KbdProps])),
     label: LogicType.string(),
     loading: LogicType.boolean(),
@@ -38,13 +39,13 @@ const contextMenu = {
     },
     name: "Overlay/ContextMenu",
     properties: {
-        checkedIcon: LogicType.string({ description: "The icon displayed when an item is checked." }),
+        checkedIcon: iconType({ description: "The icon displayed when an item is checked." }),
         descriptionKey: LogicType.string(),
         disabled: LogicType.boolean(),
         externalIcon: LogicType.union([LogicType.string(), LogicType.boolean()], { description: "The icon displayed when the item is an external link." }),
         items: LogicType.array(ContextMenuItem),
         labelKey: LogicType.string(),
-        loadingIcon: LogicType.string({ description: "The icon displayed when an item is loading." }),
+        loadingIcon: iconType({ description: "The icon displayed when an item is loading." }),
         modal: LogicType.boolean({ description: "The modality of the dropdown menu." }),
         portal: LogicType.boolean({ description: "Render the menu in a portal." }),
         pressOpenDelay: LogicType.number({ default: 700, description: "The duration from when the trigger is pressed until the menu opens." }),

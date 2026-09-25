@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/vue";
 import { LogicType, type TComponent } from "@luna-park/plugin";
 
+import { iconType } from "@/lib/icon.ts";
+
 const icon = {
     build: {
         name: "UIcon"
@@ -11,7 +13,7 @@ const icon = {
     },
     name: "Element/Icon",
     properties: {
-        icon: LogicType.string(),
+        icon: iconType(),
         mode: LogicType.string({ enum: ["style", "bg", "mask", "svg"] })
     }
 } satisfies TComponent;

@@ -3,11 +3,12 @@ import Breadcrumb from "@nuxt/ui/components/Breadcrumb.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
+import { iconType } from "@/lib/icon.ts";
 
 const BreadcrumbItem = LogicUtil.partial(LogicType.object({
     ...LogicUtil.omit(LinkProps, ["raw", "custom"]).properties,
     avatar: AvatarProps,
-    icon: LogicType.string(),
+    icon: iconType(),
     label: LogicType.string(),
     slot: LogicType.string()
 }));
@@ -24,7 +25,7 @@ const breadcrumb = {
     properties: {
         items: LogicType.array(BreadcrumbItem),
         labelKey: LogicType.string({ default: "label" }),
-        separatorIcon: LogicType.string()
+        separatorIcon: iconType()
     },
     slots: {
         item: LogicType.object({ active: LogicType.boolean(), index: LogicType.number(), item: BreadcrumbItem }),

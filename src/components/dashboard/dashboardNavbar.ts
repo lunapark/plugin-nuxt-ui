@@ -2,6 +2,7 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import DashboardNavbar from "@nuxt/ui/components/DashboardNavbar.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 
 const dashboardNavbar = {
     build: {
@@ -13,7 +14,7 @@ const dashboardNavbar = {
     },
     name: "Dashboard/DashboardNavbar",
     properties: {
-        icon: LogicType.string({ description: "The icon displayed next to the title." }),
+        icon: iconType({ description: "The icon displayed next to the title." }),
         title: LogicType.string(),
         toggle: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Customize the toggle button to open the sidebar." }),
         toggleSide: LogicType.string({ default: "left", description: "The side to render the toggle button on.", enum: ["left", "right"] })

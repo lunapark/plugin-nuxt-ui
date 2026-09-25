@@ -1,6 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Switch from "@nuxt/ui/components/Switch.vue";
 
+import { iconType } from "@/lib/icon.ts";
 import { color, size } from "@/lib/variants.ts";
 
 const switch_ = {
@@ -16,17 +17,17 @@ const switch_ = {
     },
     name: "Form/Switch",
     properties: {
-        checkedIcon: LogicType.string({ description: "Icon when the switch is checked." }),
+        checkedIcon: iconType({ description: "Icon when the switch is checked." }),
         color,
         description: LogicType.string(),
         disabled: LogicType.boolean(),
         label: LogicType.string(),
         loading: LogicType.boolean({ description: "Display loading icon when true." }),
-        loadingIcon: LogicType.string({ description: "Icon to display when loading." }),
+        loadingIcon: iconType({ description: "Icon to display when loading." }),
         name: LogicType.string(),
         required: LogicType.boolean(),
         size,
-        uncheckedIcon: LogicType.string({ description: "Icon when the switch is unchecked." })
+        uncheckedIcon: iconType({ description: "Icon when the switch is unchecked." })
     },
     slots: {
         description: LogicType.object({ description: LogicType.string() }),
