@@ -53,7 +53,7 @@ const table = {
                     slots[`${ id }-cell`] = LogicType.object({
                         row: LogicType.object({
                             id: LogicType.string(),
-                            original: props.data?.schema?.items ?? LogicType.unknown()
+                            original: { ...props.data?.schema?.items ?? LogicType.unknown(), name: "original" }
                         })
                     });
                 }
