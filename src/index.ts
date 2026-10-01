@@ -1,12 +1,12 @@
 import { EInjectionKey, makePlugin } from "@luna-park/plugin";
 import UApp from "@nuxt/ui/components/App.vue";
 import ui from "@nuxt/ui/vue-plugin";
+import { defineAsyncComponent } from "vue";
 
 import { colorMode } from "@/color.ts";
 import { getComponents } from "@/components";
 import config from "@/config";
 import baseStyle from "@/index.css?inline";
-import IconInput from "@/inputs/IconInput.vue";
 import llm from "@/llm.md?raw";
 import icon from "@/logo.svg";
 import LWrapper from "@/LWrapper.vue";
@@ -49,7 +49,7 @@ export default makePlugin({
     editor: {
         components: getComponents,
         inputs: {
-            icon: IconInput
+            icon: defineAsyncComponent(() => import("@/inputs/IconInput.vue"))
         },
         nodes,
         templates,
@@ -93,3 +93,4 @@ export default makePlugin({
     llm,
     name: "Nuxt UI"
 });
+
