@@ -19,7 +19,7 @@ import { lengthTokens } from "@/tokens/length.ts";
 export default makePlugin({
     build: {
         frontImports: [
-            { name: "@nuxt/ui", version: "^4.2.1" },
+            { name: "@nuxt/ui", version: "^4.11.3" },
             { name: "tailwindcss", version: "^4.1.18" },
             { name: "vue-router", version: "^4.6.4" },
             { name: "@unhead/vue", version: "^2.0.19" }

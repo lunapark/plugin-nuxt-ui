@@ -11,7 +11,7 @@ export const menuProp = LogicType.unknown({
                 return ModalProps;
             case "slideover":
                 return SlideoverProps;
-            case "drawser":
+            case "drawer":
                 return DrawerProps;
         }
         return LogicType.unknown();

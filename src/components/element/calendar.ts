@@ -5,7 +5,7 @@ import { color, size, variant } from "@/lib/variants.ts";
 
 const calendar = {
     build: {
-        name: "UCalender"
+        name: "UCalendar"
     },
     component: Calendar,
     documentation: {
