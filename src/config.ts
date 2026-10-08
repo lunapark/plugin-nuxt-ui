@@ -1,5 +1,8 @@
 /* eslint-disable sort-keys-custom-order/object-keys */
-import { LogicType, type TSchema } from "@luna-park/plugin";
+import type { TSchema } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
+
+import { localeCodes, NAVIGATOR_LOCALE } from "@/locale.ts";
 
 export default LogicType.object({
     colorMode: LogicType.string({
@@ -17,6 +20,11 @@ export default LogicType.object({
     neutral: LogicType.string({
         default: "slate",
         enum: ["slate", "gray", "zinc", "neutral", "stone"]
+    }),
+    locale: LogicType.string({
+        default: NAVIGATOR_LOCALE,
+        description: "Language of the components and order of the date segments. \"navigator\" follows the browser language.",
+        enum: [NAVIGATOR_LOCALE, ...localeCodes]
     }),
     radius: LogicType.number({
         default: 0.25,

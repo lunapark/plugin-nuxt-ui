@@ -1,11 +1,11 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import InputTime from "@nuxt/ui/components/InputTime.vue";
 
+import { timeValueType } from "@/lib/date.ts";
 import { ComponentIconsProps } from "@/lib/icon.ts";
 import { DateStep } from "@/lib/time.ts";
 import { color, size, variant } from "@/lib/variants.ts";
-
-const Time = LogicType.unknown();
 
 const inputTime = {
     build: {
@@ -16,7 +16,7 @@ const inputTime = {
         link: "https://ui.nuxt.com/docs/components/input-time"
     },
     models: {
-        modelValue: Time
+        modelValue: timeValueType()
     },
     name: "Form/InputTime",
     properties: {
@@ -29,10 +29,10 @@ const inputTime = {
         hideTimeZone: LogicType.boolean({ description: "Hide the time zone segment." }),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         hourCycle: LogicType.number({ description: "The hour cycle to use for the input.", enum: [12, 24] }),
-        maxValue: Time,
-        minValue: Time,
+        maxValue: timeValueType(),
+        minValue: timeValueType(),
         name: LogicType.string({ description: "The name of the field. Submitted with its owning form as part of a name/value pair." }),
-        placeholder: { ...Time, description: "The placeholder text when the input is empty." },
+        placeholder: timeValueType({ description: "The time used to fill the segments when empty." }),
         readonly: LogicType.boolean(),
         required: LogicType.boolean(),
         size,

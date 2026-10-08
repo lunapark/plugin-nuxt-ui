@@ -7,7 +7,9 @@ import { colorMode } from "@/color.ts";
 import { getComponents } from "@/components";
 import config from "@/config";
 import baseStyle from "@/index.css?inline";
+import { interfaces } from "@/interfaces";
 import llm from "@/llm.md?raw";
+import { getLocaleSetup, locale, resolveLocale } from "@/locale.ts";
 import icon from "@/logo.svg";
 import LWrapper from "@/LWrapper.vue";
 import nodes from "@/nodes";
@@ -19,6 +21,7 @@ import { lengthTokens } from "@/tokens/length.ts";
 export default makePlugin({
     build: {
         frontImports: [
+            { name: "@internationalized/date", version: "^3.12.4" },
             { name: "@nuxt/ui", version: "^4.11.3" },
             { name: "tailwindcss", version: "^4.1.18" },
             { name: "vue-router", version: "^4.6.4" },
@@ -40,6 +43,7 @@ export default makePlugin({
                 [EInjectionKey.VitePlugin]: `ui(${ JSON.stringify(ui) }),`,
                 [EInjectionKey.AppImport]: "import ui from '@nuxt/ui/vue-plugin';",
                 [EInjectionKey.AppBody]: "app.use(ui);",
+                [EInjectionKey.AppSetup]: getLocaleSetup(config.locale),
                 [EInjectionKey.Style]: "@import \"tailwindcss\";\n@import \"@nuxt/ui\";\n"
             };
         }
@@ -51,6 +55,7 @@ export default makePlugin({
         inputs: {
             icon: defineAsyncComponent(() => import("@/inputs/IconInput.vue"))
         },
+        interfaces,
         nodes,
         templates,
         tokens: [
@@ -60,7 +65,7 @@ export default makePlugin({
         ],
         wrapper: ({ mode }) => {
             if (mode === "build") {
-                return { component: UApp, name: "UApp" };
+                return { attributes: { ":locale": "nuxtUiLocale" }, component: UApp, name: "UApp" };
             }
 
             return { component: LWrapper, name: "Wrapper" };
@@ -88,9 +93,9 @@ export default makePlugin({
             appConfig.ui.colors.neutral = config.neutral;
 
             colorMode.value = config.colorMode;
+            locale.value = resolveLocale(config.locale);
         }
     },
     llm,
     name: "Nuxt UI"
 });
-

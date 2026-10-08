@@ -1,6 +1,6 @@
 {
     "name": "@luna-park/plugin-nuxt-ui",
-    "version": "1.5.2",
+    "version": "1.6.0",
     "private": false,
     "description": "Nuxt UI plugin for Luna Park",
     "keywords": [
@@ -39,6 +39,7 @@
     },
     "dependencies": {
         "@iconify/vue": "^5.0.1",
+        "@internationalized/date": "3.12.4",
         "@nuxt/ui": "^4.11.3",
         "@vueuse/core": "^14.3.0",
         "tailwindcss": "^4.3.2",

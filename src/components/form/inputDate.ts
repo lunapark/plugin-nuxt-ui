@@ -2,11 +2,10 @@ import type { TComponent } from "@luna-park/plugin";
 import { LogicType } from "@luna-park/plugin";
 import InputDate from "@nuxt/ui/components/InputDate.vue";
 
+import { DateRange, dateValueType } from "@/lib/date.ts";
 import { ComponentIconsProps, iconType } from "@/lib/icon.ts";
 import { DateStep } from "@/lib/time.ts";
 import { color, size, variant } from "@/lib/variants.ts";
-
-const DateValue = LogicType.unknown(); // TODO
 
 const inputDate = {
     build: {
@@ -22,7 +21,7 @@ const inputDate = {
         focus: LogicType.void()
     },
     models: {
-        modelValue: DateValue // TODO: add dynamic for range
+        modelValue: LogicType.union([dateValueType(), DateRange])
     },
     name: "Form/InputDate",
     properties: {
@@ -36,11 +35,11 @@ const inputDate = {
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         hourCycle: LogicType.number({ description: "The hour cycle to use for formatting the hour.", enum: [12, 24] }),
         id: LogicType.string(),
-        isDateUnavailable: LogicType.function(LogicType.object({ date: DateValue }), LogicType.boolean()),
-        maxValue: DateValue,
-        minValue: DateValue,
+        isDateUnavailable: LogicType.function(LogicType.object({ date: dateValueType() }), LogicType.boolean()),
+        maxValue: dateValueType(),
+        minValue: dateValueType(),
         name: LogicType.string({ description: "The name of the field. Submitted with its owning form as part of a name/value pair." }),
-        placeholder: LogicType.interface("Date", { description: "Placeholder text when empty." }),
+        placeholder: dateValueType({ description: "The date used to fill the segments when empty." }),
         range: LogicType.boolean({ description: "Allow selecting a range of dates." }),
         readonly: LogicType.boolean(),
         required: LogicType.boolean(),

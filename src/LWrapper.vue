@@ -3,7 +3,10 @@
         :class="colorClass"
         data-nuxt-body
     >
-        <UApp portal="[data-nuxt-body]">
+        <UApp
+            :locale="locale"
+            portal="[data-nuxt-body]"
+        >
             <slot />
         </UApp>
     </div>
@@ -13,6 +16,7 @@
 import { computed } from "vue";
 
 import { colorMode } from "@/color.ts";
+import { locale } from "@/locale.ts";
 
 const colorClass = computed(() => colorMode.state.value);
 </script>
