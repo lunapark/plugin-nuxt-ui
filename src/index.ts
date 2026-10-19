@@ -18,13 +18,17 @@ import { colorTokens } from "@/tokens/color.ts";
 import { fontSizeTokens } from "@/tokens/fontSize.ts";
 import { lengthTokens } from "@/tokens/length.ts";
 
+import packageDefinition from "../package.json" with { type: "json" };
+
+const { dependencies } = packageDefinition;
+
 export default makePlugin({
     build: {
         frontImports: [
-            { name: "@internationalized/date", version: "^3.12.4" },
-            { name: "@nuxt/ui", version: "^4.11.3" },
-            { name: "tailwindcss", version: "^4.1.18" },
-            { name: "vue-router", version: "^4.6.4" },
+            { name: "@internationalized/date", version: dependencies["@internationalized/date"] },
+            { name: "@nuxt/ui", version: dependencies["@nuxt/ui"] },
+            { name: "tailwindcss", version: dependencies.tailwindcss },
+            { name: "vue-router", version: dependencies["vue-router"] },
             { name: "@unhead/vue", version: "^2.0.19" }
         ],
         injections: ({ config }) => {

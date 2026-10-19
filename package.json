@@ -27,7 +27,8 @@
     },
     "module": "./dist/index.js",
     "files": [
-        "dist/**"
+        "dist/**",
+        "src/logo.svg"
     ],
     "scripts": {
         "build": "vite build",
