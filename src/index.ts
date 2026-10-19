@@ -18,7 +18,7 @@ import { colorTokens } from "@/tokens/color.ts";
 import { fontSizeTokens } from "@/tokens/fontSize.ts";
 import { lengthTokens } from "@/tokens/length.ts";
 
-import packageDefinition from "../package.json" with { type: "json" };
+import packageDefinition from "../package.json";
 
 const { dependencies } = packageDefinition;
 
