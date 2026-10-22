@@ -4,6 +4,7 @@ import InputTime from "@nuxt/ui/components/InputTime.vue";
 
 import { ComponentIconsProps } from "@/lib/componentIcons.ts";
 import { timeValueType } from "@/lib/date.ts";
+import { iconType } from "@/lib/icon.ts";
 import { DateStep } from "@/lib/time.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
@@ -25,18 +26,24 @@ const inputTime = {
         autofocusDelay: LogicType.number(),
         color,
         disabled: LogicType.boolean(),
+        fixed: LogicType.boolean({ description: "Keep the mobile text size on all breakpoints." }),
         granularity: LogicType.string({ description: "Granularity for time segments.", enum: ["hour", "minute", "second"] }),
         hideTimeZone: LogicType.boolean({ description: "Hide the time zone segment." }),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         hourCycle: LogicType.number({ description: "The hour cycle to use for the input.", enum: [12, 24] }),
+        id: LogicType.string(),
+        locale: LogicType.string({ description: "The locale to use for formatting and parsing." }),
         maxValue: timeValueType(),
         minValue: timeValueType(),
         name: LogicType.string({ description: "The name of the field. Submitted with its owning form as part of a name/value pair." }),
         placeholder: timeValueType({ description: "The time used to fill the segments when empty." }),
+        range: LogicType.boolean({ description: "Allow selecting a range of times." }),
         readonly: LogicType.boolean(),
         required: LogicType.boolean(),
+        separatorIcon: iconType({ description: "Icon to use as range separator." }),
         size,
         step: DateStep,
+        stepSnapping: LogicType.boolean({ description: "Whether the value should snap to the step." }),
         variant
     },
     slots: {

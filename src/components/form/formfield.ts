@@ -1,7 +1,8 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import FormField from "@nuxt/ui/components/FormField.vue";
 
-import { size } from "@/lib/variants.ts";
+import { orientation, size } from "@/lib/variants.ts";
 
 const formField = {
     build: {
@@ -16,11 +17,12 @@ const formField = {
         description: LogicType.string(),
         eagerValidation: LogicType.boolean({ description: "Validate on input immediately instead of on blur." }),
         error: LogicType.union([LogicType.string(), LogicType.boolean()]),
-        errorPatten: LogicType.interface("RegExp"),
+        errorPattern: LogicType.interface("RegExp"),
         help: LogicType.string(),
         hint: LogicType.string(),
         label: LogicType.string(),
         name: LogicType.string({ description: "Field name used to match form errors." }),
+        orientation: { ...orientation, default: "vertical", description: "The orientation of the form field." },
         required: LogicType.boolean(),
         size,
         validateOnInputDelay: LogicType.number({ default: 300, description: "Delay before validating on input (ms)." })

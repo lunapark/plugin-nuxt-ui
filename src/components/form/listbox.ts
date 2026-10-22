@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Listbox from "@nuxt/ui/components/Listbox.vue";
 
 import { SelectItem } from "@/components/form/select.ts";
@@ -33,10 +34,13 @@ const listbox = {
         filterFields: LogicType.array(LogicType.string(), { description: "Fields to filter items by." }),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         highlightOnHover: LogicType.boolean({ description: "Highlight the item when hovered." }),
+        id: LogicType.string(),
+        ignoreFilter: LogicType.boolean({ description: "When `true`, disable the default filters, useful for custom filtering." }),
         items: LogicType.array(SelectItem),
         labelKey: LogicType.string({ default: "label", description: "The key used to get the label from the item." }),
         loading: LogicType.boolean(),
         loadingIcon: iconType(),
+        loop: LogicType.boolean({ description: "Whether keyboard navigation should loop around." }),
         multiple: LogicType.boolean(),
         name: LogicType.string(),
         orientation: { ...orientation, default: "vertical" },

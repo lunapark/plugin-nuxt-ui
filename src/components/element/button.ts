@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Button from "@nuxt/ui/components/Button.vue";
 
 import { LinkProps } from "@/components/navigation/link.ts";
@@ -18,10 +19,13 @@ const button = {
     properties: {
         ...ComponentIconsProps.properties,
         ...LogicUtil.omit(LinkProps, ["custom"]).properties,
+        activeColor: { ...color, description: "The color of the button when active." },
+        activeVariant: { ...variant, description: "The variant of the button when active." },
         block: LogicType.boolean({ description: "Render the button full width." }),
         color,
         icon: iconType(),
         label: LogicType.string(),
+        loadingAuto: LogicType.boolean({ description: "When `true`, the loading icon will be displayed while the `onClick` promise is pending." }),
         size,
         square: LogicType.boolean({ description: "Render the button with equal padding on all sides." }),
         variant

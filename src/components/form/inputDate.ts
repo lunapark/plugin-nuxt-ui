@@ -31,12 +31,14 @@ const inputDate = {
         autofocusDelay: LogicType.number(),
         color,
         disabled: LogicType.boolean(),
+        fixed: LogicType.boolean({ description: "Keep the mobile text size on all breakpoints." }),
         granularity: LogicType.string({ description: "Granularity for date/time segments.", enum: ["day", "hour", "minute", "second"] }),
         hideTimeZone: LogicType.boolean({ description: "Hide the time zone segment." }),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         hourCycle: LogicType.number({ description: "The hour cycle to use for formatting the hour.", enum: [12, 24] }),
         id: LogicType.string(),
         isDateUnavailable: LogicType.function(LogicType.object({ date: dateValueType() }), LogicType.boolean()),
+        locale: LogicType.string({ description: "The locale to use for formatting and parsing." }),
         maxValue: dateValueType(),
         minValue: dateValueType(),
         name: LogicType.string({ description: "The name of the field. Submitted with its owning form as part of a name/value pair." }),
@@ -47,6 +49,7 @@ const inputDate = {
         separatorIcon: iconType({ description: "Icon to use as range separator." }),
         size,
         step: DateStep,
+        stepSnapping: LogicType.boolean({ description: "Whether the value should snap to the step." }),
         variant
     },
     slots: {

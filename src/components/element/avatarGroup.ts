@@ -1,7 +1,8 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import AvatarGroup from "@nuxt/ui/components/AvatarGroup.vue";
 
-import { size } from "@/lib/variants.ts";
+import { color, size } from "@/lib/variants.ts";
 
 const avatarGroup = {
     build: {
@@ -13,6 +14,7 @@ const avatarGroup = {
     },
     name: "Element/AvatarGroup",
     properties: {
+        color: { ...color, default: "neutral" },
         max: LogicType.number({ description: "The maximum number of avatars to display." }),
         size
     },

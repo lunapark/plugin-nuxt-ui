@@ -1,9 +1,11 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Breadcrumb from "@nuxt/ui/components/Breadcrumb.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
 import { iconType } from "@/lib/icon.ts";
+import { color } from "@/lib/variants.ts";
 
 const BreadcrumbItem = LogicUtil.partial(LogicType.object({
     ...LogicUtil.omit(LinkProps, ["raw", "custom"]).properties,
@@ -23,6 +25,7 @@ const breadcrumb = {
     },
     name: "Navigation/Breadcrumb",
     properties: {
+        color,
         items: LogicType.array(BreadcrumbItem),
         labelKey: LogicType.string({ default: "label" }),
         separatorIcon: iconType()

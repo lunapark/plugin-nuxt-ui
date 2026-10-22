@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Header from "@nuxt/ui/components/Header.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -17,6 +18,7 @@ const header = {
     },
     name: "Layout/Header",
     properties: {
+        autoClose: LogicType.boolean({ description: "Automatically close when route changes." }),
         menu: menuProp,
         mode: LogicType.string({ description: "The mode of the header menu.", enum: ["modal", "slideover", "drawer"] }),
         title: LogicType.string(),

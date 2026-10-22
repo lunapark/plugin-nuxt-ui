@@ -3,6 +3,7 @@ import { LogicType } from "@luna-park/plugin";
 import InputTags from "@nuxt/ui/components/InputTags.vue";
 
 import { ComponentIconsProps } from "@/lib/componentIcons.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const InputTagItem = LogicType.union([LogicType.string(), LogicType.number()]);
@@ -32,10 +33,13 @@ const inputTags = {
         autofocus: LogicType.boolean(),
         autofocusDelay: LogicType.number(),
         color,
+        deleteIcon: iconType({ description: "The icon displayed to delete a tag." }),
         delimiter: LogicType.union([LogicType.string(), LogicType.interface("RegExp")], { description: "Character/regexp string to split tags (e.g., , or ;)." }),
         disabled: LogicType.boolean(),
         duplicate: LogicType.boolean({ description: "Allow duplicate tags." }),
+        fixed: LogicType.boolean({ description: "Keep the mobile text size on all breakpoints." }),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
+        id: LogicType.string(),
         max: LogicType.number({ description: "Maximum number of tags." }),
         maxLength: LogicType.number({ description: "Maximum number of characters allowed." }),
         name: LogicType.string(),

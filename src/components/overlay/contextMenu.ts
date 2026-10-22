@@ -4,6 +4,7 @@ import ContextMenu from "@nuxt/ui/components/ContextMenu.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { KbdProps } from "@/components/element/kbd.ts";
+import { PopoverContentProps } from "@/components/overlay/popover.ts";
 import { withCollisionBoundary } from "@/lib/boundary.ts";
 import { iconType } from "@/lib/icon.ts";
 import { color, size } from "@/lib/variants.ts";
@@ -41,6 +42,7 @@ const contextMenu = {
     name: "Overlay/ContextMenu",
     properties: {
         checkedIcon: iconType({ description: "The icon displayed when an item is checked." }),
+        content: PopoverContentProps,
         descriptionKey: LogicType.string(),
         disabled: LogicType.boolean(),
         externalIcon: LogicType.union([LogicType.string(), LogicType.boolean()], { description: "The icon displayed when the item is an external link." }),

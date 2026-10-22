@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Sidebar from "@nuxt/ui/components/Sidebar.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -21,6 +22,7 @@ const sidebar = {
     },
     name: "Layout/Sidebar",
     properties: {
+        breakpoint: LogicType.string({ default: "lg", description: "The breakpoint below which the sidebar renders as a menu.", enum: ["sm", "md", "lg", "xl", "2xl"] }),
         close: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a close button in the mobile menu." }),
         closeIcon: iconType({ description: "The icon displayed in the close button." }),
         collapsible: LogicType.string({ default: "offcanvas", description: "How the sidebar collapses.", enum: ["offcanvas", "icon", "none"] }),

@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Tooltip from "@nuxt/ui/components/Tooltip.vue";
 
 import { KbdProps } from "@/components/element/kbd";
@@ -33,6 +34,9 @@ export const tooltip: TComponent = {
     component: withCollisionBoundary(Tooltip),
     documentation: {
         link: "https://ui.nuxt.com/docs/components/tooltip"
+    },
+    models: {
+        open: LogicType.boolean()
     },
     name: "Overlay/Tooltip",
     properties: {

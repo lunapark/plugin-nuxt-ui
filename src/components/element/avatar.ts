@@ -1,8 +1,9 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Avatar from "@nuxt/ui/components/Avatar.vue";
 
 import { iconType } from "@/lib/icon.ts";
-import { size } from "@/lib/variants.ts";
+import { color, size } from "@/lib/variants.ts";
 
 const avatar = {
     build: {
@@ -16,7 +17,9 @@ const avatar = {
     properties: {
         alt: LogicType.string(),
         chip: LogicType.boolean(),
+        color: { ...color, default: "neutral" },
         icon: iconType(),
+        loading: LogicType.string({ description: "How the browser should load the image.", enum: ["lazy", "eager"] }),
         size,
         src: LogicType.string(),
         text: LogicType.string()

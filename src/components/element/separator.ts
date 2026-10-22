@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Separator from "@nuxt/ui/components/Separator.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -21,6 +22,7 @@ const separator = {
         icon: iconType({ description: "Display an icon in the middle." }),
         label: LogicType.string({ description: "Display a label in the middle." }),
         orientation,
+        position: LogicType.string({ default: "center", description: "The position of the content.", enum: ["start", "center", "end"] }),
         size,
         type: LogicType.string({ enum: ["solid", "dashed", "dotted"] })
     },

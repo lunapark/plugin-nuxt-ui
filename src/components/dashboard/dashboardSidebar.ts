@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import DashboardSidebar from "@nuxt/ui/components/DashboardSidebar.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -18,6 +19,7 @@ const dashboardSidebar = {
     },
     name: "Dashboard/DashboardSidebar",
     properties: {
+        autoClose: LogicType.boolean({ description: "Automatically close when route changes." }),
         collapsedSize: LogicType.number({ description: "The size of the panel when collapsed." }),
         collapsible: LogicType.boolean({ description: "Whether to allow the user to collapse the panel." }),
         defaultSize: LogicType.number({ default: 15, description: "The default size of the panel." }),

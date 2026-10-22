@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Empty from "@nuxt/ui/components/Empty.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -20,6 +21,8 @@ const empty = {
         avatar: AvatarProps,
         description: LogicType.string(),
         icon: iconType({ description: "The icon displayed above the title." }),
+        loading: LogicType.boolean({ description: "When `true`, the loading icon will be displayed." }),
+        loadingIcon: iconType({ description: "The icon when the `loading` prop is `true`." }),
         size,
         title: LogicType.string(),
         variant

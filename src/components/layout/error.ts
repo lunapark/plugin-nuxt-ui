@@ -1,7 +1,9 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Error from "@nuxt/ui/components/Error.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 
 const error = {
     build: {
@@ -19,6 +21,7 @@ const error = {
             statusCode: LogicType.number(),
             statusMessage: LogicType.string()
         }),
+        icon: iconType({ description: "The icon displayed above the status code." }),
         redirect: LogicType.string({ description: "The URL to redirect to when the error is cleared." })
     },
     slots: {

@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Accordion from "@nuxt/ui/components/Accordion.vue";
 
 import { iconType } from "@/lib/icon.ts";
@@ -33,7 +34,8 @@ const accordion = {
         labelKey: LogicType.union([LogicType.string(), LogicType.number()]),
         trailingIcon: iconType(),
         type: LogicType.string({ enum: ["single", "multiple"] }),
-        unmountOnHide: LogicType.boolean({ description: "When `true`, the element will be unmounted on closed state." })
+        unmountOnHide: LogicType.boolean({ description: "When `true`, the element will be unmounted on closed state." }),
+        valueKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "value", description: "When `items` is an array of objects, select the field to use as the value." })
     },
     slots: {
         body: LogicType.object({ index: LogicType.number(), item: AccordionItem }),

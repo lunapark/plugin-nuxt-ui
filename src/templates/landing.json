@@ -2,20 +2,20 @@
     "name": "Landing",
     "type": "folder",
     "children": {
-        "98acb73e-9b17-4e8c-a6c4-c527ff6950be": {
+        "d8acb73e": {
             "name": "Layout",
             "type": "component",
             "layout": {
-                "id": "e1684065-fb0b-401e-8300-06c8e944d5ef",
+                "id": "c1684065",
                 "name": "",
                 "children": [
                     {
-                        "id": "2a87ec87-59e5-41cb-9229-5d1494bea83e",
+                        "id": "ca87ec87",
                         "name": "",
                         "children": [],
                         "classes": [],
                         "content": {
-                            "id": "6a02d12d-5a0a-4658-8001-1a577e68c47f",
+                            "id": "aa02d12d",
                             "slot": false,
                             "slots": {}
                         },
@@ -26,11 +26,11 @@
                         "tag": "template"
                     },
                     {
-                        "id": "de1bc1d1-c852-47f0-93d9-67d7688c74ba",
+                        "id": "be1bc1d1",
                         "name": "",
                         "children": [
                             {
-                                "id": "ea6300e7-3755-4c3b-b76d-6f90a70839c4",
+                                "id": "ca6300e7",
                                 "name": "",
                                 "children": [],
                                 "classes": [],
@@ -43,7 +43,7 @@
                         ],
                         "classes": [],
                         "content": {
-                            "id": "8c820bd4-4352-49c3-933f-20614a035f05",
+                            "id": "cc820bd4",
                             "slot": true,
                             "slots": {}
                         },
@@ -54,7 +54,7 @@
                         "tag": "template"
                     },
                     {
-                        "id": "54ea4974-c893-499f-9f5b-e5f76d653e71",
+                        "id": "f4ea4974",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -72,12 +72,12 @@
                         "tag": "template"
                     },
                     {
-                        "id": "a38077e6-1416-4284-8587-328be8d60c0a",
+                        "id": "e38077e6",
                         "name": "",
                         "children": [],
                         "classes": [],
                         "content": {
-                            "id": "3921d6ae-7b03-40f5-93ca-776b06ccc22e",
+                            "id": "d921d6ae",
                             "slot": false,
                             "slots": {}
                         },
@@ -132,15 +132,15 @@
                 "variables": {}
             }
         },
-        "6a02d12d-5a0a-4658-8001-1a577e68c47f": {
+        "aa02d12d": {
             "name": "Header",
             "type": "component",
             "layout": {
-                "id": "e3bd5b99-dfd7-42ee-854e-0216cf30508b",
+                "id": "c3bd5b99",
                 "name": "",
                 "children": [
                     {
-                        "id": "5d1bc8e6-cc3e-4d10-913e-926374391eaf",
+                        "id": "fd1bc8e6",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -187,11 +187,11 @@
                     "slot": true,
                     "slots": {
                         "right": {
-                            "id": "3c4462f6-6032-400f-811c-5a6d974ec2c3",
+                            "id": "dc4462f6",
                             "name": "right",
                             "children": [
                                 {
-                                    "id": "f6a053f0-a327-41e8-8918-e209492973ee",
+                                    "id": "d6a053f0",
                                     "name": "",
                                     "children": [],
                                     "classes": [],
@@ -262,15 +262,15 @@
                 "variables": {}
             }
         },
-        "3921d6ae-7b03-40f5-93ca-776b06ccc22e": {
+        "d921d6ae": {
             "name": "Footer",
             "type": "component",
             "layout": {
-                "id": "e646563e-8fd8-4d5a-84da-6ab9c1da86de",
+                "id": "c646563e",
                 "name": "",
                 "children": [
                     {
-                        "id": "c8583e2b-817c-4709-a652-38163b2e5ae0",
+                        "id": "a8583e2b",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -303,11 +303,11 @@
                     "slot": true,
                     "slots": {
                         "left": {
-                            "id": "c449d7e6-e628-432d-9577-45fe51e69731",
+                            "id": "a449d7e6",
                             "name": "left",
                             "children": [
                                 {
-                                    "id": "562efadd-fc3a-492d-99c9-e061143e38d7",
+                                    "id": "f62efadd",
                                     "name": "",
                                     "children": [],
                                     "classes": [],
@@ -350,11 +350,11 @@
                             "tag": "div"
                         },
                         "right": {
-                            "id": "68d5a935-cc41-49b0-911b-37dcbcb5872f",
+                            "id": "a8d5a935",
                             "name": "right",
                             "children": [
                                 {
-                                    "id": "1fd537fd-6d4e-4a9d-ab90-1d21f13a2d9e",
+                                    "id": "bfd537fd",
                                     "name": "",
                                     "children": [],
                                     "classes": [],
@@ -376,7 +376,7 @@
                                     "tag": "template"
                                 },
                                 {
-                                    "id": "e4056983-8934-4175-ba7e-d1d8e00175c8",
+                                    "id": "c4056983",
                                     "name": "",
                                     "children": [],
                                     "classes": [],
@@ -398,7 +398,7 @@
                                     "tag": "template"
                                 },
                                 {
-                                    "id": "ffad81d9-f9fe-4976-a079-1342089c930a",
+                                    "id": "dfad81d9",
                                     "name": "",
                                     "children": [],
                                     "classes": [],
@@ -473,19 +473,19 @@
                 "variables": {}
             }
         },
-        "8c820bd4-4352-49c3-933f-20614a035f05": {
+        "cc820bd4": {
             "name": "Main",
             "type": "component",
             "layout": {
-                "id": "066223a6-73f9-4668-b252-ce83ae4e4c26",
+                "id": "a66223a6",
                 "name": "",
                 "children": [
                     {
-                        "id": "23e46416-fbcc-44e3-9dbd-a6c028cdf94d",
+                        "id": "c3e46416",
                         "name": "",
                         "children": [
                             {
-                                "id": "87f5b6b5-6338-47af-8c9f-bdb31f3d93e8",
+                                "id": "c7f5b6b5",
                                 "name": "",
                                 "children": [],
                                 "classes": [],
@@ -558,15 +558,15 @@
                 "variables": {}
             }
         },
-        "4a4c8fe2-0b3b-4d14-8b8d-dc4081b1f16b": {
+        "ea4c8fe2": {
             "name": "Hero",
             "type": "component",
             "layout": {
-                "id": "60a9edcf-adac-48d1-983e-f91d45106922",
+                "id": "a0a9edcf",
                 "name": "",
                 "children": [
                     {
-                        "id": "3479a3c7-9a2d-41d2-bd56-554a43a276f9",
+                        "id": "d479a3c7",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -597,7 +597,7 @@
                         "tag": "template"
                     },
                     {
-                        "id": "03607b32-6634-492d-9a27-fefb3d7e6436",
+                        "id": "a3607b32",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -648,11 +648,11 @@
                         "tag": "template"
                     },
                     {
-                        "id": "1a153f70-1e48-4362-94ca-ca4216be876c",
+                        "id": "ba153f70",
                         "name": "",
                         "children": [
                             {
-                                "id": "92de0ab0-cf29-4e60-b5ae-f200f58e3a1d",
+                                "id": "d2de0ab0",
                                 "name": "",
                                 "children": [],
                                 "classes": [],
@@ -700,7 +700,7 @@
                 ],
                 "classes": [],
                 "content": {
-                    "id": "98acb73e-9b17-4e8c-a6c4-c527ff6950be",
+                    "id": "d8acb73e",
                     "slot": true,
                     "slots": {}
                 },

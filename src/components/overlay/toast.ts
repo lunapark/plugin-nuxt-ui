@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Toast from "@nuxt/ui/components/Toast.vue";
 
 import { AvatarProps } from "@/components/element/avatar";
@@ -13,6 +14,9 @@ export const toast: TComponent = {
     component: Toast,
     documentation: {
         link: "https://ui.nuxt.com/docs/components/toast"
+    },
+    models: {
+        open: LogicType.boolean()
     },
     name: "Overlay/Toast",
     properties: {

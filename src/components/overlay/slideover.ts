@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Slideover from "@nuxt/ui/components/Slideover.vue";
 
 import { ButtonProps } from "@/components/element/button";
@@ -22,12 +23,14 @@ export const slideover: TComponent = {
         defaultOpen: LogicType.boolean({ description: "The open state of the dialog when it is initially rendered." }),
         description: LogicType.string(),
         dismissible: LogicType.boolean({ description: "When `false`, the slideover will not close when clicking outside or pressing escape." }),
+        inset: LogicType.boolean({ description: "Whether to inset the slideover from the edges." }),
         modal: LogicType.boolean({ description: "The modality of the dialog." }),
         overlay: LogicType.boolean({ description: "Render an overlay behind the slideover." }),
         portal: LogicType.boolean({ description: "Render the slideover in a portal." }),
         side: LogicType.string({ default: "right", description: "The side of the slideover.", enum: ["left", "right", "top", "bottom"] }),
         title: LogicType.string(),
-        transition: LogicType.boolean({ description: "Animate the slideover when opening or closing." })
+        transition: LogicType.boolean({ description: "Animate the slideover when opening or closing." }),
+        unmountOnHide: LogicType.boolean({ description: "When `true`, the element will be unmounted on closed state." })
     },
     slots: {
         actions: LogicType.void(),

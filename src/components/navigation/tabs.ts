@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Tabs from "@nuxt/ui/components/Tabs.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -40,6 +41,7 @@ const tabs = {
         orientation,
         size,
         unmountOnHide: LogicType.boolean({ description: "When `true`, the element will be unmounted on closed state." }),
+        valueKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "value", description: "When `items` is an array of objects, select the field to use as the value." }),
         variant: LogicType.string({ default: "pill", enum: ["pill", "link"] })
     },
     slots: {

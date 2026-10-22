@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Modal from "@nuxt/ui/components/Modal.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -28,7 +29,8 @@ const modal = {
         portal: LogicType.boolean({ description: "Render the modal in a portal." }),
         scrollable: LogicType.boolean({ description: "When `true`, enables scrollable overlay mode where content scrolls within the overlay." }),
         title: LogicType.string(),
-        transition: LogicType.boolean({ description: "Animate the modal when opening or closing." })
+        transition: LogicType.boolean({ description: "Animate the modal when opening or closing." }),
+        unmountOnHide: LogicType.boolean({ description: "When `true`, the element will be unmounted on closed state." })
     },
     slots: {
         actions: LogicType.void(),

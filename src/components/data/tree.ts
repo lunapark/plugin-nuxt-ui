@@ -43,6 +43,7 @@ export const tree = {
         expandedIcon: iconType({ description: "The icon displayed when a parent node is expanded." }),
         items: LogicType.array(TreeItem),
         labelKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "label", description: "The key used to get the label from the item." }),
+        loop: LogicType.boolean({ description: "Whether keyboard navigation should loop around." }),
         multiple: LogicType.boolean({ description: "Whether multiple options can be selected or not." }),
         nested: LogicType.boolean({ description: "Use nested DOM structure (children inside parents) vs flattened structure (all items at same level).\nWhen `virtualize` is enabled, this is automatically set to `false`." }),
         propagateSelect: LogicType.boolean({ description: "When `true`, selecting parent will select the descendants." }),

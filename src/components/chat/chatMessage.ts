@@ -1,11 +1,12 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChatMessage from "@nuxt/ui/components/ChatMessage.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ButtonProps } from "@/components/element/button.ts";
 import { UIMessage } from "@/lib/ai.ts";
 import { iconType } from "@/lib/icon.ts";
-import { variant } from "@/lib/variants.ts";
+import { color, variant } from "@/lib/variants.ts";
 
 const chatMessage = {
     build: {},
@@ -18,6 +19,7 @@ const chatMessage = {
         ...UIMessage.properties,
         actions: LogicType.array(LogicType.union([ButtonProps]), { description: "Display a list of actions under the message." }),
         avatar: LogicType.union([AvatarProps, LogicType.object()], { description: "The avatar displayed in the message." }),
+        color: { ...color, default: "neutral" },
         compact: LogicType.boolean({ description: "Render the message in a compact style." }),
         content: LogicType.string({ description: "The content of the message." }),
         icon: iconType({ description: "The icon displayed in the message." }),

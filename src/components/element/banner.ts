@@ -26,6 +26,7 @@ const banner = {
         closeIcon: LogicType.union([LogicType.string(), LogicType.interface("object")], { description: "The icon displayed in the close button." }),
         color,
         icon: iconType({ description: "The icon displayed next to the title." }),
+        id: LogicType.string({ description: "A unique id saved to local storage to remember if the banner has been dismissed." }),
         title: LogicType.string()
     },
     slots: {

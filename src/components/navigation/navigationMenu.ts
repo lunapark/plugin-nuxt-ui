@@ -73,6 +73,7 @@ const navigationMenu = {
         trailingIcon: iconType({ description: "The icon displayed to open the menu." }),
         type: LogicType.string({ default: "multiple", enum: ["single", "multiple"] }),
         unmountOnHide: LogicType.boolean({ description: "When `true`, the element will be unmounted on closed state." }),
+        valueKey: LogicType.string({ default: "value", description: "When `items` is an array of objects, select the field to use as the value." }),
         variant: LogicType.string({ default: "pill", enum: ["pill", "link"] })
     },
     slots: {

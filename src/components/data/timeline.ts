@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Timeline from "@nuxt/ui/components/Timeline.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
@@ -33,7 +34,8 @@ export const timeline = {
         items: LogicType.array(TimelineItem),
         orientation: { ...orientation, description: "The orientation of the Timeline." },
         reverse: LogicType.boolean(),
-        size
+        size,
+        valueKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "value", description: "When `items` is an array of objects, select the field to use as the value." })
     },
     slots: {
         date: LogicType.object({ item: TimelineItem }),

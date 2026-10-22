@@ -1,5 +1,9 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Drawer from "@nuxt/ui/components/Drawer.vue";
+
+import { ButtonProps } from "@/components/element/button.ts";
+import { iconType } from "@/lib/icon.ts";
 
 const drawer = {
     build: {
@@ -9,9 +13,14 @@ const drawer = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/drawer"
     },
+    models: {
+        open: LogicType.boolean()
+    },
     name: "Overlay/Drawer",
     properties: {
         activeSnapPoint: LogicType.union([LogicType.string(), LogicType.number()]),
+        close: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a close button to dismiss the drawer." }),
+        closeIcon: iconType({ description: "The icon displayed in the close button." }),
         closeThreshold: LogicType.number({ description: "Number between 0 and 1 that determines when the drawer should be closed." }),
         defaultOpen: LogicType.boolean({ description: "Opened by default, skips initial enter animation." }),
         description: LogicType.string(),

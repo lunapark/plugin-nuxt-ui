@@ -32,15 +32,19 @@ const radioGroup = {
     name: "Form/RadioGroup",
     properties: {
         color,
+        descriptionKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "description", description: "When `items` is an array of objects, select the field to use as the description." }),
         disabled: LogicType.boolean({ description: "Prevent interaction with radio items." }),
+        highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         indicator,
         items: LogicType.array(RadioGroupItem),
+        labelKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "label", description: "When `items` is an array of objects, select the field to use as the label." }),
         legend: LogicType.string(),
         loop: LogicType.boolean({ description: "Loop keyboard navigation." }),
         name: LogicType.string(),
         orientation,
         required: LogicType.boolean(),
         size,
+        valueKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "value", description: "When `items` is an array of objects, select the field to use as the value." }),
         variant: LogicType.string({ default: "list", enum: ["list", "card", "table"] })
     },
     slots: {

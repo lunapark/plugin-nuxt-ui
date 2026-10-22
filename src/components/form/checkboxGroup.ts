@@ -32,6 +32,8 @@ const checkboxGroup = {
         color,
         description: LogicType.string(),
         descriptionKey: LogicType.union([LogicType.string(), LogicType.number()], { default: "description", description: "When `items` is an array of objects, select the field to use as the description." }),
+        disabled: LogicType.boolean({ description: "When `true`, prevents the user from interacting with the checkboxes." }),
+        highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         icon: iconType(),
         id: LogicType.string(),
         indicator,

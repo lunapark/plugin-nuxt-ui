@@ -5,6 +5,7 @@ import DropdownMenu from "@nuxt/ui/components/DropdownMenu.vue";
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { KbdProps } from "@/components/element/kbd.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
+import { PopoverContentProps } from "@/components/overlay/popover.ts";
 import { withCollisionBoundary } from "@/lib/boundary.ts";
 import { iconType } from "@/lib/icon.ts";
 import { MaybeArray } from "@/lib/value.ts";
@@ -45,10 +46,14 @@ const dropdownMenu = {
     properties: {
         arrow: LogicType.boolean({ description: "Display an arrow alongside the menu." }),
         checkedIcon: iconType({ description: "The icon displayed when an item is checked." }),
+        content: PopoverContentProps,
         defaultOpen: LogicType.boolean({ description: "The open state of the dropdown menu when it is initially rendered." }),
         descriptionKey: LogicType.union([LogicType.string(), LogicType.number()]),
         disabled: LogicType.boolean(),
         externalIcon: LogicType.union([LogicType.string(), LogicType.boolean()], { description: "The icon displayed when the item is an external link." }),
+        filter: LogicType.boolean({ description: "Display a search input to filter the items." }),
+        filterFields: LogicType.array(LogicType.string(), { description: "Fields to filter items by." }),
+        ignoreFilter: LogicType.boolean({ description: "When `true`, disable the default filters, useful for custom filtering." }),
         items: LogicType.array(MaybeArray(DropdownMenuItem)),
         labelKey: LogicType.union([LogicType.string(), LogicType.number()]),
         loadingIcon: iconType({ description: "The icon displayed when an item is loading." }),

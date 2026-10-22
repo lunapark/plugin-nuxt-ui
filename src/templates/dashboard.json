@@ -2,20 +2,20 @@
     "name": "Dashboard",
     "type": "folder",
     "children": {
-        "d0cc299c-1360-4051-ac8a-5b7adc0e5beb": {
+        "b0cc299c": {
             "name": "Layout",
             "type": "component",
             "layout": {
-                "id": "1b35206a-053c-42bb-b7ec-e9075f171c5e",
+                "id": "bb35206a",
                 "name": "",
                 "children": [
                     {
-                        "id": "f54161ad-51fb-42d7-9190-3c5582760d28",
+                        "id": "d54161ad",
                         "name": "",
                         "children": [],
                         "classes": [],
                         "content": {
-                            "id": "f967b1ee-269e-4f06-ac34-49cc4a55ca1a",
+                            "id": "d967b1ee",
                             "slot": false,
                             "slots": {}
                         },
@@ -26,12 +26,12 @@
                         "tag": "template"
                     },
                     {
-                        "id": "45a8683e-0196-4aab-b2de-55574f8eb082",
+                        "id": "e5a8683e",
                         "name": "",
                         "children": [],
                         "classes": [],
                         "content": {
-                            "id": "83b827da-a9d0-43c3-aa0a-fb44f0c89708",
+                            "id": "c3b827da",
                             "slot": false,
                             "slots": {}
                         },
@@ -42,7 +42,7 @@
                         "tag": "template"
                     },
                     {
-                        "id": "ada19eeb-88b3-4b0a-8011-9a94de982ac6",
+                        "id": "eda19eeb",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -107,19 +107,19 @@
                 "variables": {}
             }
         },
-        "3d7a5e14-1658-4978-adb3-c630102b436d": {
+        "dd7a5e14": {
             "name": "sidebar",
             "type": "folder",
             "children": {
-                "ba318733-392d-4a58-a738-5167b02747d6": {
+                "fa318733": {
                     "name": "TeamsMenu",
                     "type": "component",
                     "layout": {
-                        "id": "41606608-6c15-4d01-b4a8-796db9ad656e",
+                        "id": "e1606608",
                         "name": "",
                         "children": [
                             {
-                                "id": "5615bee1-16ae-4493-b952-9d03ca8f220e",
+                                "id": "f615bee1",
                                 "name": "",
                                 "children": [],
                                 "classes": [],
@@ -218,11 +218,11 @@
                         "variables": {}
                     }
                 },
-                "3c3a20ae-b4ff-4e14-8dcf-6fd75df988b0": {
+                "dc3a20ae": {
                     "name": "NavigationMenu",
                     "type": "component",
                     "layout": {
-                        "id": "0eae5699-15c9-4c88-911d-ea923aa0dc6d",
+                        "id": "aeae5699",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -309,15 +309,15 @@
                         "variables": {}
                     }
                 },
-                "f967b1ee-269e-4f06-ac34-49cc4a55ca1a": {
+                "d967b1ee": {
                     "name": "Sidebar",
                     "type": "component",
                     "layout": {
-                        "id": "2c9d73e9-a6bd-4b0f-a023-e6c0b8dafcc2",
+                        "id": "cc9d73e9",
                         "name": "",
                         "children": [
                             {
-                                "id": "90a62681-c635-4771-b8eb-e50b2de0970d",
+                                "id": "d0a62681",
                                 "name": "",
                                 "children": [],
                                 "classes": [],
@@ -333,12 +333,12 @@
                                 "tag": "template"
                             },
                             {
-                                "id": "a9814628-bddb-46af-8f70-d47dd5abc87f",
+                                "id": "e9814628",
                                 "name": "",
                                 "children": [],
                                 "classes": [],
                                 "content": {
-                                    "id": "3c3a20ae-b4ff-4e14-8dcf-6fd75df988b0",
+                                    "id": "dc3a20ae",
                                     "slot": false,
                                     "slots": {}
                                 },
@@ -354,16 +354,16 @@
                             "slot": true,
                             "slots": {
                                 "header": {
-                                    "id": "71119fc8-8116-43ae-a4b8-87c0d533c025",
+                                    "id": "b1119fc8",
                                     "name": "header",
                                     "children": [
                                         {
-                                            "id": "cd33b76f-e3c3-4132-97cc-dee1bb55d1b2",
+                                            "id": "ad33b76f",
                                             "name": "",
                                             "children": [],
                                             "classes": [],
                                             "content": {
-                                                "id": "ba318733-392d-4a58-a738-5167b02747d6",
+                                                "id": "fa318733",
                                                 "slot": false,
                                                 "slots": {}
                                             },
@@ -435,15 +435,15 @@
                 "expand": true
             }
         },
-        "0c1475b8-4c85-4adf-b250-ca9500de42ec": {
+        "ac1475b8": {
             "name": "panel",
             "type": "folder",
             "children": {
-                "83b827da-a9d0-43c3-aa0a-fb44f0c89708": {
+                "c3b827da": {
                     "name": "Panel",
                     "type": "component",
                     "layout": {
-                        "id": "8865f1be-ecc4-4a27-8e96-cdd315578eac",
+                        "id": "c865f1be",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -451,11 +451,11 @@
                             "slot": true,
                             "slots": {
                                 "header": {
-                                    "id": "e65be85b-321b-49fe-b811-0f3cc8b1e58f",
+                                    "id": "c65be85b",
                                     "name": "header",
                                     "children": [
                                         {
-                                            "id": "cf7994b3-082c-4c15-9ba6-392bb1c66175",
+                                            "id": "af7994b3",
                                             "name": "",
                                             "children": [],
                                             "classes": [],
@@ -463,11 +463,11 @@
                                                 "slot": true,
                                                 "slots": {
                                                     "leading": {
-                                                        "id": "2b6d0dba-1599-4d07-a49e-a60b449e7d5a",
+                                                        "id": "cb6d0dba",
                                                         "name": "leading",
                                                         "children": [
                                                             {
-                                                                "id": "a25c6d1e-04c9-4cf5-b18c-a7cb6d071f28",
+                                                                "id": "e25c6d1e",
                                                                 "name": "",
                                                                 "children": [],
                                                                 "classes": [],
@@ -491,23 +491,23 @@
                                                         "tag": "div"
                                                     },
                                                     "right": {
-                                                        "id": "0c0d1463-f7a6-48aa-85ad-4ea3849a3877",
+                                                        "id": "ac0d1463",
                                                         "name": "right",
                                                         "children": [
                                                             {
-                                                                "id": "20d1b201-4afa-4e5f-ab86-29220280e560",
+                                                                "id": "c0d1b201",
                                                                 "name": "",
                                                                 "children": [
                                                                     {
-                                                                        "id": "a04f5a44-2cef-439e-afa6-1be3f216a437",
+                                                                        "id": "e04f5a44",
                                                                         "name": "",
                                                                         "children": [
                                                                             {
-                                                                                "id": "afb909ad-c935-4e98-add2-ed628c4d92c3",
+                                                                                "id": "efb909ad",
                                                                                 "name": "",
                                                                                 "children": [
                                                                                     {
-                                                                                        "id": "a3921723-a924-4cbe-bb9d-01fd8ffe0406",
+                                                                                        "id": "e3921723",
                                                                                         "name": "",
                                                                                         "children": [],
                                                                                         "classes": [],
@@ -559,7 +559,7 @@
                                                                         "tag": "template"
                                                                     },
                                                                     {
-                                                                        "id": "1590bba8-a622-4209-ac69-c724c60f5201",
+                                                                        "id": "b590bba8",
                                                                         "name": "",
                                                                         "children": [],
                                                                         "classes": [],
@@ -618,7 +618,7 @@
                                             "tag": "template"
                                         },
                                         {
-                                            "id": "4d9a3394-ca84-418f-87e6-2de4f97cedb0",
+                                            "id": "ed9a3394",
                                             "name": "",
                                             "children": [],
                                             "classes": [],
@@ -626,11 +626,11 @@
                                                 "slot": true,
                                                 "slots": {
                                                     "left": {
-                                                        "id": "079cff92-c678-4da4-9e07-e3b780f7fe9b",
+                                                        "id": "a79cff92",
                                                         "name": "left",
                                                         "children": [
                                                             {
-                                                                "id": "080f7e01-0f2a-4515-ae66-65ad4b66cd9b",
+                                                                "id": "a80f7e01",
                                                                 "name": "",
                                                                 "children": [],
                                                                 "classes": [],
@@ -674,16 +674,16 @@
                                     "tag": "div"
                                 },
                                 "body": {
-                                    "id": "41474578-1db3-4f6e-830c-c6112b5f6de5",
+                                    "id": "e1474578",
                                     "name": "body",
                                     "children": [
                                         {
-                                            "id": "e580676b-4af4-4143-9ef1-adf82400a116",
+                                            "id": "c580676b",
                                             "name": "",
                                             "children": [],
                                             "classes": [],
                                             "content": {
-                                                "id": "544a9ca3-8c4d-4220-89bc-6f072b8df011",
+                                                "id": "f44a9ca3",
                                                 "slot": false,
                                                 "slots": {}
                                             },
@@ -694,12 +694,12 @@
                                             "tag": "template"
                                         },
                                         {
-                                            "id": "308cdb6e-9efb-40cd-9c7a-92b6f160c971",
+                                            "id": "d08cdb6e",
                                             "name": "",
                                             "children": [],
                                             "classes": [],
                                             "content": {
-                                                "id": "c802cbd2-a805-4030-9ac5-8350d9c0b137",
+                                                "id": "a802cbd2",
                                                 "slot": false,
                                                 "slots": {}
                                             },
@@ -763,23 +763,23 @@
                         "variables": {}
                     }
                 },
-                "544a9ca3-8c4d-4220-89bc-6f072b8df011": {
+                "f44a9ca3": {
                     "name": "Stats",
                     "type": "component",
                     "layout": {
-                        "id": "45ee2fac-62b7-4e59-b34c-fb4bd51bb75b",
+                        "id": "e5ee2fac",
                         "name": "",
                         "children": [
                             {
-                                "id": "46dc445b-bbd9-4ca0-82f2-aadc2c6b6903",
+                                "id": "e6dc445b",
                                 "name": "",
                                 "children": [
                                     {
-                                        "id": "cdb9b8c4-78a7-4284-8a7f-d44ba542b3f5",
+                                        "id": "adb9b8c4",
                                         "name": "",
                                         "children": [
                                             {
-                                                "id": "70d3a167-1fdc-4e3f-83e2-ac9bf6c35d6e",
+                                                "id": "b0d3a167",
                                                 "name": "",
                                                 "children": [],
                                                 "classes": [],
@@ -810,11 +810,11 @@
                                                 "tag": "div"
                                             },
                                             {
-                                                "id": "e168dde3-e414-4abe-9ce6-9a42854db81e",
+                                                "id": "c168dde3",
                                                 "name": "",
                                                 "children": [
                                                     {
-                                                        "id": "1ca2e031-fd43-4d3e-a2b3-4aa9cf4b47d0",
+                                                        "id": "bca2e031",
                                                         "name": "",
                                                         "children": [],
                                                         "classes": [],
@@ -888,15 +888,15 @@
                                 "tag": "template"
                             },
                             {
-                                "id": "52026a85-955e-4195-8fbf-b8042e3808de",
+                                "id": "f2026a85",
                                 "name": "",
                                 "children": [
                                     {
-                                        "id": "611440f4-433b-45c8-97a9-0714975e66dc",
+                                        "id": "a11440f4",
                                         "name": "",
                                         "children": [
                                             {
-                                                "id": "ca2089b9-a3a0-4fb0-b12d-8aa0315f4f13",
+                                                "id": "aa2089b9",
                                                 "name": "",
                                                 "children": [],
                                                 "classes": [],
@@ -927,11 +927,11 @@
                                                 "tag": "div"
                                             },
                                             {
-                                                "id": "5da7cad0-68b2-4e26-ae2b-0edef3f09e31",
+                                                "id": "fda7cad0",
                                                 "name": "",
                                                 "children": [
                                                     {
-                                                        "id": "530bd78d-5a84-4da9-8779-8f8213b16100",
+                                                        "id": "f30bd78d",
                                                         "name": "",
                                                         "children": [],
                                                         "classes": [],
@@ -1005,15 +1005,15 @@
                                 "tag": "template"
                             },
                             {
-                                "id": "bec00f25-baa5-428f-ac82-1a9095b44087",
+                                "id": "fec00f25",
                                 "name": "",
                                 "children": [
                                     {
-                                        "id": "caead2c3-8ee7-4740-9226-d991aeeb74e9",
+                                        "id": "aaead2c3",
                                         "name": "",
                                         "children": [
                                             {
-                                                "id": "f49c686f-5161-42d5-9212-f08cf2174702",
+                                                "id": "d49c686f",
                                                 "name": "",
                                                 "children": [],
                                                 "classes": [],
@@ -1044,11 +1044,11 @@
                                                 "tag": "div"
                                             },
                                             {
-                                                "id": "befe4393-2dad-4864-90bb-60777ead1945",
+                                                "id": "fefe4393",
                                                 "name": "",
                                                 "children": [
                                                     {
-                                                        "id": "6da950a0-32dd-49ae-b246-34cc94cc3274",
+                                                        "id": "ada950a0",
                                                         "name": "",
                                                         "children": [],
                                                         "classes": [],
@@ -1122,15 +1122,15 @@
                                 "tag": "template"
                             },
                             {
-                                "id": "a90c1bf6-8582-429d-8d09-75d9d15c624a",
+                                "id": "e90c1bf6",
                                 "name": "",
                                 "children": [
                                     {
-                                        "id": "6fecbdcf-0f21-4c14-a5b5-e8ded0d42a8f",
+                                        "id": "afecbdcf",
                                         "name": "",
                                         "children": [
                                             {
-                                                "id": "e23c5a5c-a728-4254-9f1c-5e3ded1ef891",
+                                                "id": "c23c5a5c",
                                                 "name": "",
                                                 "children": [],
                                                 "classes": [],
@@ -1161,11 +1161,11 @@
                                                 "tag": "div"
                                             },
                                             {
-                                                "id": "3b7831b4-0ae6-45a5-92ec-98094e603b71",
+                                                "id": "db7831b4",
                                                 "name": "",
                                                 "children": [
                                                     {
-                                                        "id": "c917790b-cf9f-4c64-8a47-5db7813e185a",
+                                                        "id": "a917790b",
                                                         "name": "",
                                                         "children": [],
                                                         "classes": [],
@@ -1297,11 +1297,11 @@
                         "variables": {}
                     }
                 },
-                "c802cbd2-a805-4030-9ac5-8350d9c0b137": {
+                "a802cbd2": {
                     "name": "Table",
                     "type": "component",
                     "layout": {
-                        "id": "86f91eeb-c2a0-4486-855d-97570d37950a",
+                        "id": "c6f91eeb",
                         "name": "",
                         "children": [],
                         "classes": [],
@@ -1309,29 +1309,29 @@
                             "slot": false,
                             "slots": {
                                 "status-cell": {
-                                    "id": "26c003b3-f223-4c82-95c0-3411f5974578",
+                                    "id": "c6c003b3",
                                     "name": "status-cell",
                                     "children": [
                                         {
-                                            "id": "0ee22062-44f2-4973-b23a-a6178f752bb8",
+                                            "id": "aee22062",
                                             "name": "",
                                             "children": [],
                                             "classes": [],
                                             "content": {
-                                                "id": "b5204446-5c56-44e0-8bd1-9622a548b227",
+                                                "id": "f5204446",
                                                 "slot": false,
                                                 "slots": {}
                                             },
                                             "element": "component",
                                             "events": [],
                                             "properties": {
-                                                "ee61ff72-8ab4-4388-a292-4e8f149cdc5e": {
+                                                "ce61ff72": {
                                                     "type": "dynamic",
                                                     "access": [
-                                                        "26c003b3-f223-4c82-95c0-3411f5974578",
+                                                        "c6c003b3",
                                                         "row",
                                                         "original",
-                                                        "ef873b54-ef50-41c5-b27a-a373de8c286d"
+                                                        "cf873b54"
                                                     ],
                                                     "_dynamic": true
                                                 }
@@ -1356,7 +1356,7 @@
                             "data": {
                                 "type": "dynamic",
                                 "access": [
-                                    "f0e0328f-2310-4cea-8e99-c989587f1378"
+                                    "d0e0328f"
                                 ],
                                 "_dynamic": true
                             },
@@ -1420,26 +1420,26 @@
                         "events": {},
                         "properties": {},
                         "variables": {
-                            "f0e0328f-2310-4cea-8e99-c989587f1378": {
+                            "d0e0328f": {
                                 "name": "data",
                                 "type": "array",
                                 "items": {
                                     "name": "",
                                     "type": "object",
                                     "properties": {
-                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": {
+                                        "c5b916e3": {
                                             "name": "id",
                                             "type": "number"
                                         },
-                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": {
+                                        "bd0faaa0": {
                                             "name": "date",
                                             "type": "string"
                                         },
-                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": {
+                                        "cf873b54": {
                                             "name": "status",
                                             "type": "string"
                                         },
-                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": {
+                                        "d292ce07": {
                                             "name": "mail",
                                             "type": "string"
                                         }
@@ -1447,44 +1447,44 @@
                                 },
                                 "default": [
                                     {
-                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": 2084,
-                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": "Dec 8, 16:23",
-                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": "paid",
-                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": "sample@example.com"
+                                        "c5b916e3": 2084,
+                                        "bd0faaa0": "Dec 8, 16:23",
+                                        "cf873b54": "paid",
+                                        "d292ce07": "sample@example.com"
                                     },
                                     {
-                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": 2083,
-                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": "Dec 8, 09:46",
-                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": "refunded",
-                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": "sample@example.com"
+                                        "c5b916e3": 2083,
+                                        "bd0faaa0": "Dec 8, 09:46",
+                                        "cf873b54": "refunded",
+                                        "d292ce07": "sample@example.com"
                                     },
                                     {
-                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": 2082,
-                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": "Dec 8, 06:46",
-                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": "paid",
-                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": "sample@example.com"
+                                        "c5b916e3": 2082,
+                                        "bd0faaa0": "Dec 8, 06:46",
+                                        "cf873b54": "paid",
+                                        "d292ce07": "sample@example.com"
                                     },
                                     {
-                                        "e5b916e3-fe8d-4a4d-a25f-1c1d1623ce5e": 2081,
-                                        "dd0faaa0-c594-428a-8e9e-6b32a1b38dfb": "Dec 7, 23:46",
-                                        "ef873b54-ef50-41c5-b27a-a373de8c286d": "failed",
-                                        "f292ce07-fcff-4d9f-8679-4a1b2c9bd31d": "sample@example.com"
+                                        "c5b916e3": 2081,
+                                        "bd0faaa0": "Dec 7, 23:46",
+                                        "cf873b54": "failed",
+                                        "d292ce07": "sample@example.com"
                                     }
                                 ],
-                                "id": "f0e0328f-2310-4cea-8e99-c989587f1378"
+                                "id": "d0e0328f"
                             }
                         }
                     }
                 },
-                "b5204446-5c56-44e0-8bd1-9622a548b227": {
+                "f5204446": {
                     "name": "TableStatus",
                     "type": "component",
                     "layout": {
-                        "id": "e09557ed-3d5e-452d-81cf-568d48fc2f2f",
+                        "id": "c09557ed",
                         "name": "",
                         "children": [
                             {
-                                "id": "3029979d-ffa3-4054-ad42-1fd67258c997",
+                                "id": "d029979d",
                                 "name": "",
                                 "children": [],
                                 "classes": [],
@@ -1492,7 +1492,7 @@
                                     "var": {
                                         "type": "dynamic",
                                         "access": [
-                                            "ee61ff72-8ab4-4388-a292-4e8f149cdc5e"
+                                            "ce61ff72"
                                         ],
                                         "_dynamic": true
                                     }
@@ -1516,7 +1516,7 @@
                             "color": {
                                 "type": "dynamic",
                                 "access": [
-                                    "b9ea03f6-3b13-42ad-a8f6-117832020ceb"
+                                    "f9ea03f6"
                                 ],
                                 "_dynamic": true
                             },
@@ -1538,7 +1538,7 @@
                                     "zoom": 0
                                 },
                                 "nodes": {
-                                    "954f90b1-690a-4552-8512-0da64722caa0": {
+                                    "d54f90b1": {
                                         "data": {
                                             "config": {
                                                 "deep": false
@@ -1565,14 +1565,14 @@
                                             "x": 0,
                                             "y": 0
                                         },
-                                        "logic": "computed/set/b9ea03f6-3b13-42ad-a8f6-117832020ceb"
+                                        "logic": "computed/set/f9ea03f6"
                                     },
-                                    "e97dfceb-b268-4bce-a871-659e9345fa63": {
+                                    "c97dfceb": {
                                         "data": {
                                             "config": {
                                                 "internal": {
-                                                    "in_f9070e17-94d7-4526-b2ee-c0ffec3ff482": "failed",
-                                                    "in_20b0e159-ec6d-4795-82db-e7496da6ca74": "paid"
+                                                    "in_d9070e17": "failed",
+                                                    "in_c0b0e159": "paid"
                                                 }
                                             },
                                             "reset": false,
@@ -1581,11 +1581,11 @@
                                                     "name": "object",
                                                     "type": "object",
                                                     "properties": {
-                                                        "f9070e17-94d7-4526-b2ee-c0ffec3ff482": {
+                                                        "d9070e17": {
                                                             "name": "failed",
                                                             "type": "string"
                                                         },
-                                                        "20b0e159-ec6d-4795-82db-e7496da6ca74": {
+                                                        "c0b0e159": {
                                                             "name": "paid",
                                                             "type": "string"
                                                         }
@@ -1595,8 +1595,8 @@
                                         },
                                         "internal": {
                                             "inputs": {
-                                                "in_f9070e17-94d7-4526-b2ee-c0ffec3ff482": "error",
-                                                "in_20b0e159-ec6d-4795-82db-e7496da6ca74": "success"
+                                                "in_d9070e17": "error",
+                                                "in_c0b0e159": "success"
                                             }
                                         },
                                         "location": {
@@ -1605,7 +1605,7 @@
                                         },
                                         "logic": "object/create"
                                     },
-                                    "d86af90f-1dfa-4f62-9af8-c1fc7cefb948": {
+                                    "b86af90f": {
                                         "data": {
                                             "optionals": {
                                                 "in_2default": true
@@ -1633,7 +1633,7 @@
                                         },
                                         "logic": "object/getAnyProperty"
                                     },
-                                    "51d84d65-c618-4c4b-97cb-3a241e8abb55": {
+                                    "f1d84d65": {
                                         "data": {
                                             "_size": {
                                                 "x": 6,
@@ -1645,38 +1645,38 @@
                                             "x": 3,
                                             "y": 21
                                         },
-                                        "logic": "property/get/ee61ff72-8ab4-4388-a292-4e8f149cdc5e"
+                                        "logic": "property/get/ce61ff72"
                                     }
                                 },
                                 "wires": {
-                                    "759c927a-acc3-4012-8c06-74872e0d2208": {
+                                    "b59c927a": {
                                         "from": {
                                             "key": "out_object",
-                                            "node": "e97dfceb-b268-4bce-a871-659e9345fa63"
+                                            "node": "c97dfceb"
                                         },
                                         "to": {
                                             "key": "in_0object",
-                                            "node": "d86af90f-1dfa-4f62-9af8-c1fc7cefb948"
+                                            "node": "b86af90f"
                                         }
                                     },
-                                    "c4cb11fe-4c88-4272-b0b8-9dcc815026f6": {
+                                    "a4cb11fe": {
                                         "from": {
                                             "key": "out_get",
-                                            "node": "51d84d65-c618-4c4b-97cb-3a241e8abb55"
+                                            "node": "f1d84d65"
                                         },
                                         "to": {
                                             "key": "in_1property",
-                                            "node": "d86af90f-1dfa-4f62-9af8-c1fc7cefb948"
+                                            "node": "b86af90f"
                                         }
                                     },
-                                    "ba3ba1a8-d451-4856-9c3b-7601813135aa": {
+                                    "fa3ba1a8": {
                                         "from": {
                                             "key": "out_value",
-                                            "node": "d86af90f-1dfa-4f62-9af8-c1fc7cefb948"
+                                            "node": "b86af90f"
                                         },
                                         "to": {
                                             "key": "in_l_value",
-                                            "node": "954f90b1-690a-4552-8512-0da64722caa0"
+                                            "node": "d54f90b1"
                                         }
                                     }
                                 }
@@ -1698,19 +1698,19 @@
                     },
                     "values": {
                         "computed": {
-                            "b9ea03f6-3b13-42ad-a8f6-117832020ceb": {
+                            "f9ea03f6": {
                                 "name": "color",
                                 "type": "string",
-                                "id": "b9ea03f6-3b13-42ad-a8f6-117832020ceb"
+                                "id": "f9ea03f6"
                             }
                         },
                         "events": {},
                         "properties": {
-                            "ee61ff72-8ab4-4388-a292-4e8f149cdc5e": {
+                            "ce61ff72": {
                                 "name": "status",
                                 "type": "string",
                                 "default": "",
-                                "id": "ee61ff72-8ab4-4388-a292-4e8f149cdc5e"
+                                "id": "ce61ff72"
                             }
                         },
                         "variables": {}

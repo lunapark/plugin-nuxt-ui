@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Link from "@nuxt/ui/components/Link.vue";
 
 export const NuxtLinkProps = LogicUtil.partial(LogicType.object({
@@ -21,12 +22,15 @@ const link = {
     properties: {
         ...NuxtLinkProps.properties,
         active: LogicType.boolean({ description: "Force the link to be active independent of the current route." }),
+        activeClass: LogicType.string({ description: "The class to apply when the link is active." }),
         disabled: LogicType.boolean(),
         exact: LogicType.boolean({ description: "Will only be active if the current route is an exact match." }),
+        exactActiveClass: LogicType.string({ description: "The class to apply when the link is exactly active." }),
         exactHash: LogicType.boolean({ description: "Will only be active if the current route hash is an exact match." }),
         exactQuery: LogicType.union([LogicType.boolean(), LogicType.string({ enum: ["partial"] })], { description: "Allows controlling how the current route query sets the link as active." }),
         inactiveClass: LogicType.string({ description: "The class to apply when the link is inactive." }),
         raw: LogicType.boolean({ description: "When `true`, only styles from `class`, `activeClass`, and `inactiveClass` will be applied." }),
+        replace: LogicType.boolean({ description: "Replace the current history entry instead of pushing a new one." }),
         type: LogicType.string({ description: "The type of the button when not a link.", enum: ["button", "submit", "reset"] })
     },
     slots: {

@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import ChatReasoning from "@nuxt/ui/components/ChatReasoning.vue";
 
 import { ChatShimmerProps } from "@/components/chat/chatShimmer.ts";
@@ -18,6 +19,7 @@ const chatReasoning = {
     name: "Chat/ChatReasoning",
     properties: {
         autoCloseDelay: LogicType.number({ default: 500, description: "Delay in milliseconds before auto-closing when streaming ends." }),
+        autoOpen: LogicType.boolean({ description: "Whether to automatically open when streaming starts." }),
         chevron: LogicType.string({ default: "trailing", description: "The position of the chevron icon.", enum: ["leading", "trailing"] }),
         chevronIcon: iconType({ description: "The icon displayed as the chevron." }),
         defaultOpen: LogicType.boolean({ description: "Initial open state." }),

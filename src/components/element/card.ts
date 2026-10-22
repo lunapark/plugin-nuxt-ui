@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Card from "@nuxt/ui/components/Card.vue";
 
 import { variant } from "@/lib/variants.ts";
@@ -13,6 +14,8 @@ const card = {
     },
     name: "Element/Card",
     properties: {
+        description: LogicType.string(),
+        title: LogicType.string(),
         variant
     },
     slots: {

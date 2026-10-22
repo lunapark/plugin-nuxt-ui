@@ -1,6 +1,8 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import FileUpload from "@nuxt/ui/components/FileUpload.vue";
 
+import { ButtonProps } from "@/components/element/button.ts";
 import { iconType } from "@/lib/icon.ts";
 import { color, size } from "@/lib/variants.ts";
 
@@ -22,8 +24,13 @@ const fileUpload = {
         description: LogicType.string(),
         disabled: LogicType.boolean(),
         dropzone: LogicType.boolean({ description: "Create a zone that allows the user to drop files onto it." }),
+        fileDelete: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Configure the delete button for the file." }),
+        fileDeleteIcon: iconType({ description: "The icon displayed to delete a file." }),
+        fileIcon: iconType({ description: "The icon to display for the file." }),
+        fileImage: LogicType.boolean({ description: "Preview the file. When `false`, only `fileIcon` is displayed." }),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         icon: iconType({ description: "The icon to display." }),
+        id: LogicType.string(),
         interactive: LogicType.boolean({ description: "Make the dropzone interactive when the user is clicking on it." }),
         label: LogicType.string(),
         layout: LogicType.string({ default: "grid", description: "The layout of how files are displayed.\nOnly works when `variant` is `area`.", enum: ["list", "grid"] }),

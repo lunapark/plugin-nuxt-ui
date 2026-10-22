@@ -1,9 +1,10 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Popover from "@nuxt/ui/components/Popover.vue";
 
 import { withCollisionBoundary } from "@/lib/boundary.ts";
 
-const PopoverContentProps = LogicUtil.partial(LogicType.object({
+export const PopoverContentProps = LogicUtil.partial(LogicType.object({
     align: LogicType.string({ description: "The preferred alignment against the trigger.", enum: ["start", "center", "end"] }),
     alignFlip: LogicType.boolean({ description: "Flip alignment when colliding with boundary." }),
     alignOffset: LogicType.number({ description: "An offset in pixels from the `start` or `end` alignment options." }),

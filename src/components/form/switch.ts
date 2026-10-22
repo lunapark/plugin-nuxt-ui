@@ -1,7 +1,9 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Switch from "@nuxt/ui/components/Switch.vue";
 
 import { iconType } from "@/lib/icon.ts";
+import { AcceptableValues } from "@/lib/value.ts";
 import { color, size } from "@/lib/variants.ts";
 
 const switch_ = {
@@ -21,13 +23,16 @@ const switch_ = {
         color,
         description: LogicType.string(),
         disabled: LogicType.boolean(),
+        highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
+        id: LogicType.string(),
         label: LogicType.string(),
         loading: LogicType.boolean({ description: "Display loading icon when true." }),
         loadingIcon: iconType({ description: "Icon to display when loading." }),
         name: LogicType.string(),
         required: LogicType.boolean(),
         size,
-        uncheckedIcon: iconType({ description: "Icon when the switch is unchecked." })
+        uncheckedIcon: iconType({ description: "Icon when the switch is unchecked." }),
+        value: AcceptableValues
     },
     slots: {
         description: LogicType.object({ description: LogicType.string() }),

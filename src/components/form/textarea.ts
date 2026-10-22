@@ -1,7 +1,9 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Textarea from "@nuxt/ui/components/Textarea.vue";
 
 import { ComponentIconsProps } from "@/lib/componentIcons.ts";
+import { ModelModifiers } from "@/lib/value.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const textarea = {
@@ -18,16 +20,23 @@ const textarea = {
     name: "Form/Textarea",
     properties: {
         ...ComponentIconsProps.properties,
+        autocomplete: LogicType.string(),
         autofocus: LogicType.boolean(),
         autofocusDelay: LogicType.number(),
         autoresize: LogicType.boolean(),
         autoresizeDelay: LogicType.number(),
         color,
         disabled: LogicType.boolean(),
+        fixed: LogicType.boolean({ description: "Keep the mobile text size on all breakpoints." }),
         highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
+        id: LogicType.string(),
+        maxlength: LogicType.number({ description: "The maximum number of characters allowed." }),
         maxrows: LogicType.number({ default: 0 }),
+        minlength: LogicType.number({ description: "The minimum number of characters required." }),
+        modelModifiers: ModelModifiers,
         name: LogicType.string(),
         placeholder: LogicType.string({ description: "The placeholder text when the textarea is empty." }),
+        readonly: LogicType.boolean(),
         required: LogicType.boolean(),
         rows: LogicType.number({ default: 3 }),
         size,

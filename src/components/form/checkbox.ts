@@ -3,6 +3,7 @@ import { LogicType } from "@luna-park/plugin";
 import Checkbox from "@nuxt/ui/components/Checkbox.vue";
 
 import { iconType } from "@/lib/icon.ts";
+import { AcceptableValues } from "@/lib/value.ts";
 import { color, indicator, size } from "@/lib/variants.ts";
 
 const checkbox = {
@@ -24,6 +25,7 @@ const checkbox = {
         color,
         description: LogicType.string(),
         disabled: LogicType.boolean({ description: "Prevent interaction." }),
+        highlight: LogicType.boolean({ description: "Highlight the ring color like a focus state." }),
         icon: iconType({ description: "The icon displayed when checked." }),
         id: LogicType.string(),
         indeterminateIcon: iconType({ description: "The icon displayed when indeterminate." }),
@@ -32,6 +34,7 @@ const checkbox = {
         name: LogicType.string({ description: "The name of the field. Submitted with its owning form as part of a name/value pair." }),
         required: LogicType.boolean({ description: "When `true`, indicates that the user must set the value before the owning form can be submitted." }),
         size,
+        value: AcceptableValues,
         variant: LogicType.string({ default: "list", enum: ["list", "card"] })
     },
     slots: {
