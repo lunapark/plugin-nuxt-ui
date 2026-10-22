@@ -4,6 +4,7 @@ import ContextMenu from "@nuxt/ui/components/ContextMenu.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { KbdProps } from "@/components/element/kbd.ts";
+import { withCollisionBoundary } from "@/lib/boundary.ts";
 import { iconType } from "@/lib/icon.ts";
 import { color, size } from "@/lib/variants.ts";
 
@@ -30,7 +31,7 @@ const contextMenu = {
     build: {
         name: "UContextMenu"
     },
-    component: ContextMenu,
+    component: withCollisionBoundary(ContextMenu),
     documentation: {
         link: "https://ui.nuxt.com/docs/components/context-menu"
     },

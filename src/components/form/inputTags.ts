@@ -2,7 +2,7 @@ import type { TComponent } from "@luna-park/plugin";
 import { LogicType } from "@luna-park/plugin";
 import InputTags from "@nuxt/ui/components/InputTags.vue";
 
-import { ComponentIconsProps } from "@/lib/icon.ts";
+import { ComponentIconsProps } from "@/lib/componentIcons.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const InputTagItem = LogicType.union([LogicType.string(), LogicType.number()]);

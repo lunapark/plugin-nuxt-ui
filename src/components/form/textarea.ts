@@ -1,7 +1,7 @@
 import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Textarea from "@nuxt/ui/components/Textarea.vue";
 
-import { ComponentIconsProps } from "@/lib/icon.ts";
+import { ComponentIconsProps } from "@/lib/componentIcons.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const textarea = {

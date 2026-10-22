@@ -5,6 +5,7 @@ import DropdownMenu from "@nuxt/ui/components/DropdownMenu.vue";
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { KbdProps } from "@/components/element/kbd.ts";
 import { LinkProps } from "@/components/navigation/link.ts";
+import { withCollisionBoundary } from "@/lib/boundary.ts";
 import { iconType } from "@/lib/icon.ts";
 import { MaybeArray } from "@/lib/value.ts";
 import { color, size } from "@/lib/variants.ts";
@@ -33,7 +34,7 @@ const dropdownMenu = {
     build: {
         name: "UDropdownMenu"
     },
-    component: DropdownMenu,
+    component: withCollisionBoundary(DropdownMenu),
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dropdown-menu"
     },

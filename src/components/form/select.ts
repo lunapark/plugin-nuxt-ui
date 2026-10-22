@@ -3,7 +3,9 @@ import Select from "@nuxt/ui/components/Select.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ChipProps } from "@/components/element/chip.ts";
-import { ComponentIconsProps, iconType } from "@/lib/icon.ts";
+import { withCollisionBoundary } from "@/lib/boundary.ts";
+import { ComponentIconsProps } from "@/lib/componentIcons.ts";
+import { iconType } from "@/lib/icon.ts";
 import { AcceptableValues } from "@/lib/value.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
@@ -25,7 +27,7 @@ const select = {
     build: {
         name: "USelect"
     },
-    component: Select,
+    component: withCollisionBoundary(Select),
     documentation: {
         link: "https://ui.nuxt.com/docs/components/select"
     },

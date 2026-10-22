@@ -3,7 +3,8 @@ import { LogicType, LogicUtil } from "@luna-park/plugin";
 import SelectMenu from "@nuxt/ui/components/SelectMenu.vue";
 
 import { SelectItem } from "@/components/form/select.ts";
-import { ComponentIconsProps } from "@/lib/icon.ts";
+import { withCollisionBoundary } from "@/lib/boundary.ts";
+import { ComponentIconsProps } from "@/lib/componentIcons.ts";
 import { AcceptableValues } from "@/lib/value.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
@@ -11,7 +12,7 @@ const selectMenu = {
     build: {
         name: "USelectMenu"
     },
-    component: SelectMenu,
+    component: withCollisionBoundary(SelectMenu),
     documentation: {
         link: "https://ui.nuxt.com/docs/components/select-menu"
     },

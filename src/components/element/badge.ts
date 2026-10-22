@@ -2,7 +2,8 @@ import type { TComponent } from "@luna-park/plugin";
 import { LogicType } from "@luna-park/plugin";
 import Badge from "@nuxt/ui/components/Badge.vue";
 
-import { ComponentIconsProps, iconType } from "@/lib/icon.ts";
+import { ComponentIconsProps } from "@/lib/componentIcons.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const badge = {

@@ -2,7 +2,7 @@ import type { TComponent } from "@luna-park/plugin";
 import { LogicType } from "@luna-park/plugin";
 import Input from "@nuxt/ui/components/Input.vue";
 
-import { ComponentIconsProps } from "@/lib/icon.ts";
+import { ComponentIconsProps } from "@/lib/componentIcons.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const input = {

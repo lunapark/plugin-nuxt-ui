@@ -3,7 +3,9 @@ import InputMenu from "@nuxt/ui/components/InputMenu.vue";
 
 import { AvatarProps } from "@/components/element/avatar.ts";
 import { ChipProps } from "@/components/element/chip.ts";
-import { ComponentIconsProps, iconType } from "@/lib/icon.ts";
+import { withCollisionBoundary } from "@/lib/boundary.ts";
+import { ComponentIconsProps } from "@/lib/componentIcons.ts";
+import { iconType } from "@/lib/icon.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
 const InputMenuItem = LogicType.union([
@@ -24,7 +26,7 @@ const inputMenu = {
     build: {
         name: "UInputMenu"
     },
-    component: InputMenu,
+    component: withCollisionBoundary(InputMenu),
     documentation: {
         link: "https://ui.nuxt.com/docs/components/input-menu"
     },

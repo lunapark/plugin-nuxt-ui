@@ -2,6 +2,7 @@ import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
 import Tooltip from "@nuxt/ui/components/Tooltip.vue";
 
 import { KbdProps } from "@/components/element/kbd";
+import { withCollisionBoundary } from "@/lib/boundary.ts";
 
 const TooltipContentProps = LogicType.object({
     align: LogicType.string({ description: "The preferred alignment against the trigger.", enum: ["end", "start", "center"], optional: true }),
@@ -29,7 +30,7 @@ export const tooltip: TComponent = {
     build: {
         name: "UTooltip"
     },
-    component: Tooltip,
+    component: withCollisionBoundary(Tooltip),
     documentation: {
         link: "https://ui.nuxt.com/docs/components/tooltip"
     },

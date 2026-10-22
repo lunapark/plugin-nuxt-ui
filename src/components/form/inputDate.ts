@@ -2,8 +2,9 @@ import type { TComponent } from "@luna-park/plugin";
 import { LogicType } from "@luna-park/plugin";
 import InputDate from "@nuxt/ui/components/InputDate.vue";
 
+import { ComponentIconsProps } from "@/lib/componentIcons.ts";
 import { DateRange, dateValueType } from "@/lib/date.ts";
-import { ComponentIconsProps, iconType } from "@/lib/icon.ts";
+import { iconType } from "@/lib/icon.ts";
 import { DateStep } from "@/lib/time.ts";
 import { color, size, variant } from "@/lib/variants.ts";
 
