@@ -4,7 +4,7 @@ import Listbox from "@nuxt/ui/components/Listbox.vue";
 
 import { SelectItem } from "@/components/form/select.ts";
 import { iconType } from "@/lib/icon.ts";
-import { AcceptableValues, MaybeArray } from "@/lib/value.ts";
+import { AcceptableValues } from "@/lib/value.ts";
 import { color, orientation, size } from "@/lib/variants.ts";
 
 const ItemSlot = LogicType.object({ index: LogicType.number(), item: SelectItem });
@@ -20,9 +20,9 @@ const listbox = {
     emits: {
         change: LogicType.void()
     },
-    models: {
-        modelValue: MaybeArray(AcceptableValues)
-    },
+    models: (props) => ({
+        modelValue: props.multiple?.value ? LogicType.array(AcceptableValues) : AcceptableValues
+    }),
     name: "Form/Listbox",
     properties: {
         autofocus: LogicType.boolean(),

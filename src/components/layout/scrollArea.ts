@@ -21,9 +21,9 @@ const scrollArea = {
         shadow: LogicType.boolean({ description: "Display a fading shadow on the scrollable edges." }),
         virtualize: LogicType.boolean({ description: "Enable virtualization for large lists." })
     },
-    slots: {
-        default: LogicType.object({ index: LogicType.number(), item: LogicType.unknown() })
-    }
+    slots: (props) => ({
+        default: LogicType.object({ index: LogicType.number(), item: { ...props.items?.schema?.items ?? LogicType.unknown(), name: "item" } })
+    })
 } satisfies TComponent;
 
 export default scrollArea;

@@ -1,4 +1,4 @@
-import type { TComponent } from "@luna-park/plugin";
+import type { TComponent, TSchema } from "@luna-park/plugin";
 import { LogicType, LogicUtil } from "@luna-park/plugin";
 import AuthForm from "@nuxt/ui/components/AuthForm.vue";
 
@@ -29,6 +29,21 @@ const AuthFormField = LogicUtil.partial(LogicType.object({
     variant
 }));
 
+function getFieldType(type?: string) {
+    switch (type) {
+        case "checkbox":
+            return LogicType.boolean();
+        case "number":
+            return LogicType.number();
+        case "select":
+            return AcceptableValues;
+        case "otp":
+            return LogicType.array(LogicType.string());
+        default:
+            return LogicType.string();
+    }
+}
+
 const authForm = {
     build: {
         name: "UAuthForm"
@@ -37,8 +52,18 @@ const authForm = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/auth-form"
     },
-    emits: {
-        submit: LogicType.object({ payload: LogicType.unknown() })
+    emits: (props) => {
+        const data: Record<string, TSchema> = {};
+
+        for (const field of props.fields?.value ?? []) {
+            if (field.name) {
+                data[field.name] = getFieldType(field.type);
+            }
+        }
+
+        return {
+            submit: LogicType.object({ data: LogicType.object(data) })
+        };
     },
     name: "Page/AuthForm",
     properties: {

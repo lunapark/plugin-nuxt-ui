@@ -14,9 +14,9 @@ const fileUpload = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/file-upload"
     },
-    models: {
-        modelValue: LogicType.union(LogicType.interface("File"), LogicType.array(LogicType.interface("File")))
-    },
+    models: (props) => ({
+        modelValue: props.multiple?.value ? LogicType.array(LogicType.interface("File")) : LogicType.interface("File")
+    }),
     name: "Form/FileUpload",
     properties: {
         accept: LogicType.string({ default: "*", description: "Specifies the allowed file types for the input. Provide a comma-separated list of MIME types or file extensions (e.g., \"image/png,application/pdf,.jpg\")." }),

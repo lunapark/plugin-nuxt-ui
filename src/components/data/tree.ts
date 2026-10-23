@@ -28,9 +28,13 @@ export const tree = {
         select: LogicType.object({ e: LogicType.interface("SelectEvent"), item: LogicType.array(LogicType.interface("T")) }),
         toggle: LogicType.object({ e: LogicType.interface("ToggleEvent"), item: LogicType.array(LogicType.interface("T")) })
     },
-    models: {
-        expanded: LogicType.array(LogicType.string(), { description: "The controlled value of the expanded item. Can be binded with with `v-model`." }),
-        modelValue: LogicType.union([TreeItem, LogicType.array(TreeItem)], { description: "The controlled value of the Tree. Can be bind as `v-model`." })
+    models: (props) => {
+        const description = "The controlled value of the Tree. Can be bind as `v-model`.";
+
+        return {
+            expanded: LogicType.array(LogicType.string(), { description: "The controlled value of the expanded item. Can be binded with with `v-model`." }),
+            modelValue: props.multiple?.value ? LogicType.array(TreeItem, { description }) : { ...TreeItem, description }
+        };
     },
     name: "Data/Tree",
     properties: {

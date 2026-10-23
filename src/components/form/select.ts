@@ -33,10 +33,10 @@ const select = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/select"
     },
-    models: {
-        modelValue: AcceptableValues,
+    models: (props) => ({
+        modelValue: props.multiple?.value ? LogicType.array(AcceptableValues) : AcceptableValues,
         open: LogicType.boolean()
-    },
+    }),
     name: "Form/Select",
     properties: {
         ...ComponentIconsProps.properties,

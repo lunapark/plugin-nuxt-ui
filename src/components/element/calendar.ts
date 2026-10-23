@@ -15,8 +15,12 @@ const calendar = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/calendar"
     },
-    models: {
-        modelValue: LogicType.union([dateValueType(), LogicType.array(dateValueType()), DateRange])
+    models: (props) => {
+        if (props.range?.value) {
+            return { modelValue: DateRange };
+        }
+
+        return { modelValue: props.multiple?.value ? LogicType.array(dateValueType()) : dateValueType() };
     },
     name: "Element/Calendar",
     properties: {

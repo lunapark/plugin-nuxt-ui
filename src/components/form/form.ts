@@ -1,8 +1,12 @@
-import type { TComponent } from "@luna-park/plugin";
+import type { TComponent, TSchema } from "@luna-park/plugin";
 import { LogicType } from "@luna-park/plugin";
 import Form from "@nuxt/ui/components/Form.vue";
 
 const FormError = LogicType.object({ message: LogicType.string(), name: LogicType.string({ optional: true }) });
+
+function validateType(state: TSchema = LogicType.unknown()) {
+    return LogicType.function(LogicType.object({ state }), LogicType.array(FormError));
+}
 
 const form = {
     build: {
@@ -12,10 +16,10 @@ const form = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/form"
     },
-    emits: {
+    emits: (props) => ({
         error: LogicType.void(),
-        submit: LogicType.void()
-    },
+        submit: LogicType.object({ data: props.state?.schema ?? LogicType.unknown() })
+    }),
     name: "Form/Form",
     properties: {
         disabled: LogicType.boolean({ description: "Disable all inputs inside the form." }),
@@ -26,7 +30,7 @@ const form = {
         schema: LogicType.unknown({ description: "Validation schema (Zod/Yup/Joi/etc.)." }),
         state: LogicType.unknown({ description: "An object representing the current state of the form." }),
         transform: LogicType.boolean({ description: "Apply schema transformations on submit." }),
-        validate: LogicType.function(LogicType.object({ state: LogicType.unknown() }), LogicType.array(FormError)),
+        validate: { ...validateType(), dynamic: ({ inputs }: { inputs: Record<string, TSchema>; }) => validateType(inputs.state) },
         validateOn: LogicType.array(LogicType.string({ enum: ["input", "blur", "change", "focus"] }), { default: ["blur", "change", "input"], description: "Input events that trigger validation." }),
         validateOnInputDelay: LogicType.number({ default: 300, description: "Delay before validating on input (ms)." })
     },

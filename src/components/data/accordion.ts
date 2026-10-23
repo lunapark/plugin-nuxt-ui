@@ -22,8 +22,12 @@ const accordion = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/accordion"
     },
-    models: {
-        modelValue: LogicType.union([LogicType.string(), LogicType.array(LogicType.string())], { description: "The controlled value of the active item(s).\n\nUse this when you need to control the state of the items. Can be binded with `v-model`" })
+    models: (props) => {
+        const description = "The controlled value of the active item(s).\n\nUse this when you need to control the state of the items. Can be binded with `v-model`";
+
+        return {
+            modelValue: props.type?.value === "multiple" ? LogicType.array(LogicType.string(), { description }) : LogicType.string({ description })
+        };
     },
     name: "Data/Accordion",
     properties: {

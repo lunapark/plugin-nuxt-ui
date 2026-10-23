@@ -33,9 +33,13 @@ const inputMenu = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/input-menu"
     },
-    models: {
-        modelValue: LogicType.union([LogicType.string(), LogicType.number()]), // TODO: Add dynamic for array
-        open: LogicType.boolean()
+    models: (props) => {
+        const value = LogicType.union([LogicType.string(), LogicType.number()]);
+
+        return {
+            modelValue: props.multiple?.value ? LogicType.array(value) : value,
+            open: LogicType.boolean()
+        };
     },
     name: "Form/InputMenu",
     properties: {

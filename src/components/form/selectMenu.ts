@@ -22,10 +22,10 @@ const selectMenu = {
     emits: {
         create: LogicType.object({ item: LogicType.string() })
     },
-    models: {
-        modelValue: AcceptableValues,
+    models: (props) => ({
+        modelValue: props.multiple?.value ? LogicType.array(AcceptableValues) : AcceptableValues,
         open: LogicType.boolean()
-    },
+    }),
     name: "Form/SelectMenu",
     properties: {
         ...ComponentIconsProps.properties,

@@ -21,9 +21,9 @@ const inputDate = {
         change: LogicType.void(),
         focus: LogicType.void()
     },
-    models: {
-        modelValue: LogicType.union([dateValueType(), DateRange])
-    },
+    models: (props) => ({
+        modelValue: props.range?.value ? DateRange : dateValueType()
+    }),
     name: "Form/InputDate",
     properties: {
         ...ComponentIconsProps.properties,
