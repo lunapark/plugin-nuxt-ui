@@ -12,14 +12,17 @@ This plugin can be installed directly from the Luna Park application:
 
 ## Configuration
 
-You can configure the global appearance of the UI components in the plugin settings:
+Click the Nuxt UI button in the editor header to open the plugin workspace, where you can customize the theme the same way as the [Nuxt UI theme builder](https://ui.nuxt.com/theme):
 
-| Option | Description | Type | Default | Options |
-|---|---|---|---|---|
-| `primary` | Primary color theme | String | `green` | `red`, `orange`, `amber`, `yellow`, `lime`, `green`, `emerald`, `teal`, `cyan`, `sky`, `blue`, `indigo`, `violet`, `purple`, `fuchsia`, `pink`, `rose` |
-| `neutral` | Neutral color shade | String | `slate` | `slate`, `gray`, `zinc`, `neutral`, `stone` |
-| `colorMode`| Color mode preference | String | `auto` | `light`, `dark`, `auto` |
-| `radius` | Global border radius | Number | `0.25` | 0 to 1 (step 0.125) |
+| Section | Settings |
+|---|---|
+| Presets | Default, Mono, Sky, Mint, Iris, Crimson, Coral, Sunset |
+| Colors | Primary, secondary, success, info, warning, error, neutral, black as primary |
+| Typography | Sans, serif and mono Google Fonts |
+| Style | Radius, icon set, default size, default variant of buttons, inputs and panels |
+| General | Color mode, locale |
+
+The theme applies live in the editor and is exported to the generated app.
 
 ## Components
 

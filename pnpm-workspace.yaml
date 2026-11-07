@@ -2,10 +2,9 @@ allowBuilds:
   esbuild: true
   unrs-resolver: true
   vue-demi: true
+minimumReleaseAgeExclude:
+  - '@luna-park/*'
 onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
   - vue-demi
-overrides:
-  "@luna-park/design": "link:../core/packages/design"
-  "@luna-park/plugin": "link:../core/packages/plugin"

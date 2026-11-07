@@ -20,9 +20,13 @@ import { colorMode } from "@/color.ts";
 import { collisionBoundaryKey } from "@/lib/boundary.ts";
 import { locale } from "@/locale.ts";
 
+const props = defineProps<{
+    mode?: "dark" | "light";
+}>();
+
 const body = useTemplateRef<HTMLDivElement>("body");
 provide(collisionBoundaryKey, computed(() => body.value?.closest<HTMLElement>("[data-scroll-root]") ?? undefined));
-const colorClass = computed(() => colorMode.state.value);
+const colorClass = computed(() => props.mode ?? colorMode.state.value);
 </script>
 
 <style scoped>

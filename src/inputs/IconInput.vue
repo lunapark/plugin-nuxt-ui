@@ -74,17 +74,17 @@ import { computed, ref } from "vue";
 const value = defineModel<string>();
 
 const libraries = [
-    { id: "all", label: "All libraries" },
-    { id: "lucide", label: "Lucide" },
-    { id: "ph", label: "Phosphor" },
-    { id: "ri", label: "Remix" },
-    { id: "tabler", label: "Tabler" },
-    { id: "heroicons", label: "Heroicons" },
-    { id: "material-symbols", label: "Material Symbols" },
-    { id: "mdi", label: "Material Design" },
-    { id: "fa7-solid,fa7-regular,fa7-brands", label: "Font Awesome" },
-    { id: "simple-icons", label: "Simple Icons" },
-    { id: "logos", label: "Logos" }
+    { label: "All libraries", value: "all" },
+    { label: "Lucide", value: "lucide" },
+    { label: "Phosphor", value: "ph" },
+    { label: "Remix", value: "ri" },
+    { label: "Tabler", value: "tabler" },
+    { label: "Heroicons", value: "heroicons" },
+    { label: "Material Symbols", value: "material-symbols" },
+    { label: "Material Design", value: "mdi" },
+    { label: "Font Awesome", value: "fa7-solid,fa7-regular,fa7-brands" },
+    { label: "Simple Icons", value: "simple-icons" },
+    { label: "Logos", value: "logos" }
 ];
 
 const query = ref("");

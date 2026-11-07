@@ -3,20 +3,23 @@ import UApp from "@nuxt/ui/components/App.vue";
 import ui from "@nuxt/ui/vue-plugin";
 import { defineAsyncComponent } from "vue";
 
-import { colorMode } from "@/color.ts";
 import { getComponents } from "@/components";
-import config from "@/config";
 import baseStyle from "@/index.css?inline";
 import { interfaces } from "@/interfaces";
 import llm from "@/llm.md?raw";
-import { getLocaleSetup, locale, resolveLocale } from "@/locale.ts";
+import { getLocaleSetup } from "@/locale.ts";
 import icon from "@/logo.svg";
 import LWrapper from "@/LWrapper.vue";
 import nodes from "@/nodes";
 import { templates } from "@/templates";
+import { getBuildAppConfig, getFontsHref, getThemeCss } from "@/theme/apply.ts";
+import { internals } from "@/theme/internals.ts";
+import { mountTheme, unmountTheme } from "@/theme/runtime.ts";
+import { resolveSettings } from "@/theme/settings.ts";
 import { colorTokens } from "@/tokens/color.ts";
 import { fontSizeTokens } from "@/tokens/fontSize.ts";
 import { lengthTokens } from "@/tokens/length.ts";
+import { workspacePreview, workspaceSections } from "@/workspace";
 
 import packageDefinition from "../package.json";
 
@@ -31,28 +34,23 @@ export default makePlugin({
             { name: "vue-router", version: dependencies["vue-router"] },
             { name: "@unhead/vue", version: "^2.0.19" }
         ],
-        injections: ({ config }) => {
-            const ui = {
-                ui: {
-                    colors: {
-                        neutral: config.neutral,
-                        primary: config.primary,
-                        secondary: config.secondary
-                    }
-                }
-            };
+        injections: ({ config, internals }) => {
+            const settings = resolveSettings(internals, config);
+            const ui = { ui: getBuildAppConfig(settings.theme) };
+            const fontsHref = getFontsHref(settings.theme);
+            const fontsLink = fontsHref ? `\ndocument.head.insertAdjacentHTML("beforeend", ${ JSON.stringify(`<link rel="stylesheet" href="${ fontsHref }">`) });` : "";
+            const themeCss = getThemeCss(settings.theme, { dark: ".dark", light: ":root:not(.dark)", root: ":root" });
 
             return {
                 [EInjectionKey.ViteImport]: "import ui from '@nuxt/ui/vite';",
                 [EInjectionKey.VitePlugin]: `ui(${ JSON.stringify(ui) }),`,
                 [EInjectionKey.AppImport]: "import ui from '@nuxt/ui/vue-plugin';",
-                [EInjectionKey.AppBody]: "app.use(ui);",
-                [EInjectionKey.AppSetup]: getLocaleSetup(config.locale),
-                [EInjectionKey.Style]: "@import \"tailwindcss\";\n@import \"@nuxt/ui\";\n"
+                [EInjectionKey.AppBody]: `app.use(ui);${ fontsLink }`,
+                [EInjectionKey.AppSetup]: getLocaleSetup(settings.locale),
+                [EInjectionKey.Style]: `@import "tailwindcss";\n@import "@nuxt/ui";\n${ themeCss }\n`
             };
         }
     },
-    config,
     description: "Nuxt UI is a collection of reusable components and utilities for building apps.",
     editor: {
         components: getComponents,
@@ -78,28 +76,33 @@ export default makePlugin({
     icon,
     id: "nuxt-ui",
     inject: {
-        css: ({ config, mode }) => {
+        css: ({ config, internals, mode }) => {
             if (mode === "editor") {
-                const configStyle = `:root{ --ui-radius:${ config.radius }rem; }[data-nuxt-body]{min-height: 100%}`;
-                return baseStyle.replace(/\bbody\b([^:;])*?{/g, "[data-nuxt-body]$1{") + configStyle;
+                const settings = resolveSettings(internals, config);
+                const themeCss = getThemeCss(settings.theme, {
+                    dark: "[data-nuxt-body].dark",
+                    light: "[data-nuxt-body]:not(.dark)",
+                    root: "[data-nuxt-body]"
+                });
+
+                return `${ baseStyle.replace(/\bbody\b([^:;])*?{/g, "[data-nuxt-body]$1{") }[data-nuxt-body]{min-height: 100%}${ themeCss }`;
             }
         }
     },
+    internals,
     lifecycle: {
-        mount: () => {
+        mount: ({ config }) => {
             window.__LUNA_PARK__.app.use(ui);
+            mountTheme(config);
         },
-        update({ config }) {
-            const appConfig = useAppConfig();
-
-            appConfig.ui.colors.primary = config.primary;
-            appConfig.ui.colors.secondary = config.secondary;
-            appConfig.ui.colors.neutral = config.neutral;
-
-            colorMode.value = config.colorMode;
-            locale.value = resolveLocale(config.locale);
+        unmount: () => {
+            unmountTheme();
         }
     },
     llm,
-    name: "Nuxt UI"
+    name: "Nuxt UI",
+    workspace: {
+        preview: workspacePreview,
+        sections: workspaceSections
+    }
 });
