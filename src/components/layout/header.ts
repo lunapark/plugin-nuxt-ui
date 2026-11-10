@@ -13,6 +13,7 @@ const header = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/header"
     },
+    guides: ["site-layout"],
     models: {
         open: LogicType.boolean()
     },

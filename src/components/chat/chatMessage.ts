@@ -12,6 +12,7 @@ const chatMessage = {
     build: {},
     component: ChatMessage,
     documentation: {
+        description: "Display a chat message with icon, avatar, and actions.",
         link: "https://ui.nuxt.com/docs/components/chat-message"
     },
     name: "Chat/ChatMessage",

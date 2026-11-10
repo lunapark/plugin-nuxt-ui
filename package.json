@@ -1,6 +1,6 @@
 {
     "name": "@luna-park/plugin-nuxt-ui",
-    "version": "1.8.0",
+    "version": "1.9.0",
     "private": false,
     "description": "Nuxt UI plugin for Luna Park",
     "keywords": [
@@ -53,7 +53,7 @@
         "@histoire/plugin-vue": "1.0.0-beta.1",
         "@luna-park/design": "^1.7.0",
         "@luna-park/eslint-config": "^1.4.5",
-        "@luna-park/plugin": "^2.1.0",
+        "@luna-park/plugin": "^2.3.0",
         "@types/node": "^26.6.6",
         "@vitejs/plugin-vue": "^6.0.10",
         "@vue/tsconfig": "^0.9.1",

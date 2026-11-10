@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PageHeader from "@nuxt/ui/components/PageHeader.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -11,6 +12,7 @@ const pageHeader = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/page-header"
     },
+    guides: ["page"],
     name: "Page/PageHeader",
     properties: {
         description: LogicType.string(),

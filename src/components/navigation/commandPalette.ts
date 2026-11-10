@@ -45,6 +45,7 @@ const commandPalette = {
     },
     component: CommandPalette,
     documentation: {
+        description: "A command palette with full-text search powered by Fuse.js for efficient fuzzy matching.",
         link: "https://ui.nuxt.com/docs/components/command-palette"
     },
     models: {

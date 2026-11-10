@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import ChatTool from "@nuxt/ui/components/ChatTool.vue";
 
 import { ChatShimmerProps } from "@/components/chat/chatShimmer.ts";
@@ -11,6 +12,7 @@ const chatTool = {
     },
     component: ChatTool,
     documentation: {
+        description: "Display a collapsible AI tool invocation status.",
         link: "https://ui.nuxt.com/docs/components/chat-tool"
     },
     models: {

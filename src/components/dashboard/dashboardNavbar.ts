@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import DashboardNavbar from "@nuxt/ui/components/DashboardNavbar.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -12,6 +13,7 @@ const dashboardNavbar = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/dashboard-navbar"
     },
+    guides: ["dashboard"],
     name: "Dashboard/DashboardNavbar",
     properties: {
         icon: iconType({ description: "The icon displayed next to the title." }),

@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import DashboardPanel from "@nuxt/ui/components/DashboardPanel.vue";
 
 const dashboardPanel = {
@@ -7,8 +8,10 @@ const dashboardPanel = {
     },
     component: DashboardPanel,
     documentation: {
+        description: "A resizable panel to display in a dashboard.",
         link: "https://ui.nuxt.com/docs/components/dashboard-panel"
     },
+    guides: ["dashboard"],
     name: "Dashboard/DashboardPanel",
     properties: {
         defaultSize: LogicType.number({ description: "The default size of the panel." }),

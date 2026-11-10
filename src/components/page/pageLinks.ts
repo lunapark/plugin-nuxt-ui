@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PageLinks from "@nuxt/ui/components/PageLinks.vue";
 
 import { LinkProps } from "@/components/navigation/link.ts";

@@ -4,6 +4,7 @@ import ui from "@nuxt/ui/vue-plugin";
 import { defineAsyncComponent } from "vue";
 
 import { getComponents } from "@/components";
+import { guides } from "@/guides";
 import baseStyle from "@/index.css?inline";
 import { interfaces } from "@/interfaces";
 import llm from "@/llm.md?raw";
@@ -73,6 +74,7 @@ export default makePlugin({
             return { component: LWrapper, name: "Wrapper" };
         }
     },
+    guides,
     icon,
     id: "nuxt-ui",
     inject: {

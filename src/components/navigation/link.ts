@@ -16,6 +16,7 @@ const link = {
     },
     component: Link,
     documentation: {
+        description: "A wrapper around NuxtLink with extra props.",
         link: "https://ui.nuxt.com/docs/components/link"
     },
     name: "Navigation/Link",

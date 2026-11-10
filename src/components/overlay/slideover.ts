@@ -11,6 +11,7 @@ export const slideover: TComponent = {
     },
     component: Slideover,
     documentation: {
+        description: "A dialog that slides in from any side of the screen.",
         link: "https://ui.nuxt.com/docs/components/slideover"
     },
     models: {

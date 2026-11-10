@@ -13,6 +13,7 @@ const banner = {
     },
     component: Banner,
     documentation: {
+        description: "Display a banner at the top of your website to inform users about important information.",
         link: "https://ui.nuxt.com/docs/components/banner"
     },
     emits: {

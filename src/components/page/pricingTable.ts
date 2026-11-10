@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PricingTable from "@nuxt/ui/components/PricingTable.vue";
 
 import { PricingPlanProps } from "@/components/page/pricingPlan.ts";
@@ -29,6 +30,7 @@ const pricingTable = {
     },
     component: PricingTable,
     documentation: {
+        description: "A responsive pricing table component that displays tiered pricing plans with feature comparisons.",
         link: "https://ui.nuxt.com/docs/components/pricing-table"
     },
     name: "Page/PricingTable",

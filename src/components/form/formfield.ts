@@ -10,8 +10,10 @@ const formField = {
     },
     component: FormField,
     documentation: {
+        description: "A wrapper for form elements that provides validation and error handling.",
         link: "https://ui.nuxt.com/docs/components/form-field"
     },
+    guides: ["form"],
     name: "Form/FormField",
     properties: {
         description: LogicType.string(),

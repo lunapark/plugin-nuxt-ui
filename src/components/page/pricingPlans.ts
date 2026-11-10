@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PricingPlans from "@nuxt/ui/components/PricingPlans.vue";
 
 import { PricingPlanProps } from "@/components/page/pricingPlan.ts";
@@ -12,6 +13,7 @@ const pricingPlans = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/pricing-plans"
     },
+    guides: ["lists"],
     name: "Page/PricingPlans",
     properties: {
         compact: LogicType.boolean({ description: "When `true`, the plans will be displayed without gap." }),

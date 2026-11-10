@@ -17,6 +17,7 @@ const sidebar = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/sidebar"
     },
+    guides: ["sidebar"],
     models: {
         open: LogicType.boolean()
     },

@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PageLogos from "@nuxt/ui/components/PageLogos.vue";
 
 import { MarqueeProps } from "@/components/data/marquee.ts";
@@ -14,6 +15,7 @@ const pageLogos = {
     },
     component: PageLogos,
     documentation: {
+        description: "A list of logos or images to display on your pages.",
         link: "https://ui.nuxt.com/docs/components/page-logos"
     },
     name: "Page/PageLogos",

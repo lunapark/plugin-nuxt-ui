@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PageCard from "@nuxt/ui/components/PageCard.vue";
 
 import { LinkProps } from "@/components/navigation/link.ts";
@@ -11,8 +12,10 @@ const pageCard = {
     },
     component: PageCard,
     documentation: {
+        description: "A pre-styled card component that displays a title, description and optional link.",
         link: "https://ui.nuxt.com/docs/components/page-card"
     },
+    guides: ["lists"],
     name: "Page/PageCard",
     properties: {
         ...LogicUtil.pick(LinkProps, ["to", "target"]).properties,

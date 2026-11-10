@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PageCTA from "@nuxt/ui/components/PageCTA.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -10,6 +11,7 @@ const pageCTA = {
     },
     component: PageCTA,
     documentation: {
+        description: "A call to action section to display in your pages.",
         link: "https://ui.nuxt.com/docs/components/page-cta"
     },
     name: "Page/PageCTA",

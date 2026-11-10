@@ -7,6 +7,7 @@ const colorModeImage = {
     },
     component: ColorModeImage,
     documentation: {
+        description: "An image element with a different source for light and dark mode.",
         link: "https://ui.nuxt.com/docs/components/color-mode-image"
     },
     name: "ColorMode/ColorModeImage",

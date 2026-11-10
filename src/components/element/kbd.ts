@@ -9,6 +9,7 @@ const kbd = {
     },
     component: Kbd,
     documentation: {
+        description: "A kbd element to display a keyboard key.",
         link: "https://ui.nuxt.com/docs/components/kbd"
     },
     name: "Element/Kbd",

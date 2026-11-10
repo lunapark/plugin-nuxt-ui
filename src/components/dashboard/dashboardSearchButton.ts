@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import DashboardSearchButton from "@nuxt/ui/components/DashboardSearchButton.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -11,8 +12,10 @@ const dashboardSearchButton = {
     },
     component: DashboardSearchButton,
     documentation: {
+        description: "A pre-styled Button to open the DashboardSearch modal.",
         link: "https://ui.nuxt.com/docs/components/dashboard-search-button"
     },
+    guides: ["dashboard"],
     name: "Dashboard/DashboardSearchButton",
     properties: {
         ...ButtonProps.properties,

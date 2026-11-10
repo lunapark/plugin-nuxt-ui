@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import Slider from "@nuxt/ui/components/Slider.vue";
 
 import { color, orientation, size } from "@/lib/variants.ts";

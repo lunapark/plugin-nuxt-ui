@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChangelogVersion from "@nuxt/ui/components/ChangelogVersion.vue";
 
 import { UserProps } from "@/components/data/user.ts";
@@ -16,6 +17,7 @@ const changelogVersion = {
     emits: {
         click: LogicType.void()
     },
+    guides: ["lists"],
     name: "Page/ChangelogVersion",
     properties: {
         ...LogicUtil.pick(LinkProps, ["to", "target"]).properties,

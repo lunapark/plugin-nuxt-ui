@@ -34,6 +34,7 @@ const contextMenu = {
     },
     component: withCollisionBoundary(ContextMenu),
     documentation: {
+        description: "A menu to display actions when right-clicking on an element.",
         link: "https://ui.nuxt.com/docs/components/context-menu"
     },
     emits: {

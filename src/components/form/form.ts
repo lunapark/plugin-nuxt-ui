@@ -14,12 +14,14 @@ const form = {
     },
     component: Form,
     documentation: {
+        description: "A form component with built-in validation and submission handling.",
         link: "https://ui.nuxt.com/docs/components/form"
     },
     emits: (props) => ({
         error: LogicType.void(),
         submit: LogicType.object({ data: props.state?.schema ?? LogicType.unknown() })
     }),
+    guides: ["form"],
     name: "Form/Form",
     properties: {
         disabled: LogicType.boolean({ description: "Disable all inputs inside the form." }),

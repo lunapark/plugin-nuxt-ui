@@ -11,6 +11,7 @@ const chatReasoning = {
     },
     component: ChatReasoning,
     documentation: {
+        description: "Display a collapsible AI reasoning or thinking process.",
         link: "https://ui.nuxt.com/docs/components/chat-reasoning"
     },
     models: {

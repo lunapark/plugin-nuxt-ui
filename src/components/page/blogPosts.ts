@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import BlogPosts from "@nuxt/ui/components/BlogPosts.vue";
 
 import { BlogPostProps } from "@/components/page/blogPost.ts";
@@ -12,6 +13,7 @@ const blogPosts = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/blog-posts"
     },
+    guides: ["lists"],
     name: "Page/BlogPosts",
     properties: {
         orientation: { ...orientation, description: "The orientation of the blog posts." },

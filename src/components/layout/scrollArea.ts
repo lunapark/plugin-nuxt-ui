@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import ScrollArea from "@nuxt/ui/components/ScrollArea.vue";
 
 import { orientation } from "@/lib/variants.ts";
@@ -9,6 +10,7 @@ const scrollArea = {
     },
     component: ScrollArea,
     documentation: {
+        description: "A flexible scroll container with virtualization support.",
         link: "https://ui.nuxt.com/docs/components/scroll-area"
     },
     emits: {

@@ -9,6 +9,7 @@ const fieldGroup = {
     },
     component: FieldGroup,
     documentation: {
+        description: "Group multiple button-like elements together.",
         link: "https://ui.nuxt.com/docs/components/field-group"
     },
     name: "Element/FieldGroup",

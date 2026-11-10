@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChatPalette from "@nuxt/ui/components/ChatPalette.vue";
 
 const chatPalette = {
@@ -7,6 +8,7 @@ const chatPalette = {
     },
     component: ChatPalette,
     documentation: {
+        description: "A chat palette to create a chatbot interface inside an overlay.",
         link: "https://ui.nuxt.com/docs/components/chat-palette"
     },
     name: "Chat/ChatPalette",

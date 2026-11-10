@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Main from "@nuxt/ui/components/Main.vue";
 
 const main = {
@@ -7,8 +8,10 @@ const main = {
     },
     component: Main,
     documentation: {
+        description: "A main element that fills the available viewport height.",
         link: "https://ui.nuxt.com/docs/components/main"
     },
+    guides: ["site-layout"],
     name: "Layout/Main",
     properties: {},
     slots: {

@@ -11,12 +11,14 @@ const chatPrompt = {
     },
     component: ChatPrompt,
     documentation: {
+        description: "An enhanced Textarea for submitting prompts in AI chat interfaces.",
         link: "https://ui.nuxt.com/docs/components/chat-prompt"
     },
     emits: {
         close: LogicType.object({ event: LogicType.interface("Event") }),
         submit: LogicType.object({ event: LogicType.interface("Event") })
     },
+    guides: ["chat-prompt"],
     models: {
         modelValue: LogicType.string()
     },

@@ -17,6 +17,7 @@ const selectMenu = {
     },
     component: withCollisionBoundary(SelectMenu),
     documentation: {
+        description: "An advanced searchable select element.",
         link: "https://ui.nuxt.com/docs/components/select-menu"
     },
     emits: {

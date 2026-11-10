@@ -50,6 +50,7 @@ const authForm = {
     },
     component: AuthForm,
     documentation: {
+        description: "A customizable Form to create login, register or password reset forms.",
         link: "https://ui.nuxt.com/docs/components/auth-form"
     },
     emits: (props) => {

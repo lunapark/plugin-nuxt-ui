@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChatShimmer from "@nuxt/ui/components/ChatShimmer.vue";
 
 const chatShimmer = {
@@ -7,6 +8,7 @@ const chatShimmer = {
     },
     component: ChatShimmer,
     documentation: {
+        description: "Display a text shimmer animation effect.",
         link: "https://ui.nuxt.com/docs/components/chat-shimmer"
     },
     name: "Chat/ChatShimmer",

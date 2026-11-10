@@ -13,6 +13,7 @@ const calendar = {
     },
     component: Calendar,
     documentation: {
+        description: "A calendar component for selecting single dates, multiple dates or date ranges.",
         link: "https://ui.nuxt.com/docs/components/calendar"
     },
     models: (props) => {

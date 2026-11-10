@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Splitter from "@nuxt/ui/components/Splitter.vue";
 
 import { orientation } from "@/lib/variants.ts";
@@ -28,6 +29,7 @@ const splitter = {
     },
     component: Splitter,
     documentation: {
+        description: "A set of resizable panels separated by draggable handles.",
         link: "https://ui.nuxt.com/docs/components/splitter"
     },
     emits: {

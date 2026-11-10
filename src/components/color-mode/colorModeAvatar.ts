@@ -9,6 +9,7 @@ const colorModeAvatar = {
     },
     component: ColorModeAvatar,
     documentation: {
+        description: "An Avatar with a different source for light and dark mode.",
         link: "https://ui.nuxt.com/docs/components/color-mode-avatar"
     },
     name: "ColorMode/ColorModeAvatar",

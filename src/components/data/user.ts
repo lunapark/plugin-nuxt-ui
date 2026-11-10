@@ -13,6 +13,7 @@ export const user = {
     },
     component: User,
     documentation: {
+        description: "Display user information with name, description and avatar.",
         link: "https://ui.nuxt.com/docs/components/user"
     },
     emits: {

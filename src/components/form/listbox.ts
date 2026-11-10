@@ -15,6 +15,7 @@ const listbox = {
     },
     component: Listbox,
     documentation: {
+        description: "A selectable list of items with search, virtualization and rich item rendering.",
         link: "https://ui.nuxt.com/docs/components/listbox"
     },
     emits: {

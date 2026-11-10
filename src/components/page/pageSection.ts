@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PageSection from "@nuxt/ui/components/PageSection.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";

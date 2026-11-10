@@ -9,6 +9,7 @@ const chip = {
     },
     component: Chip,
     documentation: {
+        description: "An indicator of a numeric value or a state.",
         link: "https://ui.nuxt.com/docs/components/chip"
     },
     name: "Element/Chip",

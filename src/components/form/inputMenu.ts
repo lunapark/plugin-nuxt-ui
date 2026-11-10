@@ -31,6 +31,7 @@ const inputMenu = {
     },
     component: withCollisionBoundary(InputMenu),
     documentation: {
+        description: "An autocomplete input with real-time suggestions.",
         link: "https://ui.nuxt.com/docs/components/input-menu"
     },
     models: (props) => {

@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Footer from "@nuxt/ui/components/Footer.vue";
 
 const footer = {
@@ -9,6 +10,7 @@ const footer = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/footer"
     },
+    guides: ["site-layout"],
     name: "Layout/Footer",
     properties: {},
     slots: {

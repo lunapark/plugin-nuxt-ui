@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChangelogVersions from "@nuxt/ui/components/ChangelogVersions.vue";
 
 import { ChangelogVersionProps } from "@/components/page/changelogVersion.ts";
@@ -23,6 +24,7 @@ const changelogVersions = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/changelog-versions"
     },
+    guides: ["lists"],
     name: "Page/ChangelogVersions",
     properties: {
         indicator: LogicType.boolean({ description: "Display an indicator bar on the left." }),

@@ -11,8 +11,10 @@ const dashboardSidebar = {
     },
     component: DashboardSidebar,
     documentation: {
+        description: "A resizable and collapsible sidebar to display in a dashboard.",
         link: "https://ui.nuxt.com/docs/components/dashboard-sidebar"
     },
+    guides: ["dashboard"],
     models: {
         collapsed: LogicType.boolean(),
         open: LogicType.boolean()

@@ -11,8 +11,10 @@ const error = {
     },
     component: Error,
     documentation: {
+        description: "A pre-built error component with NuxtError support.",
         link: "https://ui.nuxt.com/docs/components/error"
     },
+    guides: ["site-layout"],
     name: "Layout/Error",
     properties: {
         clear: LogicType.union([LogicType.boolean(), ButtonProps], { description: "Display a button to clear the error in the links slot." }),

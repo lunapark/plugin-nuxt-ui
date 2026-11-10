@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PageFeature from "@nuxt/ui/components/PageFeature.vue";
 
 import { LinkProps } from "@/components/navigation/link.ts";
@@ -11,6 +12,7 @@ const pageFeature = {
     },
     component: PageFeature,
     documentation: {
+        description: "A component to showcase key features of your application.",
         link: "https://ui.nuxt.com/docs/components/page-feature"
     },
     name: "Page/PageFeature",

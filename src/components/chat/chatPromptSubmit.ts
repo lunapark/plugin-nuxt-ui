@@ -12,12 +12,14 @@ const chatPromptSubmit = {
     },
     component: ChatPromptSubmit,
     documentation: {
+        description: "A Button for submitting chat prompts with automatic status handling.",
         link: "https://ui.nuxt.com/docs/components/chat-prompt-submit"
     },
     emits: {
         reload: LogicType.void(),
         stop: LogicType.void()
     },
+    guides: ["chat-prompt"],
     name: "Chat/ChatPromptSubmit",
     properties: {
         ...ButtonProps.properties,

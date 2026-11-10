@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import BlogPost from "@nuxt/ui/components/BlogPost.vue";
 
 import { UserProps } from "@/components/data/user.ts";
@@ -17,6 +18,7 @@ const blogPost = {
     emits: {
         click: LogicType.void()
     },
+    guides: ["lists"],
     name: "Page/BlogPost",
     properties: {
         ...LogicUtil.pick(LinkProps, ["to", "target"]).properties,

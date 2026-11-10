@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PricingPlan from "@nuxt/ui/components/PricingPlan.vue";
 
 import { BadgeProps } from "@/components/element/badge.ts";
@@ -14,6 +15,7 @@ const pricingPlan = {
     documentation: {
         link: "https://ui.nuxt.com/docs/components/pricing-plan"
     },
+    guides: ["lists"],
     name: "Page/PricingPlan",
     properties: {
         badge: LogicType.union([LogicType.string(), BadgeProps], { description: "Display a badge next to the title." }),

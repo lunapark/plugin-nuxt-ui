@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import InputRating from "@nuxt/ui/components/InputRating.vue";
 
 import { iconType } from "@/lib/icon.ts";

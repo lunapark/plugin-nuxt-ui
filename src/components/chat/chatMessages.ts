@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import ChatMessages from "@nuxt/ui/components/ChatMessages.vue";
 
 import { ChatMessageProps } from "@/components/chat/chatMessage.ts";
@@ -13,6 +14,7 @@ const chatMessages = {
     },
     component: ChatMessages,
     documentation: {
+        description: "Display a list of chat messages, designed to work seamlessly with Vercel AI SDK.",
         link: "https://ui.nuxt.com/docs/components/chat-messages"
     },
     name: "Chat/ChatMessages",

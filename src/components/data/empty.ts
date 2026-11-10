@@ -13,6 +13,7 @@ const empty = {
     },
     component: Empty,
     documentation: {
+        description: "A component to display an empty state.",
         link: "https://ui.nuxt.com/docs/components/empty"
     },
     name: "Data/Empty",

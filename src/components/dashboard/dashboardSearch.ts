@@ -14,8 +14,10 @@ const dashboardSearch = {
     },
     component: DashboardSearch,
     documentation: {
+        description: "A ready-to-use CommandPalette to add to your dashboard.",
         link: "https://ui.nuxt.com/docs/components/dashboard-search"
     },
+    guides: ["dashboard"],
     models: {
         open: LogicType.boolean(),
         searchTerm: LogicType.string()

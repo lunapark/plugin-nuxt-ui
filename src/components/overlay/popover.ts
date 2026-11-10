@@ -37,6 +37,7 @@ export const popover: TComponent = {
     },
     component: withCollisionBoundary(Popover),
     documentation: {
+        description: "A non-modal dialog that floats around a trigger element.",
         link: "https://ui.nuxt.com/docs/components/popover"
     },
     models: {

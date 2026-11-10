@@ -9,6 +9,7 @@ export const marquee = {
     },
     component: Marquee,
     documentation: {
+        description: "A component to create infinite scrolling content.",
         link: "https://ui.nuxt.com/docs/components/marquee"
     },
     name: "Data/Marquee",

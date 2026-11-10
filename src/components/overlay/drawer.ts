@@ -11,6 +11,7 @@ const drawer = {
     },
     component: Drawer,
     documentation: {
+        description: "A drawer that smoothly slides in and out of the screen.",
         link: "https://ui.nuxt.com/docs/components/drawer"
     },
     models: {

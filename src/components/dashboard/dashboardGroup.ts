@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import DashboardGroup from "@nuxt/ui/components/DashboardGroup.vue";
 
 const dashboardGroup = {
@@ -7,8 +8,10 @@ const dashboardGroup = {
     },
     component: DashboardGroup,
     documentation: {
+        description: "A fixed layout component that provides context for dashboard components with sidebar state management and persistence.",
         link: "https://ui.nuxt.com/docs/components/dashboard-group"
     },
+    guides: ["dashboard"],
     name: "Dashboard/DashboardGroup",
     properties: {
         persistent: LogicType.boolean({ description: "Whether to persist the size in the storage." }),

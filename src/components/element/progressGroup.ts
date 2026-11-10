@@ -19,6 +19,7 @@ const progressGroup = {
     },
     component: ProgressGroup,
     documentation: {
+        description: "A progress bar split into multiple segments that add up to a total.",
         link: "https://ui.nuxt.com/docs/components/progress-group"
     },
     name: "Element/ProgressGroup",

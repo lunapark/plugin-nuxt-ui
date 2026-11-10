@@ -1,4 +1,5 @@
-import { LogicType, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType } from "@luna-park/plugin";
 import ColorPicker from "@nuxt/ui/components/ColorPicker.vue";
 
 import { size } from "@/lib/variants.ts";

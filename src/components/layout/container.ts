@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import Container from "@nuxt/ui/components/Container.vue";
 
 const container = {
@@ -7,8 +8,10 @@ const container = {
     },
     component: Container,
     documentation: {
+        description: "A layout element to center and constrain the width of your content.",
         link: "https://ui.nuxt.com/docs/components/container"
     },
+    guides: ["site-layout"],
     name: "Layout/Container",
     properties: {},
     slots: {

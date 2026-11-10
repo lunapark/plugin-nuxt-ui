@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import DashboardSidebarToggle from "@nuxt/ui/components/DashboardSidebarToggle.vue";
 
 import { ButtonProps } from "@/components/element/button.ts";
@@ -9,8 +10,10 @@ const dashboardSidebarToggle = {
     },
     component: DashboardSidebarToggle,
     documentation: {
+        description: "A Button to toggle the sidebar on mobile.",
         link: "https://ui.nuxt.com/docs/components/dashboard-sidebar-toggle"
     },
+    guides: ["dashboard"],
     name: "Dashboard/DashboardSidebarToggle",
     properties: {
         ...ButtonProps.properties,

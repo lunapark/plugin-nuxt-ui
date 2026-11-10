@@ -1,4 +1,5 @@
-import { LogicType, LogicUtil, type TComponent } from "@luna-park/plugin";
+import type { TComponent } from "@luna-park/plugin";
+import { LogicType, LogicUtil } from "@luna-park/plugin";
 import PageColumns from "@nuxt/ui/components/PageColumns.vue";
 
 const pageColumns = {
@@ -7,8 +8,10 @@ const pageColumns = {
     },
     component: PageColumns,
     documentation: {
-        link: "https://ui.nuxt.com/docs/components/page-column"
+        description: "A responsive multi-column layout system for organizing content side-by-side.",
+        link: "https://ui.nuxt.com/docs/components/page-columns"
     },
+    guides: ["lists"],
     name: "Page/PageColumns",
     properties: {},
     slots: {
