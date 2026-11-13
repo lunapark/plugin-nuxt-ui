@@ -104,6 +104,7 @@ export default makePlugin({
     llm,
     name: "Nuxt UI",
     workspace: {
+        openOnClick: true,
         preview: workspacePreview,
         sections: workspaceSections
     }
